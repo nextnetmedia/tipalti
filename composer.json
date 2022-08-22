@@ -1,0 +1,16 @@
+{
+    "name": "nextnetmedia/tipalti",
+    "description": "Simple PHP implementation of the Tipalti iFrame and SOAP APIs",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nextnetmedia\\Tipalti\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "ext-soap": "*",
+        "ext-curl": "*",
+        "ext-hash": "*"
+    }
+}
