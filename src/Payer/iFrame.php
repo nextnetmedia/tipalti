@@ -70,22 +70,21 @@ class iFrame extends Client {
    */
   private function tipaltiUrl($type = "home") {
     $type = strtolower($type);
-    $base = $this->production ? "https://ui2.tipalti.com/" : "https://ui2.sandbox.tipalti.com/";
     switch ($type) {
       case "payeedashboard/home":
       case "home":
       case "paymentdetails":
-        return $base . "payeedashboard/home";
+        return $this->iFrameBaseUrl . "payeedashboard/home";
         break;
       case "payeedashboard/paymentshistory":
       case "paymentshistory":
       case "paymenthistory":
       case "history":
-        return $base . "PayeeDashboard/PaymentsHistory";
+        return $this->iFrameBaseUrl . "PayeeDashboard/PaymentsHistory";
         break;
       case "payeedashboard/invoices":
       case "invoices":
-        return $base . "PayeeDashboard/Invoices";
+        return $this->iFrameBaseUrl . "PayeeDashboard/Invoices";
         break;
       default:
         throw new Exception("Invalid iFrame type specified, please use one of: home, history, invoices");

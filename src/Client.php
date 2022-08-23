@@ -17,7 +17,13 @@ class Client {
   /**
    * @var bool|string
    */
-  protected $apikey, $production;
+  /**
+   * @var string
+   */
+  /**
+   * @var string
+   */
+  protected $apikey, $production, $iFrameBaseUrl, $apiBaseUrl;
 
   /**
    * @param $apikey
@@ -32,6 +38,8 @@ class Client {
     if(empty($apikey)) throw new Exception("You must supply a Tipalti API key");
     $this->apikey = $apikey;
     $this->production = $production;
+    $this->iFrameBaseUrl = $this->production ? "https://ui2.tipalti.com/" : "https://ui2.sandbox.tipalti.com/";
+    $this->apiBaseUrl = $this->production ? "https://api.tipalti.com/" : "https://api.sandbox.tipalti.com/";
   }
 
 
