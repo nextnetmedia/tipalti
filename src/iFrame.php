@@ -1,26 +1,17 @@
 <?php
 
-namespace Nextnetmedia\Tipalti\Payer;
+namespace Nextnetmedia\Tipalti;
 
-use Nextnetmedia\Tipalti\Client;
 use Exception;
 
 /**
  *
  * Generate iFrame URL's for Tipalti payees to use to enroll or update their settings, as well as view previous payments or invoices.
  *
- * Example:
- *
- * $if = new iFrame("your-api-key-here");
- * $iFrameURL = $if->getUrl("YourCompanyName", "PAYEE_1234", ["payeeType"=>"individual"]);
- *
- * would return a Tipalti sandbox Payment Details URL for the user PAYEE_1234 which prefills their payee type as individual.
- *
  */
-class iFrame extends Client {
+class iFrame extends Tipalti {
 
   /**
-   * @param $payerName
    * @param $payeeId
    * @param array $extraParameters
    * @param $type
@@ -28,7 +19,7 @@ class iFrame extends Client {
    * @return string
    * @throws Exception
    *
-   * Generate an iFrame URL to display to a Payee. You must provide the Payer name (as set by Tipalti), the payee ID (also known as the "IDAP"), and optionally any additional parameters as listed at:
+   * Generate an iFrame URL to display to a PayeeAPI. You must provide the Payer name (as set by Tipalti), the payee ID (also known as the "IDAP"), and optionally any additional parameters as listed at:
    * https://support.tipalti.com/Content/Topics/Development/iFrames/IframeRequestStructure.htm
    *
    * Additionally, you can specify the type of iFrame you'd like to display:
@@ -37,13 +28,12 @@ class iFrame extends Client {
    * invoices - the Invoice History page
    *
    */
-  public function getUrl($payerName, $payeeId, array $extraParameters = [], $type = "home") {
-    $url = $this->tipaltiUrl($type);
+  public function getUrl($payeeId, array $extraParameters = [], $type = "home") {
     $queryString = $extraParameters;
     $queryString["ts"] = time();
     $queryString["idap"] = $payeeId;
-    $queryString["payer"] = $payerName;
-    return $url . "?" . $this->buildEncryptedQueryString($queryString);
+    $queryString["payer"] = $this->payerName;
+    return $this->iframeBaseUrl($type) . "?" . $this->buildEncryptedQueryString($queryString);
   }
 
   /**
@@ -55,7 +45,7 @@ class iFrame extends Client {
    *
    */
   private function buildEncryptedQueryString(array $queryArray) {
-    $queryArray['hashkey'] = hash_hmac("sha256",http_build_query($queryArray),$this->apikey);
+    $queryArray['hashkey'] = $this->generateHmac(http_build_query($queryArray));
     return http_build_query($queryArray);
   }
 
@@ -68,7 +58,7 @@ class iFrame extends Client {
    * Determine the proper Tipalti base URL for the selected page type & environment.
    *
    */
-  private function tipaltiUrl($type = "home") {
+  private function iframeBaseUrl($type = "home") {
     $type = strtolower($type);
     switch ($type) {
       case "payeedashboard/home":

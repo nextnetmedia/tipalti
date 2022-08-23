@@ -10,7 +10,10 @@
     "require": {
         "php": ">=5.4",
         "ext-soap": "*",
-        "ext-curl": "*",
-        "ext-hash": "*"
+        "ext-hash": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "psy/psysh": "@stable"
     }
 }
