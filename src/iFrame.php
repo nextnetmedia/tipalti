@@ -3,59 +3,94 @@
 namespace Nextnetmedia\Tipalti;
 
 use Exception;
+use Nextnetmedia\Tipalti\Authentication\EncryptionKey;
+use Nextnetmedia\Tipalti\Client\PayeeClient;
 
 /**
  *
  * Generate iFrame URL's for Tipalti payees to use to enroll or update their settings, as well as view previous payments or invoices.
  *
  */
-class iFrame extends Tipalti {
+class iFrame {
 
   /**
-   * @param $payeeId
-   * @param array $extraParameters
-   * @param $type
-   *
-   * @return string
-   * @throws Exception
+   * @var string
+   */
+  private $apikey;
+  /**
+   * @var string
+   */
+  private $payerName;
+  /**
+   * @var bool
+   */
+  private $production;
+  /**
+   * @var string
+   */
+  private $iFrameBaseUrl;
+
+  /**
+   * @param string $apikey
+   * @param string $payerName
+   * @param bool $production
+   */
+  public function __construct($apikey, $payerName, $production = false) {
+    $this->apikey = $apikey;
+    $this->payerName = $payerName;
+    $this->production = $production;
+    $this->iFrameBaseUrl = $this->production ? "https://ui2.tipalti.com/" : "https://ui2.sandbox.tipalti.com/";
+  }
+
+
+  /**
    *
    * Generate an iFrame URL to display to a PayeeAPI. You must provide the Payer name (as set by Tipalti), the payee ID (also known as the "IDAP"), and optionally any additional parameters as listed at:
    * https://support.tipalti.com/Content/Topics/Development/iFrames/IframeRequestStructure.htm
-   *
+   **
+   * @param $idap
+   * @param array $extraParameters
+   * @param $type
    * Additionally, you can specify the type of iFrame you'd like to display:
    * home - the Payment Details page
    * history - the Payments History page
    * invoices - the Invoice History page
    *
+   * @return string
+   * @throws Exception
+   *
+   *
    */
-  public function getUrl($payeeId, array $extraParameters = [], $type = "home") {
+  public function getUrl($idap, array $extraParameters = [], $type = "home") {
     $queryString = $extraParameters;
     $queryString["ts"] = time();
-    $queryString["idap"] = $payeeId;
+    $queryString["idap"] = $idap;
     $queryString["payer"] = $this->payerName;
     return $this->iframeBaseUrl($type) . "?" . $this->buildEncryptedQueryString($queryString);
   }
 
   /**
+   *
+   * Build an encrypted query string, given an array of query parameters; the "hashkey" value is added to the array and a string is returned. Remember to prefix the string with ? when using it in a URL.
+   *
    * @param array $queryArray
    *
    * @return string
    *
-   * Build an encrypted query string, given an array of query parameters; the "hashkey" value is added to the array and a string is returned. Remember to prefix the string with ? when using it in a URL.
-   *
    */
   private function buildEncryptedQueryString(array $queryArray) {
-    $queryArray['hashkey'] = $this->generateHmac(http_build_query($queryArray));
+    $queryArray['hashkey'] = EncryptionKey::generateHmac(http_build_query($queryArray), $this->apikey);
     return http_build_query($queryArray);
   }
 
   /**
-   * @param $type
+   *
+   * Determine the proper Tipalti base URL for the selected page type & environment.
+   *
+   * @param string $type
    *
    * @return string
    * @throws Exception
-   *
-   * Determine the proper Tipalti base URL for the selected page type & environment.
    *
    */
   private function iframeBaseUrl($type = "home") {
