@@ -59,5 +59,7 @@ var_dump($payerClient->GetExtendedPayeeDetails("TEST_IDAP"));
 ### Development Notes
 
 The Tipalti API V11 is in use by this project. Attempting to change the API version in use is unlikely to work due to the SOAP WSDL generation that was performed with wsdl2phpgenerator and then cleaned up by hand.
+
 Care has been taken to ensure that this code will (hopefully) work properly on PHP 5.4+, and a minimum of dependencies. Some unusual code patterns such as custom class annotations have been used to add support for EAT parameters, since those are not specified in the Tipalti WSDL and must be hard-coded.
+
 Magic method class definitions, which are defined as PHPDoc @method annotations in the PayeeClient and PayerClient classes, can be regenerated with the static::generateMethodAnnotations() method if the available commands have changed (to help your IDE detect the available commands).
