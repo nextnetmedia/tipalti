@@ -45,7 +45,7 @@ class Invoice {
     $this->payername = $payername;
     $this->production = $production;
     $this->invoices = new ArrayOfTipaltiInvoiceItemRequest();
-    $this->client = new PayerClient($apikey, $payername, $production);
+    $this->client = new PayerClient($this->apikey, $this->payername, $this->production);
   }
 
   public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines) {
@@ -72,7 +72,8 @@ class Invoice {
 
   private function sendBatch($output) {
     $reply = $this->client->CreateOrUpdateInvoices($output);
-    if(!empty($reply->CreateOrUpdateInvoicesResult) && !empty($reply->CreateOrUpdateInvoicesResult->errorMessage)) {
+    print_r($reply);
+    if(!empty($reply->CreateOrUpdateInvoicesResult) && !empty($reply->CreateOrUpdateInvoicesResult->errorCode)) {
       if(strtolower($reply->CreateOrUpdateInvoicesResult->errorCode) == "ok" || strtolower($reply->CreateOrUpdateInvoicesResult->errorMessage) == "ok") return true;
       throw new Exception($reply->CreateOrUpdateInvoicesResult->errorCode . ": ". $reply->CreateOrUpdateInvoicesResult->errorMessage);
     } else {

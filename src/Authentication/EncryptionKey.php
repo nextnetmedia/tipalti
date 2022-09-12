@@ -77,7 +77,8 @@ class EncryptionKey {
     } elseif($annotation && empty($value)) {
 
       // We have an annotation, but the EAT parameter wasn't supplied so we cannot continue.
-      throw new Exception("Cannot calculate encryption key without parameter ".$annotation->eatParameter);
+      $requiredParams = is_array($annotation->eatParameter) ? implode(" or ", $annotation->eatParameter) : $annotation->eatParameter;
+      throw new Exception("Cannot calculate encryption key without parameter ".$requiredParams);
 
     }
 
