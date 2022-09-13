@@ -13,7 +13,7 @@
         "ext-hash": "*",
         "ext-json": "*",
         "haydenpierce/class-finder": "^0.4.3",
-        "doctrine/annotations": "^1.13"
+        "doctrine/annotations": "^1.4"
     },
     "require-dev": {
         "psy/psysh": "@stable"
