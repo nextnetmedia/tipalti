@@ -24,6 +24,7 @@ class EncryptionKey {
     if(!isset($args['payerName'])) throw new Exception("You must specify a payerName");
     if(!isset($args['timestamp'])) throw new Exception("You must specify a timestamp");
 
+    $value = "";
     AnnotationRegistry::registerLoader('class_exists');
     $reader = new AnnotationReader();
 
@@ -37,7 +38,7 @@ class EncryptionKey {
         foreach ($annotation->eatParameter as $av) {
           if(method_exists($args[$nestedAnnotation->childItem],"get".$av)) $value = $args[$nestedAnnotation->childItem]->{"get".$av}();
           else $value = empty($args[$nestedAnnotation->childItem]->{$av}) ? null : $args[$nestedAnnotation->childItem]->{$av};
-          if(!empty($value)) continue;
+          if(!empty($value)) break;
         }
       } else {
 
