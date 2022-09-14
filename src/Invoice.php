@@ -48,12 +48,13 @@ class Invoice {
     $this->client = new PayerClient($this->apikey, $this->payername, $this->production);
   }
 
-  public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines) {
+  public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines, $description = "") {
     $invoice = new TipaltiInvoiceItemRequest($invoiceDate, $canApprove, $isPaidManually);
     $invoice->setIdap($idap);
     $invoice->setInvoiceRefCode($refcode);
     $invoice->setInvoiceDueDate($invoiceDueDate);
     $invoice->setInvoiceLines($lines);
+    if(!empty($description)) $invoice->setDescription($description);
     $this->invoices[] = $invoice;
   }
 
