@@ -72,7 +72,6 @@ class Invoice {
 
   private function sendBatch($output) {
     $reply = $this->client->CreateOrUpdateInvoices($output);
-    print_r($reply);
     if(!empty($reply->CreateOrUpdateInvoicesResult) && !empty($reply->CreateOrUpdateInvoicesResult->errorCode)) {
       if(strtolower($reply->CreateOrUpdateInvoicesResult->errorCode) == "ok" || strtolower($reply->CreateOrUpdateInvoicesResult->errorMessage) == "ok") return true;
       throw new Exception($reply->CreateOrUpdateInvoicesResult->errorCode . ": ". $reply->CreateOrUpdateInvoicesResult->errorMessage);
