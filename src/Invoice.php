@@ -55,7 +55,7 @@ class Invoice {
     $invoice->setInvoiceDueDate($invoiceDueDate);
     $invoice->setInvoiceLines($lines);
     if(!empty($description)) $invoice->setDescription($description);
-    if(!empty($subject)) $invoice->setDescription($subject);
+    if(!empty($subject)) $invoice->setInvoiceSubject($subject);
     if(!empty($payerEntityName)) $invoice->setPayerEntityName($payerEntityName);
     $this->invoices[] = $invoice;
   }
