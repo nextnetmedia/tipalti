@@ -164,7 +164,8 @@ class Payee {
     $item->{"set".$key}($value);
     // TODO: set overridepayablecountry properly
     // TODO: Check if we are going to clobber the user by overwriting the wrong values here? we have SkipNulls turned on but a new PayeeDetailsItem will mostly be null... how can we set a field to null now?
-    $this->client->UpdateOrCreatePayeeInfo($this->idap, true, false, $item);
+    $response = $this->client->UpdateOrCreatePayeeInfo($this->idap, true, false, $item);
+    if(strtolower($response->UpdateOrCreatePayeeInfoResult->errorCode) != "ok") throw new Exception("Failed to update ".$this->idap ." key ".$key.": ".$response->UpdateOrCreatePayeeInfoResult->errorCode . " ".$response->UpdateOrCreatePayeeInfoResult->errorMessage);
     $this->update();
   }
 

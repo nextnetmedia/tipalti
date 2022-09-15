@@ -48,7 +48,7 @@ class Invoice {
     $this->client = new PayerClient($this->apikey, $this->payername, $this->production);
   }
 
-  public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines, $subject = "", $description = "") {
+  public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines, $subject = "", $description = "", $payerEntityName = "") {
     $invoice = new TipaltiInvoiceItemRequest($invoiceDate, $canApprove, $isPaidManually);
     $invoice->setIdap($idap);
     $invoice->setInvoiceRefCode($refcode);
@@ -56,6 +56,7 @@ class Invoice {
     $invoice->setInvoiceLines($lines);
     if(!empty($description)) $invoice->setDescription($description);
     if(!empty($subject)) $invoice->setDescription($subject);
+    if(!empty($payerEntityName)) $invoice->setPayerEntityName($payerEntityName);
     $this->invoices[] = $invoice;
   }
 

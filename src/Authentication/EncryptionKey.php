@@ -63,8 +63,17 @@ class EncryptionKey {
       // If the EAT is the idap, use the special idap format
       if(is_array($annotation->eatParameter)) {
         foreach ($annotation->eatParameter as $av) {
-          if($av == "idap" && !empty($args['idap'])) return self::generateHmac([$args['payerName'],$args['idap'],$args['timestamp']], $apiKey);
-          if($av == "Idap" && !empty($args['Idap'])) return self::generateHmac([$args['payerName'],$args['Idap'],$args['timestamp']], $apiKey);
+          if(strtolower($av) == "idap") {
+            if (!empty($args[ucfirst($av)])) return self::generateHmac([$args['payerName'], $args[ucfirst($av)], $args['timestamp']], $apiKey);
+            elseif (!empty($args[lcfirst($av)])) return self::generateHmac([$args['payerName'], $args[lcfirst($av)], $args['timestamp']], $apiKey);
+            elseif (!empty($args[strtolower($av)])) return self::generateHmac([$args['payerName'], $args[strtolower($av)], $args['timestamp']], $apiKey);
+            else return self::generateHmac([$args['payerName'], $value, $args['timestamp']], $apiKey);
+          } else {
+            if (!empty($args[ucfirst($av)])) return self::generateHmac([$args['payerName'], $args['timestamp'], $args[ucfirst($av)]], $apiKey);
+            elseif (!empty($args[lcfirst($av)])) return self::generateHmac([$args['payerName'], $args['timestamp'], $args[lcfirst($av)]], $apiKey);
+            elseif (!empty($args[strtolower($av)])) return self::generateHmac([$args['payerName'], $args['timestamp'], $args[strtolower($av)]], $apiKey);
+            else return self::generateHmac([$args['payerName'], $args['timestamp'], $value], $apiKey);
+          }
         }
       } elseif($annotation->eatParameter == "idap" && !empty($args['idap'])) {
         return self::generateHmac([$args['payerName'], $args['idap'], $args['timestamp']], $apiKey);
