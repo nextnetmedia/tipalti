@@ -6,6 +6,7 @@ use DateTime;
 use Exception;
 use Nextnetmedia\Tipalti\Client\PayerClient;
 use Nextnetmedia\Tipalti\Resource\ArrayOfInvoiceLine;
+use Nextnetmedia\Tipalti\Resource\ArrayOfKeyValuePair;
 use Nextnetmedia\Tipalti\Resource\ArrayOfTipaltiInvoiceItemRequest;
 use Nextnetmedia\Tipalti\Resource\TipaltiInvoiceItemRequest;
 use NoRewindIterator;
@@ -48,7 +49,7 @@ class Invoice {
     $this->client = new PayerClient($this->apikey, $this->payername, $this->production);
   }
 
-  public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines, $subject = "", $description = "", $payerEntityName = "") {
+  public function addItem($idap, $refcode, $canApprove, $isPaidManually, DateTime $invoiceDate, DateTime $invoiceDueDate, ArrayOfInvoiceLine $lines, $subject = "", $description = "", $payerEntityName = "", ArrayOfKeyValuePair $customfields = null) {
     $invoice = new TipaltiInvoiceItemRequest($invoiceDate, $canApprove, $isPaidManually);
     $invoice->setIdap($idap);
     $invoice->setInvoiceRefCode($refcode);
@@ -57,6 +58,7 @@ class Invoice {
     if(!empty($description)) $invoice->setDescription($description);
     if(!empty($subject)) $invoice->setInvoiceSubject($subject);
     if(!empty($payerEntityName)) $invoice->setPayerEntityName($payerEntityName);
+    if(!empty($customfields)) $invoice->setCustomFields($customfields);
     $this->invoices[] = $invoice;
   }
 
