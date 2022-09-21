@@ -54,4 +54,4 @@ Magic method class definitions, which are defined as PHPDoc @method annotations 
 
 ### Known Bugs
 
-The Tipalti "EAT" parameter is exceedingly hard to calculate for calls that contain multiple layers of nested items, especially when there are multiple choices for EAT value (such as IDAP or Street1"). This currently results in 
+The Tipalti "EAT" parameter is exceedingly hard to calculate for calls that contain multiple layers of nested items, especially when there are multiple choices for EAT value (such as IDAP or Street1"). This currently results in errors being thrown during validation; a workaround is to force the Idap to be set on a child item again, even if it's already set on the parent.
