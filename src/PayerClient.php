@@ -1,6 +1,8 @@
 <?php
 
-namespace Nextnetmedia\Tipalti\Client;
+namespace Nextnetmedia\Tipalti;
+
+use Nextnetmedia\Tipalti\Client\Nextnetmedia;
 
 /**
  * @method Nextnetmedia\Tipalti\Command\Payer\ApplyVendorCredit ApplyVendorCredit($vendorCreditRefCode, $relatedInvoices)

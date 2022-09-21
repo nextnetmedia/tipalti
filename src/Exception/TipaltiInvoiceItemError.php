@@ -2,7 +2,7 @@
 
 namespace Nextnetmedia\Tipalti\Exception;
 
-use Nextnetmedia\Tipalti\Command\Payee\WSErrors;
+use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiInvoiceItemError
 {

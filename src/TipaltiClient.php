@@ -1,6 +1,6 @@
 <?php
 
-namespace Nextnetmedia\Tipalti\Client;
+namespace Nextnetmedia\Tipalti;
 
 use Exception;
 use HaydenPierce\ClassFinder\ClassFinder;
@@ -53,7 +53,7 @@ class TipaltiClient extends SoapClient
       $options['features'] = SOAP_SINGLE_ELEMENT_ARRAYS;
       foreach(['Resource','Response', 'Result', 'Exception'] as $namespace) {
         foreach (ClassFinder::getClassesInNamespace(__NAMESPACE__."\\$namespace") as $class) {
-          $shortName = trim(str_replace($namespace, '', $class), " \\");
+          $shortName = trim(str_replace(__NAMESPACE__."\\".$namespace, '', $class), " \\");
           $options['classmap'][$shortName] = $class;
         }
       }
@@ -92,7 +92,15 @@ class TipaltiClient extends SoapClient
           }
         }
         $callParams[$keyPosition] = EncryptionKey::generate($class,$namedParams,$this->apikey);
-        return $this->__soapCall($name,[$classToCall->newInstanceArgs($callParams)]);
+        $reply = $this->__soapCall($name,[$classToCall->newInstanceArgs($callParams)]);
+        // Try to replace the stupid empty result classes with the actual response
+        $finalreply = method_exists($reply, "get" . $name . "Result") ? $reply->{"get" . $name . "Result"}() : $reply;
+        // There is no rhyme or reason to the error codes; some are "Ok" or "OK" or 0 or just not even set... The error messages, at least, seem to generally be one of "OK", "Ok", or "OK."
+        if(method_exists($finalreply, "getErrorMessage") && strtolower(trim($finalreply->getErrorMessage(), " .")) !== 'ok') {
+          if($finalreply->getErrorCode() != $finalreply->getErrorMessage()) throw new Exception("Error ". $finalreply->getErrorCode() .": ".$finalreply->getErrorMessage());
+          else throw new Exception("Error: ". $finalreply->getErrorCode());
+        }
+        return $finalreply;
       } else {
         throw new Exception('Class does not exist: '.$class);
       }

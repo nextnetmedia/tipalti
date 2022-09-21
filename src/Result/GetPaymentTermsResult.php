@@ -4,7 +4,7 @@ namespace Nextnetmedia\Tipalti\Result;
 
 use Nextnetmedia\Tipalti\Response\TipaltiResponse;
 use Nextnetmedia\Tipalti\Command\Payee\ArrayOfTipaltiPaymentTerm;
-use Nextnetmedia\Tipalti\Command\Payee\WSErrors;
+use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class GetPaymentTermsResult extends TipaltiResponse
 {

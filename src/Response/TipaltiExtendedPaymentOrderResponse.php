@@ -3,7 +3,7 @@
 namespace Nextnetmedia\Tipalti\Response;
 
 use Nextnetmedia\Tipalti\Command\Payee\ArrayOfKeyValuePair;
-use Nextnetmedia\Tipalti\Command\Payee\WSErrors;
+use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
 {

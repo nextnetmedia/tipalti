@@ -3,7 +3,7 @@
 namespace Nextnetmedia\Tipalti\Response;
 
 use Nextnetmedia\Tipalti\Command\Payee\TipaltiCustomFieldValue;
-use Nextnetmedia\Tipalti\Command\Payee\WSErrors;
+use Nextnetmedia\Tipalti\Resource\WSErrors;
 use Nextnetmedia\Tipalti\Result\CustomFieldUpdateResult;
 
 class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse

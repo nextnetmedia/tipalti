@@ -3,7 +3,7 @@
 namespace Nextnetmedia\Tipalti\Result;
 
 use Nextnetmedia\Tipalti\Command\Payee\TipaltiProcessingRequestStatus;
-use Nextnetmedia\Tipalti\Command\Payee\WSErrors;
+use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiGetProcessingRequestStatusResult
 {

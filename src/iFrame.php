@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti;
 
 use Exception;
 use Nextnetmedia\Tipalti\Authentication\EncryptionKey;
-use Nextnetmedia\Tipalti\Client\PayeeClient;
 
 /**
  *
