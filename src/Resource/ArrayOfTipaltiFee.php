@@ -40,6 +40,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->TipaltiFee[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return TipaltiFee
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->TipaltiFee[$offset];
@@ -63,6 +65,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      * @param TipaltiFee $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->TipaltiFee[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      *
      * @return TipaltiFee Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->TipaltiFee);
@@ -99,6 +104,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->TipaltiFee);
@@ -109,6 +115,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->TipaltiFee);
@@ -119,6 +126,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -140,6 +148,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      *
      * @return TipaltiFee Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->TipaltiFee);

@@ -40,6 +40,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->TipaltiRelatedReceipt[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      * @param mixed $offset The offset to retrieve
      * @return TipaltiRelatedReceipt
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->TipaltiRelatedReceipt[$offset];
@@ -63,6 +65,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      * @param TipaltiRelatedReceipt $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->TipaltiRelatedReceipt[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return TipaltiRelatedReceipt Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->TipaltiRelatedReceipt);
@@ -99,6 +104,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->TipaltiRelatedReceipt);
@@ -109,6 +115,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->TipaltiRelatedReceipt);
@@ -119,6 +126,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -140,6 +148,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return TipaltiRelatedReceipt Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->TipaltiRelatedReceipt);

@@ -40,6 +40,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->AccountInfo[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return AccountInfo
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->AccountInfo[$offset];
@@ -63,6 +65,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      * @param AccountInfo $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->AccountInfo[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return AccountInfo Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->AccountInfo);
@@ -99,6 +104,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->AccountInfo);
@@ -109,6 +115,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->AccountInfo);
@@ -119,6 +126,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -130,6 +138,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->AccountInfo);
@@ -140,6 +149,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return AccountInfo Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->AccountInfo);

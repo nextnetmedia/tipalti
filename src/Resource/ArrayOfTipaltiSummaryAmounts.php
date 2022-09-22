@@ -40,6 +40,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->TipaltiSummaryAmounts[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      * @param mixed $offset The offset to retrieve
      * @return TipaltiSummaryAmounts
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->TipaltiSummaryAmounts[$offset];
@@ -63,6 +65,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      * @param TipaltiSummaryAmounts $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->TipaltiSummaryAmounts[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return TipaltiSummaryAmounts Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->TipaltiSummaryAmounts);
@@ -99,6 +104,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->TipaltiSummaryAmounts);
@@ -109,6 +115,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->TipaltiSummaryAmounts);
@@ -119,6 +126,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -140,6 +148,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return TipaltiSummaryAmounts Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->TipaltiSummaryAmounts);

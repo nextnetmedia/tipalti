@@ -40,6 +40,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->TipaltiRelatedPurchaseOrder[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      * @param mixed $offset The offset to retrieve
      * @return TipaltiRelatedPurchaseOrder
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->TipaltiRelatedPurchaseOrder[$offset];
@@ -63,6 +65,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      * @param TipaltiRelatedPurchaseOrder $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->TipaltiRelatedPurchaseOrder[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      *
      * @return TipaltiRelatedPurchaseOrder Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->TipaltiRelatedPurchaseOrder);
@@ -99,6 +104,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->TipaltiRelatedPurchaseOrder);
@@ -109,6 +115,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->TipaltiRelatedPurchaseOrder);
@@ -119,6 +126,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -140,6 +148,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      *
      * @return TipaltiRelatedPurchaseOrder Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->TipaltiRelatedPurchaseOrder);

@@ -40,6 +40,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->TipaltiInvoiceItemResult[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      * @param mixed $offset The offset to retrieve
      * @return TipaltiInvoiceItemResult
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->TipaltiInvoiceItemResult[$offset];
@@ -63,6 +65,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      * @param TipaltiInvoiceItemResult $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->TipaltiInvoiceItemResult[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      *
      * @return TipaltiInvoiceItemResult Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->TipaltiInvoiceItemResult);
@@ -99,6 +104,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->TipaltiInvoiceItemResult);
@@ -109,6 +115,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->TipaltiInvoiceItemResult);
@@ -119,6 +126,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -140,6 +148,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      *
      * @return TipaltiInvoiceItemResult Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->TipaltiInvoiceItemResult);

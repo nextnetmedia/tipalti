@@ -40,6 +40,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
       return isset($this->TipaltiInvoiceApprover[$offset]);
@@ -51,6 +52,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      * @param mixed $offset The offset to retrieve
      * @return TipaltiInvoiceApprover
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
       return $this->TipaltiInvoiceApprover[$offset];
@@ -63,6 +65,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      * @param TipaltiInvoiceApprover $value The value to set
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
       if (!isset($offset)) {
@@ -78,6 +81,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      * @param mixed $offset The offset to unset
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
       unset($this->TipaltiInvoiceApprover[$offset]);
@@ -88,6 +92,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      *
      * @return TipaltiInvoiceApprover Return the current element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
       return current($this->TipaltiInvoiceApprover);
@@ -99,6 +104,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
       next($this->TipaltiInvoiceApprover);
@@ -109,6 +115,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      *
      * @return string|null Return the key of the current element or null
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
       return key($this->TipaltiInvoiceApprover);
@@ -119,6 +126,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      *
      * @return boolean Return the validity of the current position
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
       return $this->key() !== null;
@@ -140,6 +148,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      *
      * @return TipaltiInvoiceApprover Return count of elements
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
       return count($this->TipaltiInvoiceApprover);
