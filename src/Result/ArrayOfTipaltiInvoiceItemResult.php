@@ -138,6 +138,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiInvoiceItemResult);

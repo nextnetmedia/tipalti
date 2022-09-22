@@ -138,6 +138,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiRelatedPurchaseOrder);

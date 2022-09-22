@@ -138,6 +138,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiPaymentOrderItem);

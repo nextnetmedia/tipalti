@@ -138,6 +138,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->UpdateGLAccountRequest);

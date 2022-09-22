@@ -138,6 +138,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiApplyVendorCreditItemResponse);

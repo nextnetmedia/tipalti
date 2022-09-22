@@ -138,6 +138,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->PayeeInvoiceStatus);

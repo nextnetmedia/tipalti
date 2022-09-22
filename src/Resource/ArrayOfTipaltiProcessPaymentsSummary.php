@@ -138,6 +138,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiProcessPaymentsSummary);

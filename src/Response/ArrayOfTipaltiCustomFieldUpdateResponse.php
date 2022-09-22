@@ -138,6 +138,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiCustomFieldUpdateResponse);

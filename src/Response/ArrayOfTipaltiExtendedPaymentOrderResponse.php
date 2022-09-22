@@ -138,6 +138,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiExtendedPaymentOrderResponse);

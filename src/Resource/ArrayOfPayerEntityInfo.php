@@ -138,6 +138,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->PayerEntityInfo);

@@ -138,6 +138,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->KeyValuePair);

@@ -138,6 +138,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiInvoiceApprover);

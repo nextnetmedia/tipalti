@@ -138,6 +138,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->LinkedPurchaseOrder);

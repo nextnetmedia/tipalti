@@ -138,6 +138,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
       reset($this->TipaltiSummaryAmounts);
