@@ -52,8 +52,8 @@ class TipaltiClient extends SoapClient
       $this->production=$production;
       $options['features'] = SOAP_SINGLE_ELEMENT_ARRAYS;
       foreach(['Resource','Response', 'Result', 'Exception'] as $localnamespace) {
-        foreach (ClassFinder::getClassesInNamespace(__NAMESPACE__."\\$localnamespace") as $class) {
-          $shortName = trim(str_replace(__NAMESPACE__."\\".$localnamespace, '', $class), " \\");
+        foreach (ClassFinder::getClassesInNamespace("\\Nextnetmedia\\Tipalti\\".$localnamespace) as $class) {
+          $shortName = trim(str_replace("\\Nextnetmedia\\Tipalti\\".$localnamespace, '', $class), " \\");
           $options['classmap'][$shortName] = $class;
         }
       }
