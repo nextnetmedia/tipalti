@@ -4,9 +4,7 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class CustomFieldAction
 {
-    const __default = 'CreateOrUpdate';
-    const CreateOrUpdate = 'CreateOrUpdate';
-    const Delete = 'Delete';
-
-
+    public const __default = 'CreateOrUpdate';
+    public const CreateOrUpdate = 'CreateOrUpdate';
+    public const Delete = 'Delete';
 }

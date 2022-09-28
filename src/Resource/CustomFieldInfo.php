@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class CustomFieldInfo
 {
-
     /**
      * @var ArrayOfString $Entity
      */
@@ -40,10 +39,9 @@ class CustomFieldInfo
      */
     protected $Category = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -51,7 +49,7 @@ class CustomFieldInfo
      */
     public function getEntity()
     {
-      return $this->Entity;
+        return $this->Entity;
     }
 
     /**
@@ -60,8 +58,8 @@ class CustomFieldInfo
      */
     public function setEntity($Entity)
     {
-      $this->Entity = $Entity;
-      return $this;
+        $this->Entity = $Entity;
+        return $this;
     }
 
     /**
@@ -69,7 +67,7 @@ class CustomFieldInfo
      */
     public function getTitle()
     {
-      return $this->Title;
+        return $this->Title;
     }
 
     /**
@@ -78,8 +76,8 @@ class CustomFieldInfo
      */
     public function setTitle($Title)
     {
-      $this->Title = $Title;
-      return $this;
+        $this->Title = $Title;
+        return $this;
     }
 
     /**
@@ -87,7 +85,7 @@ class CustomFieldInfo
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -96,8 +94,8 @@ class CustomFieldInfo
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -105,7 +103,7 @@ class CustomFieldInfo
      */
     public function getValueType()
     {
-      return $this->ValueType;
+        return $this->ValueType;
     }
 
     /**
@@ -114,8 +112,8 @@ class CustomFieldInfo
      */
     public function setValueType($ValueType)
     {
-      $this->ValueType = $ValueType;
-      return $this;
+        $this->ValueType = $ValueType;
+        return $this;
     }
 
     /**
@@ -123,7 +121,7 @@ class CustomFieldInfo
      */
     public function getSubEntity()
     {
-      return $this->SubEntity;
+        return $this->SubEntity;
     }
 
     /**
@@ -132,8 +130,8 @@ class CustomFieldInfo
      */
     public function setSubEntity($SubEntity)
     {
-      $this->SubEntity = $SubEntity;
-      return $this;
+        $this->SubEntity = $SubEntity;
+        return $this;
     }
 
     /**
@@ -141,7 +139,7 @@ class CustomFieldInfo
      */
     public function getValues()
     {
-      return $this->Values;
+        return $this->Values;
     }
 
     /**
@@ -150,8 +148,8 @@ class CustomFieldInfo
      */
     public function setValues($Values)
     {
-      $this->Values = $Values;
-      return $this;
+        $this->Values = $Values;
+        return $this;
     }
 
     /**
@@ -159,7 +157,7 @@ class CustomFieldInfo
      */
     public function getCategory()
     {
-      return $this->Category;
+        return $this->Category;
     }
 
     /**
@@ -168,8 +166,7 @@ class CustomFieldInfo
      */
     public function setCategory($Category)
     {
-      $this->Category = $Category;
-      return $this;
+        $this->Category = $Category;
+        return $this;
     }
-
 }

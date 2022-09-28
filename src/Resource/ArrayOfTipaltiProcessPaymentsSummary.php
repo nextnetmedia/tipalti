@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiProcessPaymentsSummary[] $TipaltiProcessPaymentsSummary
      */
     protected $TipaltiProcessPaymentsSummary = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
      */
     public function getTipaltiProcessPaymentsSummary()
     {
-      return $this->TipaltiProcessPaymentsSummary;
+        return $this->TipaltiProcessPaymentsSummary;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
      */
     public function setTipaltiProcessPaymentsSummary(array $TipaltiProcessPaymentsSummary = null)
     {
-      $this->TipaltiProcessPaymentsSummary = $TipaltiProcessPaymentsSummary;
-      return $this;
+        $this->TipaltiProcessPaymentsSummary = $TipaltiProcessPaymentsSummary;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiProcessPaymentsSummary[$offset]);
+        return isset($this->TipaltiProcessPaymentsSummary[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiProcessPaymentsSummary[$offset];
+        return $this->TipaltiProcessPaymentsSummary[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiProcessPaymentsSummary[] = $value;
-      } else {
-        $this->TipaltiProcessPaymentsSummary[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiProcessPaymentsSummary[] = $value;
+        } else {
+            $this->TipaltiProcessPaymentsSummary[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiProcessPaymentsSummary[$offset]);
+        unset($this->TipaltiProcessPaymentsSummary[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiProcessPaymentsSummary);
+        return current($this->TipaltiProcessPaymentsSummary);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiProcessPaymentsSummary);
+        next($this->TipaltiProcessPaymentsSummary);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiProcessPaymentsSummary);
+        return key($this->TipaltiProcessPaymentsSummary);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiProcessPaymentsSummary);
+        reset($this->TipaltiProcessPaymentsSummary);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiProcessPaymentsSummary implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiProcessPaymentsSummary);
+        return count($this->TipaltiProcessPaymentsSummary);
     }
-
 }

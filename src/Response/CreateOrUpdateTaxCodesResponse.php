@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\CreateOrUpdateTaxCodesResult;
 
 class CreateOrUpdateTaxCodesResponse
 {
-
     /**
      * @var CreateOrUpdateTaxCodesResult $CreateOrUpdateTaxCodesResult
      */
@@ -17,7 +16,7 @@ class CreateOrUpdateTaxCodesResponse
      */
     public function __construct($CreateOrUpdateTaxCodesResult)
     {
-      $this->CreateOrUpdateTaxCodesResult = $CreateOrUpdateTaxCodesResult;
+        $this->CreateOrUpdateTaxCodesResult = $CreateOrUpdateTaxCodesResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class CreateOrUpdateTaxCodesResponse
      */
     public function getCreateOrUpdateTaxCodesResult()
     {
-      return $this->CreateOrUpdateTaxCodesResult;
+        return $this->CreateOrUpdateTaxCodesResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class CreateOrUpdateTaxCodesResponse
      */
     public function setCreateOrUpdateTaxCodesResult($CreateOrUpdateTaxCodesResult)
     {
-      $this->CreateOrUpdateTaxCodesResult = $CreateOrUpdateTaxCodesResult;
-      return $this;
+        $this->CreateOrUpdateTaxCodesResult = $CreateOrUpdateTaxCodesResult;
+        return $this;
     }
-
 }

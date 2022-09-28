@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class GoodsReceivedNotificationLine
 {
-
     /**
      * @var string $InvoiceNumber
      */
@@ -45,10 +44,9 @@ class GoodsReceivedNotificationLine
      */
     protected $ItemUnitsExternalId = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -56,7 +54,7 @@ class GoodsReceivedNotificationLine
      */
     public function getInvoiceNumber()
     {
-      return $this->InvoiceNumber;
+        return $this->InvoiceNumber;
     }
 
     /**
@@ -65,8 +63,8 @@ class GoodsReceivedNotificationLine
      */
     public function setInvoiceNumber($InvoiceNumber)
     {
-      $this->InvoiceNumber = $InvoiceNumber;
-      return $this;
+        $this->InvoiceNumber = $InvoiceNumber;
+        return $this;
     }
 
     /**
@@ -74,7 +72,7 @@ class GoodsReceivedNotificationLine
      */
     public function getItemCode()
     {
-      return $this->ItemCode;
+        return $this->ItemCode;
     }
 
     /**
@@ -83,8 +81,8 @@ class GoodsReceivedNotificationLine
      */
     public function setItemCode($ItemCode)
     {
-      $this->ItemCode = $ItemCode;
-      return $this;
+        $this->ItemCode = $ItemCode;
+        return $this;
     }
 
     /**
@@ -92,7 +90,7 @@ class GoodsReceivedNotificationLine
      */
     public function getItemDescription()
     {
-      return $this->ItemDescription;
+        return $this->ItemDescription;
     }
 
     /**
@@ -101,8 +99,8 @@ class GoodsReceivedNotificationLine
      */
     public function setItemDescription($ItemDescription)
     {
-      $this->ItemDescription = $ItemDescription;
-      return $this;
+        $this->ItemDescription = $ItemDescription;
+        return $this;
     }
 
     /**
@@ -110,7 +108,7 @@ class GoodsReceivedNotificationLine
      */
     public function getItemUnits()
     {
-      return $this->ItemUnits;
+        return $this->ItemUnits;
     }
 
     /**
@@ -119,8 +117,8 @@ class GoodsReceivedNotificationLine
      */
     public function setItemUnits($ItemUnits)
     {
-      $this->ItemUnits = $ItemUnits;
-      return $this;
+        $this->ItemUnits = $ItemUnits;
+        return $this;
     }
 
     /**
@@ -128,7 +126,7 @@ class GoodsReceivedNotificationLine
      */
     public function getQuantityShipped()
     {
-      return $this->QuantityShipped;
+        return $this->QuantityShipped;
     }
 
     /**
@@ -137,8 +135,8 @@ class GoodsReceivedNotificationLine
      */
     public function setQuantityShipped($QuantityShipped)
     {
-      $this->QuantityShipped = $QuantityShipped;
-      return $this;
+        $this->QuantityShipped = $QuantityShipped;
+        return $this;
     }
 
     /**
@@ -146,7 +144,7 @@ class GoodsReceivedNotificationLine
      */
     public function getLineNotes()
     {
-      return $this->LineNotes;
+        return $this->LineNotes;
     }
 
     /**
@@ -155,8 +153,8 @@ class GoodsReceivedNotificationLine
      */
     public function setLineNotes($LineNotes)
     {
-      $this->LineNotes = $LineNotes;
-      return $this;
+        $this->LineNotes = $LineNotes;
+        return $this;
     }
 
     /**
@@ -164,7 +162,7 @@ class GoodsReceivedNotificationLine
      */
     public function getPoLineId()
     {
-      return $this->PoLineId;
+        return $this->PoLineId;
     }
 
     /**
@@ -173,8 +171,8 @@ class GoodsReceivedNotificationLine
      */
     public function setPoLineId($PoLineId)
     {
-      $this->PoLineId = $PoLineId;
-      return $this;
+        $this->PoLineId = $PoLineId;
+        return $this;
     }
 
     /**
@@ -182,7 +180,7 @@ class GoodsReceivedNotificationLine
      */
     public function getItemUnitsExternalId()
     {
-      return $this->ItemUnitsExternalId;
+        return $this->ItemUnitsExternalId;
     }
 
     /**
@@ -191,8 +189,7 @@ class GoodsReceivedNotificationLine
      */
     public function setItemUnitsExternalId($ItemUnitsExternalId)
     {
-      $this->ItemUnitsExternalId = $ItemUnitsExternalId;
-      return $this;
+        $this->ItemUnitsExternalId = $ItemUnitsExternalId;
+        return $this;
     }
-
 }

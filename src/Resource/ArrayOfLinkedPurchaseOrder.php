@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var LinkedPurchaseOrder[] $LinkedPurchaseOrder
      */
     protected $LinkedPurchaseOrder = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
      */
     public function getLinkedPurchaseOrder()
     {
-      return $this->LinkedPurchaseOrder;
+        return $this->LinkedPurchaseOrder;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
      */
     public function setLinkedPurchaseOrder(array $LinkedPurchaseOrder = null)
     {
-      $this->LinkedPurchaseOrder = $LinkedPurchaseOrder;
-      return $this;
+        $this->LinkedPurchaseOrder = $LinkedPurchaseOrder;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->LinkedPurchaseOrder[$offset]);
+        return isset($this->LinkedPurchaseOrder[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->LinkedPurchaseOrder[$offset];
+        return $this->LinkedPurchaseOrder[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->LinkedPurchaseOrder[] = $value;
-      } else {
-        $this->LinkedPurchaseOrder[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->LinkedPurchaseOrder[] = $value;
+        } else {
+            $this->LinkedPurchaseOrder[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->LinkedPurchaseOrder[$offset]);
+        unset($this->LinkedPurchaseOrder[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->LinkedPurchaseOrder);
+        return current($this->LinkedPurchaseOrder);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->LinkedPurchaseOrder);
+        next($this->LinkedPurchaseOrder);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->LinkedPurchaseOrder);
+        return key($this->LinkedPurchaseOrder);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->LinkedPurchaseOrder);
+        reset($this->LinkedPurchaseOrder);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfLinkedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->LinkedPurchaseOrder);
+        return count($this->LinkedPurchaseOrder);
     }
-
 }

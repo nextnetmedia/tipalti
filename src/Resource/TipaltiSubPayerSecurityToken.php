@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiSubPayerSecurityToken
 {
-
     /**
      * @var string $errorMessage
      */
@@ -30,7 +29,7 @@ class TipaltiSubPayerSecurityToken
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -38,7 +37,7 @@ class TipaltiSubPayerSecurityToken
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -47,8 +46,8 @@ class TipaltiSubPayerSecurityToken
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -56,7 +55,7 @@ class TipaltiSubPayerSecurityToken
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -65,8 +64,8 @@ class TipaltiSubPayerSecurityToken
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class TipaltiSubPayerSecurityToken
      */
     public function getKey()
     {
-      return $this->Key;
+        return $this->Key;
     }
 
     /**
@@ -83,8 +82,8 @@ class TipaltiSubPayerSecurityToken
      */
     public function setKey($Key)
     {
-      $this->Key = $Key;
-      return $this;
+        $this->Key = $Key;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class TipaltiSubPayerSecurityToken
      */
     public function getToken()
     {
-      return $this->Token;
+        return $this->Token;
     }
 
     /**
@@ -101,8 +100,7 @@ class TipaltiSubPayerSecurityToken
      */
     public function setToken($Token)
     {
-      $this->Token = $Token;
-      return $this;
+        $this->Token = $Token;
+        return $this;
     }
-
 }

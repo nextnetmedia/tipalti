@@ -4,9 +4,7 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiGlAccountAction
 {
-    const __default = 'Update';
-    const Update = 'Update';
-    const Close = 'Close';
-
-
+    public const __default = 'Update';
+    public const Update = 'Update';
+    public const Close = 'Close';
 }

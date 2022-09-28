@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var PayeeInvoiceStatus[] $PayeeInvoiceStatus
      */
     protected $PayeeInvoiceStatus = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
      */
     public function getPayeeInvoiceStatus()
     {
-      return $this->PayeeInvoiceStatus;
+        return $this->PayeeInvoiceStatus;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
      */
     public function setPayeeInvoiceStatus(array $PayeeInvoiceStatus = null)
     {
-      $this->PayeeInvoiceStatus = $PayeeInvoiceStatus;
-      return $this;
+        $this->PayeeInvoiceStatus = $PayeeInvoiceStatus;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->PayeeInvoiceStatus[$offset]);
+        return isset($this->PayeeInvoiceStatus[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->PayeeInvoiceStatus[$offset];
+        return $this->PayeeInvoiceStatus[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->PayeeInvoiceStatus[] = $value;
-      } else {
-        $this->PayeeInvoiceStatus[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->PayeeInvoiceStatus[] = $value;
+        } else {
+            $this->PayeeInvoiceStatus[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->PayeeInvoiceStatus[$offset]);
+        unset($this->PayeeInvoiceStatus[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->PayeeInvoiceStatus);
+        return current($this->PayeeInvoiceStatus);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->PayeeInvoiceStatus);
+        next($this->PayeeInvoiceStatus);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->PayeeInvoiceStatus);
+        return key($this->PayeeInvoiceStatus);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->PayeeInvoiceStatus);
+        reset($this->PayeeInvoiceStatus);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfPayeeInvoiceStatus implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->PayeeInvoiceStatus);
+        return count($this->PayeeInvoiceStatus);
     }
-
 }

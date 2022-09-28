@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class CreateOrUpdateGLAccountsResponse
 {
-
     /**
      * @var TipaltiResponse $CreateOrUpdateGLAccountsResult
      */
@@ -15,7 +14,7 @@ class CreateOrUpdateGLAccountsResponse
      */
     public function __construct($CreateOrUpdateGLAccountsResult)
     {
-      $this->CreateOrUpdateGLAccountsResult = $CreateOrUpdateGLAccountsResult;
+        $this->CreateOrUpdateGLAccountsResult = $CreateOrUpdateGLAccountsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class CreateOrUpdateGLAccountsResponse
      */
     public function getCreateOrUpdateGLAccountsResult()
     {
-      return $this->CreateOrUpdateGLAccountsResult;
+        return $this->CreateOrUpdateGLAccountsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class CreateOrUpdateGLAccountsResponse
      */
     public function setCreateOrUpdateGLAccountsResult($CreateOrUpdateGLAccountsResult)
     {
-      $this->CreateOrUpdateGLAccountsResult = $CreateOrUpdateGLAccountsResult;
-      return $this;
+        $this->CreateOrUpdateGLAccountsResult = $CreateOrUpdateGLAccountsResult;
+        return $this;
     }
-
 }

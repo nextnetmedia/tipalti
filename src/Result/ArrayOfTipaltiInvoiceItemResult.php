@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Result;
 
 class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiInvoiceItemResult[] $TipaltiInvoiceItemResult
      */
     protected $TipaltiInvoiceItemResult = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      */
     public function getTipaltiInvoiceItemResult()
     {
-      return $this->TipaltiInvoiceItemResult;
+        return $this->TipaltiInvoiceItemResult;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
      */
     public function setTipaltiInvoiceItemResult(array $TipaltiInvoiceItemResult = null)
     {
-      $this->TipaltiInvoiceItemResult = $TipaltiInvoiceItemResult;
-      return $this;
+        $this->TipaltiInvoiceItemResult = $TipaltiInvoiceItemResult;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiInvoiceItemResult[$offset]);
+        return isset($this->TipaltiInvoiceItemResult[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiInvoiceItemResult[$offset];
+        return $this->TipaltiInvoiceItemResult[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiInvoiceItemResult[] = $value;
-      } else {
-        $this->TipaltiInvoiceItemResult[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiInvoiceItemResult[] = $value;
+        } else {
+            $this->TipaltiInvoiceItemResult[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiInvoiceItemResult[$offset]);
+        unset($this->TipaltiInvoiceItemResult[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiInvoiceItemResult);
+        return current($this->TipaltiInvoiceItemResult);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiInvoiceItemResult);
+        next($this->TipaltiInvoiceItemResult);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiInvoiceItemResult);
+        return key($this->TipaltiInvoiceItemResult);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiInvoiceItemResult);
+        reset($this->TipaltiInvoiceItemResult);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiInvoiceItemResult implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiInvoiceItemResult);
+        return count($this->TipaltiInvoiceItemResult);
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiPaymentOrderItem
 {
-
     /**
      * @var string $Idap
      */
@@ -101,8 +100,8 @@ class TipaltiPaymentOrderItem
      */
     public function __construct($Amount, $IgnoreThresholds)
     {
-      $this->Amount = $Amount;
-      $this->IgnoreThresholds = $IgnoreThresholds;
+        $this->Amount = $Amount;
+        $this->IgnoreThresholds = $IgnoreThresholds;
     }
 
     /**
@@ -110,7 +109,7 @@ class TipaltiPaymentOrderItem
      */
     public function getIdap()
     {
-      return $this->Idap;
+        return $this->Idap;
     }
 
     /**
@@ -119,8 +118,8 @@ class TipaltiPaymentOrderItem
      */
     public function setIdap($Idap)
     {
-      $this->Idap = $Idap;
-      return $this;
+        $this->Idap = $Idap;
+        return $this;
     }
 
     /**
@@ -128,7 +127,7 @@ class TipaltiPaymentOrderItem
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -137,8 +136,8 @@ class TipaltiPaymentOrderItem
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -146,7 +145,7 @@ class TipaltiPaymentOrderItem
      */
     public function getRefCode()
     {
-      return $this->RefCode;
+        return $this->RefCode;
     }
 
     /**
@@ -155,8 +154,8 @@ class TipaltiPaymentOrderItem
      */
     public function setRefCode($RefCode)
     {
-      $this->RefCode = $RefCode;
-      return $this;
+        $this->RefCode = $RefCode;
+        return $this;
     }
 
     /**
@@ -164,7 +163,7 @@ class TipaltiPaymentOrderItem
      */
     public function getEWalletMessage()
     {
-      return $this->EWalletMessage;
+        return $this->EWalletMessage;
     }
 
     /**
@@ -173,8 +172,8 @@ class TipaltiPaymentOrderItem
      */
     public function setEWalletMessage($EWalletMessage)
     {
-      $this->EWalletMessage = $EWalletMessage;
-      return $this;
+        $this->EWalletMessage = $EWalletMessage;
+        return $this;
     }
 
     /**
@@ -182,7 +181,7 @@ class TipaltiPaymentOrderItem
      */
     public function getIgnoreThresholds()
     {
-      return $this->IgnoreThresholds;
+        return $this->IgnoreThresholds;
     }
 
     /**
@@ -191,8 +190,8 @@ class TipaltiPaymentOrderItem
      */
     public function setIgnoreThresholds($IgnoreThresholds)
     {
-      $this->IgnoreThresholds = $IgnoreThresholds;
-      return $this;
+        $this->IgnoreThresholds = $IgnoreThresholds;
+        return $this;
     }
 
     /**
@@ -200,7 +199,7 @@ class TipaltiPaymentOrderItem
      */
     public function getBankingMessage()
     {
-      return $this->BankingMessage;
+        return $this->BankingMessage;
     }
 
     /**
@@ -209,8 +208,8 @@ class TipaltiPaymentOrderItem
      */
     public function setBankingMessage($BankingMessage)
     {
-      $this->BankingMessage = $BankingMessage;
-      return $this;
+        $this->BankingMessage = $BankingMessage;
+        return $this;
     }
 
     /**
@@ -218,7 +217,7 @@ class TipaltiPaymentOrderItem
      */
     public function getEmailMessage()
     {
-      return $this->EmailMessage;
+        return $this->EmailMessage;
     }
 
     /**
@@ -227,8 +226,8 @@ class TipaltiPaymentOrderItem
      */
     public function setEmailMessage($EmailMessage)
     {
-      $this->EmailMessage = $EmailMessage;
-      return $this;
+        $this->EmailMessage = $EmailMessage;
+        return $this;
     }
 
     /**
@@ -236,7 +235,7 @@ class TipaltiPaymentOrderItem
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -245,8 +244,8 @@ class TipaltiPaymentOrderItem
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
 
     /**
@@ -254,15 +253,15 @@ class TipaltiPaymentOrderItem
      */
     public function getScheduledDate()
     {
-      if ($this->ScheduledDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ScheduledDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->ScheduledDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->ScheduledDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -271,12 +270,12 @@ class TipaltiPaymentOrderItem
      */
     public function setScheduledDate(\DateTime $ScheduledDate = null)
     {
-      if ($ScheduledDate == null) {
-       $this->ScheduledDate = null;
-      } else {
-        $this->ScheduledDate = $ScheduledDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($ScheduledDate == null) {
+            $this->ScheduledDate = null;
+        } else {
+            $this->ScheduledDate = $ScheduledDate->format(\DateTime::ATOM);
+        }
+        return $this;
     }
 
     /**
@@ -284,7 +283,7 @@ class TipaltiPaymentOrderItem
      */
     public function getIsScheduledVisible()
     {
-      return $this->IsScheduledVisible;
+        return $this->IsScheduledVisible;
     }
 
     /**
@@ -293,8 +292,8 @@ class TipaltiPaymentOrderItem
      */
     public function setIsScheduledVisible($IsScheduledVisible)
     {
-      $this->IsScheduledVisible = $IsScheduledVisible;
-      return $this;
+        $this->IsScheduledVisible = $IsScheduledVisible;
+        return $this;
     }
 
     /**
@@ -302,7 +301,7 @@ class TipaltiPaymentOrderItem
      */
     public function getIgnoreRiskCases()
     {
-      return $this->IgnoreRiskCases;
+        return $this->IgnoreRiskCases;
     }
 
     /**
@@ -311,8 +310,8 @@ class TipaltiPaymentOrderItem
      */
     public function setIgnoreRiskCases($IgnoreRiskCases)
     {
-      $this->IgnoreRiskCases = $IgnoreRiskCases;
-      return $this;
+        $this->IgnoreRiskCases = $IgnoreRiskCases;
+        return $this;
     }
 
     /**
@@ -320,7 +319,7 @@ class TipaltiPaymentOrderItem
      */
     public function getCustomFields()
     {
-      return $this->CustomFields;
+        return $this->CustomFields;
     }
 
     /**
@@ -329,8 +328,8 @@ class TipaltiPaymentOrderItem
      */
     public function setCustomFields($CustomFields)
     {
-      $this->CustomFields = $CustomFields;
-      return $this;
+        $this->CustomFields = $CustomFields;
+        return $this;
     }
 
     /**
@@ -338,7 +337,7 @@ class TipaltiPaymentOrderItem
      */
     public function getIgnoreTaxValidation()
     {
-      return $this->IgnoreTaxValidation;
+        return $this->IgnoreTaxValidation;
     }
 
     /**
@@ -347,8 +346,8 @@ class TipaltiPaymentOrderItem
      */
     public function setIgnoreTaxValidation($IgnoreTaxValidation)
     {
-      $this->IgnoreTaxValidation = $IgnoreTaxValidation;
-      return $this;
+        $this->IgnoreTaxValidation = $IgnoreTaxValidation;
+        return $this;
     }
 
     /**
@@ -356,7 +355,7 @@ class TipaltiPaymentOrderItem
      */
     public function getMaxWithholding()
     {
-      return $this->MaxWithholding;
+        return $this->MaxWithholding;
     }
 
     /**
@@ -365,8 +364,8 @@ class TipaltiPaymentOrderItem
      */
     public function setMaxWithholding($MaxWithholding)
     {
-      $this->MaxWithholding = $MaxWithholding;
-      return $this;
+        $this->MaxWithholding = $MaxWithholding;
+        return $this;
     }
 
     /**
@@ -374,7 +373,7 @@ class TipaltiPaymentOrderItem
      */
     public function getIncomeType()
     {
-      return $this->IncomeType;
+        return $this->IncomeType;
     }
 
     /**
@@ -383,8 +382,8 @@ class TipaltiPaymentOrderItem
      */
     public function setIncomeType($IncomeType)
     {
-      $this->IncomeType = $IncomeType;
-      return $this;
+        $this->IncomeType = $IncomeType;
+        return $this;
     }
 
     /**
@@ -392,7 +391,7 @@ class TipaltiPaymentOrderItem
      */
     public function getTreatyLimitExceeded()
     {
-      return $this->TreatyLimitExceeded;
+        return $this->TreatyLimitExceeded;
     }
 
     /**
@@ -401,8 +400,8 @@ class TipaltiPaymentOrderItem
      */
     public function setTreatyLimitExceeded($TreatyLimitExceeded)
     {
-      $this->TreatyLimitExceeded = $TreatyLimitExceeded;
-      return $this;
+        $this->TreatyLimitExceeded = $TreatyLimitExceeded;
+        return $this;
     }
 
     /**
@@ -410,7 +409,7 @@ class TipaltiPaymentOrderItem
      */
     public function getAdditionalWithholding()
     {
-      return $this->AdditionalWithholding;
+        return $this->AdditionalWithholding;
     }
 
     /**
@@ -419,8 +418,8 @@ class TipaltiPaymentOrderItem
      */
     public function setAdditionalWithholding($AdditionalWithholding)
     {
-      $this->AdditionalWithholding = $AdditionalWithholding;
-      return $this;
+        $this->AdditionalWithholding = $AdditionalWithholding;
+        return $this;
     }
 
     /**
@@ -428,7 +427,7 @@ class TipaltiPaymentOrderItem
      */
     public function getUsSource()
     {
-      return $this->UsSource;
+        return $this->UsSource;
     }
 
     /**
@@ -437,8 +436,7 @@ class TipaltiPaymentOrderItem
      */
     public function setUsSource($UsSource)
     {
-      $this->UsSource = $UsSource;
-      return $this;
+        $this->UsSource = $UsSource;
+        return $this;
     }
-
 }

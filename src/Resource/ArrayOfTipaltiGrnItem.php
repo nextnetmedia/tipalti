@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiGrnItem[] $TipaltiGrnItem
      */
     protected $TipaltiGrnItem = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiGrnItem()
     {
-      return $this->TipaltiGrnItem;
+        return $this->TipaltiGrnItem;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiGrnItem(array $TipaltiGrnItem = null)
     {
-      $this->TipaltiGrnItem = $TipaltiGrnItem;
-      return $this;
+        $this->TipaltiGrnItem = $TipaltiGrnItem;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiGrnItem[$offset]);
+        return isset($this->TipaltiGrnItem[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiGrnItem[$offset];
+        return $this->TipaltiGrnItem[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiGrnItem[] = $value;
-      } else {
-        $this->TipaltiGrnItem[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiGrnItem[] = $value;
+        } else {
+            $this->TipaltiGrnItem[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiGrnItem[$offset]);
+        unset($this->TipaltiGrnItem[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiGrnItem);
+        return current($this->TipaltiGrnItem);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiGrnItem);
+        next($this->TipaltiGrnItem);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiGrnItem);
+        return key($this->TipaltiGrnItem);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiGrnItem);
+        reset($this->TipaltiGrnItem);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiGrnItem implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiGrnItem);
+        return count($this->TipaltiGrnItem);
     }
-
 }

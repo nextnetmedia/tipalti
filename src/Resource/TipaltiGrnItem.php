@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiGrnItem
 {
-
     /**
      * @var string $ReceiptNumber
      */
@@ -62,9 +61,9 @@ class TipaltiGrnItem
      */
     public function __construct($Status, \DateTime $ReceiptDate, \DateTime $ShipmentDate)
     {
-      $this->Status = $Status;
-      $this->ReceiptDate = $ReceiptDate->format(\DateTime::ATOM);
-      $this->ShipmentDate = $ShipmentDate->format(\DateTime::ATOM);
+        $this->Status = $Status;
+        $this->ReceiptDate = $ReceiptDate->format(\DateTime::ATOM);
+        $this->ShipmentDate = $ShipmentDate->format(\DateTime::ATOM);
     }
 
     /**
@@ -72,7 +71,7 @@ class TipaltiGrnItem
      */
     public function getReceiptNumber()
     {
-      return $this->ReceiptNumber;
+        return $this->ReceiptNumber;
     }
 
     /**
@@ -81,8 +80,8 @@ class TipaltiGrnItem
      */
     public function setReceiptNumber($ReceiptNumber)
     {
-      $this->ReceiptNumber = $ReceiptNumber;
-      return $this;
+        $this->ReceiptNumber = $ReceiptNumber;
+        return $this;
     }
 
     /**
@@ -90,7 +89,7 @@ class TipaltiGrnItem
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -99,8 +98,8 @@ class TipaltiGrnItem
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -108,15 +107,15 @@ class TipaltiGrnItem
      */
     public function getReceiptDate()
     {
-      if ($this->ReceiptDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ReceiptDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->ReceiptDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->ReceiptDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -125,8 +124,8 @@ class TipaltiGrnItem
      */
     public function setReceiptDate(\DateTime $ReceiptDate)
     {
-      $this->ReceiptDate = $ReceiptDate->format(\DateTime::ATOM);
-      return $this;
+        $this->ReceiptDate = $ReceiptDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -134,7 +133,7 @@ class TipaltiGrnItem
      */
     public function getPayerEntity()
     {
-      return $this->PayerEntity;
+        return $this->PayerEntity;
     }
 
     /**
@@ -143,8 +142,8 @@ class TipaltiGrnItem
      */
     public function setPayerEntity($PayerEntity)
     {
-      $this->PayerEntity = $PayerEntity;
-      return $this;
+        $this->PayerEntity = $PayerEntity;
+        return $this;
     }
 
     /**
@@ -152,7 +151,7 @@ class TipaltiGrnItem
      */
     public function getSupplier()
     {
-      return $this->Supplier;
+        return $this->Supplier;
     }
 
     /**
@@ -161,8 +160,8 @@ class TipaltiGrnItem
      */
     public function setSupplier($Supplier)
     {
-      $this->Supplier = $Supplier;
-      return $this;
+        $this->Supplier = $Supplier;
+        return $this;
     }
 
     /**
@@ -170,15 +169,15 @@ class TipaltiGrnItem
      */
     public function getShipmentDate()
     {
-      if ($this->ShipmentDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ShipmentDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->ShipmentDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->ShipmentDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -187,8 +186,8 @@ class TipaltiGrnItem
      */
     public function setShipmentDate(\DateTime $ShipmentDate)
     {
-      $this->ShipmentDate = $ShipmentDate->format(\DateTime::ATOM);
-      return $this;
+        $this->ShipmentDate = $ShipmentDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -196,7 +195,7 @@ class TipaltiGrnItem
      */
     public function getNotes()
     {
-      return $this->Notes;
+        return $this->Notes;
     }
 
     /**
@@ -205,8 +204,8 @@ class TipaltiGrnItem
      */
     public function setNotes($Notes)
     {
-      $this->Notes = $Notes;
-      return $this;
+        $this->Notes = $Notes;
+        return $this;
     }
 
     /**
@@ -214,7 +213,7 @@ class TipaltiGrnItem
      */
     public function getReceiptBy()
     {
-      return $this->ReceiptBy;
+        return $this->ReceiptBy;
     }
 
     /**
@@ -223,8 +222,8 @@ class TipaltiGrnItem
      */
     public function setReceiptBy($ReceiptBy)
     {
-      $this->ReceiptBy = $ReceiptBy;
-      return $this;
+        $this->ReceiptBy = $ReceiptBy;
+        return $this;
     }
 
     /**
@@ -232,7 +231,7 @@ class TipaltiGrnItem
      */
     public function getPurchaseOrderNumber()
     {
-      return $this->PurchaseOrderNumber;
+        return $this->PurchaseOrderNumber;
     }
 
     /**
@@ -241,8 +240,8 @@ class TipaltiGrnItem
      */
     public function setPurchaseOrderNumber($PurchaseOrderNumber)
     {
-      $this->PurchaseOrderNumber = $PurchaseOrderNumber;
-      return $this;
+        $this->PurchaseOrderNumber = $PurchaseOrderNumber;
+        return $this;
     }
 
     /**
@@ -250,7 +249,7 @@ class TipaltiGrnItem
      */
     public function getGrnLines()
     {
-      return $this->GrnLines;
+        return $this->GrnLines;
     }
 
     /**
@@ -259,8 +258,7 @@ class TipaltiGrnItem
      */
     public function setGrnLines($GrnLines)
     {
-      $this->GrnLines = $GrnLines;
-      return $this;
+        $this->GrnLines = $GrnLines;
+        return $this;
     }
-
 }

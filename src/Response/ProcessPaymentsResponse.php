@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ProcessPaymentsResponse
 {
-
     /**
      * @var TipaltiExpandedProcessPaymentResponse $ProcessPaymentsResult
      */
@@ -15,7 +14,7 @@ class ProcessPaymentsResponse
      */
     public function __construct($ProcessPaymentsResult)
     {
-      $this->ProcessPaymentsResult = $ProcessPaymentsResult;
+        $this->ProcessPaymentsResult = $ProcessPaymentsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class ProcessPaymentsResponse
      */
     public function getProcessPaymentsResult()
     {
-      return $this->ProcessPaymentsResult;
+        return $this->ProcessPaymentsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class ProcessPaymentsResponse
      */
     public function setProcessPaymentsResult($ProcessPaymentsResult)
     {
-      $this->ProcessPaymentsResult = $ProcessPaymentsResult;
-      return $this;
+        $this->ProcessPaymentsResult = $ProcessPaymentsResult;
+        return $this;
     }
-
 }

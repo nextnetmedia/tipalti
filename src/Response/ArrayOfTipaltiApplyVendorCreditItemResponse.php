@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiApplyVendorCreditItemResponse[] $TipaltiApplyVendorCreditItemResponse
      */
     protected $TipaltiApplyVendorCreditItemResponse = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
      */
     public function getTipaltiApplyVendorCreditItemResponse()
     {
-      return $this->TipaltiApplyVendorCreditItemResponse;
+        return $this->TipaltiApplyVendorCreditItemResponse;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
      */
     public function setTipaltiApplyVendorCreditItemResponse(array $TipaltiApplyVendorCreditItemResponse = null)
     {
-      $this->TipaltiApplyVendorCreditItemResponse = $TipaltiApplyVendorCreditItemResponse;
-      return $this;
+        $this->TipaltiApplyVendorCreditItemResponse = $TipaltiApplyVendorCreditItemResponse;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiApplyVendorCreditItemResponse[$offset]);
+        return isset($this->TipaltiApplyVendorCreditItemResponse[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiApplyVendorCreditItemResponse[$offset];
+        return $this->TipaltiApplyVendorCreditItemResponse[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiApplyVendorCreditItemResponse[] = $value;
-      } else {
-        $this->TipaltiApplyVendorCreditItemResponse[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiApplyVendorCreditItemResponse[] = $value;
+        } else {
+            $this->TipaltiApplyVendorCreditItemResponse[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiApplyVendorCreditItemResponse[$offset]);
+        unset($this->TipaltiApplyVendorCreditItemResponse[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiApplyVendorCreditItemResponse);
+        return current($this->TipaltiApplyVendorCreditItemResponse);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiApplyVendorCreditItemResponse);
+        next($this->TipaltiApplyVendorCreditItemResponse);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiApplyVendorCreditItemResponse);
+        return key($this->TipaltiApplyVendorCreditItemResponse);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiApplyVendorCreditItemResponse);
+        reset($this->TipaltiApplyVendorCreditItemResponse);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiApplyVendorCreditItemResponse implements \ArrayAccess, \Iter
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiApplyVendorCreditItemResponse);
+        return count($this->TipaltiApplyVendorCreditItemResponse);
     }
-
 }

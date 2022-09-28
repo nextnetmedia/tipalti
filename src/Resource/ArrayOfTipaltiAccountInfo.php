@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiAccountInfo[] $TipaltiAccountInfo
      */
     protected $TipaltiAccountInfo = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiAccountInfo()
     {
-      return $this->TipaltiAccountInfo;
+        return $this->TipaltiAccountInfo;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiAccountInfo(array $TipaltiAccountInfo = null)
     {
-      $this->TipaltiAccountInfo = $TipaltiAccountInfo;
-      return $this;
+        $this->TipaltiAccountInfo = $TipaltiAccountInfo;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiAccountInfo[$offset]);
+        return isset($this->TipaltiAccountInfo[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiAccountInfo[$offset];
+        return $this->TipaltiAccountInfo[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiAccountInfo[] = $value;
-      } else {
-        $this->TipaltiAccountInfo[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiAccountInfo[] = $value;
+        } else {
+            $this->TipaltiAccountInfo[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiAccountInfo[$offset]);
+        unset($this->TipaltiAccountInfo[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiAccountInfo);
+        return current($this->TipaltiAccountInfo);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiAccountInfo);
+        next($this->TipaltiAccountInfo);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiAccountInfo);
+        return key($this->TipaltiAccountInfo);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiAccountInfo);
+        reset($this->TipaltiAccountInfo);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiAccountInfo);
+        return count($this->TipaltiAccountInfo);
     }
-
 }

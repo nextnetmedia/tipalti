@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiInvoiceItemResponse[] $TipaltiInvoiceItemResponse
      */
     protected $TipaltiInvoiceItemResponse = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
      */
     public function getTipaltiInvoiceItemResponse()
     {
-      return $this->TipaltiInvoiceItemResponse;
+        return $this->TipaltiInvoiceItemResponse;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
      */
     public function setTipaltiInvoiceItemResponse(array $TipaltiInvoiceItemResponse = null)
     {
-      $this->TipaltiInvoiceItemResponse = $TipaltiInvoiceItemResponse;
-      return $this;
+        $this->TipaltiInvoiceItemResponse = $TipaltiInvoiceItemResponse;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiInvoiceItemResponse[$offset]);
+        return isset($this->TipaltiInvoiceItemResponse[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiInvoiceItemResponse[$offset];
+        return $this->TipaltiInvoiceItemResponse[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiInvoiceItemResponse[] = $value;
-      } else {
-        $this->TipaltiInvoiceItemResponse[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiInvoiceItemResponse[] = $value;
+        } else {
+            $this->TipaltiInvoiceItemResponse[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiInvoiceItemResponse[$offset]);
+        unset($this->TipaltiInvoiceItemResponse[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiInvoiceItemResponse);
+        return current($this->TipaltiInvoiceItemResponse);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiInvoiceItemResponse);
+        next($this->TipaltiInvoiceItemResponse);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiInvoiceItemResponse);
+        return key($this->TipaltiInvoiceItemResponse);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiInvoiceItemResponse);
+        reset($this->TipaltiInvoiceItemResponse);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiInvoiceItemResponse implements \ArrayAccess, \Iterator, \Cou
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiInvoiceItemResponse);
+        return count($this->TipaltiInvoiceItemResponse);
     }
-
 }

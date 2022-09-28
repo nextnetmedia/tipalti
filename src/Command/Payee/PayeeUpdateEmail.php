@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class PayeeUpdateEmail
 {
-
     /**
      * @var string $payerName
      */
@@ -44,11 +43,11 @@ class PayeeUpdateEmail
      */
     public function __construct($payerName, $idap, $timestamp, $key, $email)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->email = $email;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->email = $email;
     }
 
     /**
@@ -56,7 +55,7 @@ class PayeeUpdateEmail
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -65,8 +64,8 @@ class PayeeUpdateEmail
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class PayeeUpdateEmail
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -83,8 +82,8 @@ class PayeeUpdateEmail
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class PayeeUpdateEmail
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -101,8 +100,8 @@ class PayeeUpdateEmail
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -110,7 +109,7 @@ class PayeeUpdateEmail
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -119,8 +118,8 @@ class PayeeUpdateEmail
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -128,7 +127,7 @@ class PayeeUpdateEmail
      */
     public function getEmail()
     {
-      return $this->email;
+        return $this->email;
     }
 
     /**
@@ -137,8 +136,7 @@ class PayeeUpdateEmail
      */
     public function setEmail($email)
     {
-      $this->email = $email;
-      return $this;
+        $this->email = $email;
+        return $this;
     }
-
 }

@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiExtendedPaymentOrderListResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiExtendedPaymentOrderResponse $PaymentOrders
      */
@@ -17,7 +16,7 @@ class TipaltiExtendedPaymentOrderListResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -25,7 +24,7 @@ class TipaltiExtendedPaymentOrderListResponse extends TipaltiResponse
      */
     public function getPaymentOrders()
     {
-      return $this->PaymentOrders;
+        return $this->PaymentOrders;
     }
 
     /**
@@ -34,8 +33,7 @@ class TipaltiExtendedPaymentOrderListResponse extends TipaltiResponse
      */
     public function setPaymentOrders($PaymentOrders)
     {
-      $this->PaymentOrders = $PaymentOrders;
-      return $this;
+        $this->PaymentOrders = $PaymentOrders;
+        return $this;
     }
-
 }

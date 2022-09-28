@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class UpdatePayeeCustomFieldsResponse
 {
-
     /**
      * @var TipaltiResponse $UpdatePayeeCustomFieldsResult
      */
@@ -15,7 +14,7 @@ class UpdatePayeeCustomFieldsResponse
      */
     public function __construct($UpdatePayeeCustomFieldsResult)
     {
-      $this->UpdatePayeeCustomFieldsResult = $UpdatePayeeCustomFieldsResult;
+        $this->UpdatePayeeCustomFieldsResult = $UpdatePayeeCustomFieldsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class UpdatePayeeCustomFieldsResponse
      */
     public function getUpdatePayeeCustomFieldsResult()
     {
-      return $this->UpdatePayeeCustomFieldsResult;
+        return $this->UpdatePayeeCustomFieldsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class UpdatePayeeCustomFieldsResponse
      */
     public function setUpdatePayeeCustomFieldsResult($UpdatePayeeCustomFieldsResult)
     {
-      $this->UpdatePayeeCustomFieldsResult = $UpdatePayeeCustomFieldsResult;
-      return $this;
+        $this->UpdatePayeeCustomFieldsResult = $UpdatePayeeCustomFieldsResult;
+        return $this;
     }
-
 }

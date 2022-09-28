@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiPaymentTerm[] $TipaltiPaymentTerm
      */
     protected $TipaltiPaymentTerm = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiPaymentTerm()
     {
-      return $this->TipaltiPaymentTerm;
+        return $this->TipaltiPaymentTerm;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiPaymentTerm(array $TipaltiPaymentTerm = null)
     {
-      $this->TipaltiPaymentTerm = $TipaltiPaymentTerm;
-      return $this;
+        $this->TipaltiPaymentTerm = $TipaltiPaymentTerm;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiPaymentTerm[$offset]);
+        return isset($this->TipaltiPaymentTerm[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiPaymentTerm[$offset];
+        return $this->TipaltiPaymentTerm[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiPaymentTerm[] = $value;
-      } else {
-        $this->TipaltiPaymentTerm[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiPaymentTerm[] = $value;
+        } else {
+            $this->TipaltiPaymentTerm[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiPaymentTerm[$offset]);
+        unset($this->TipaltiPaymentTerm[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiPaymentTerm);
+        return current($this->TipaltiPaymentTerm);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiPaymentTerm);
+        next($this->TipaltiPaymentTerm);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiPaymentTerm);
+        return key($this->TipaltiPaymentTerm);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiPaymentTerm);
+        reset($this->TipaltiPaymentTerm);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiPaymentTerm implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiPaymentTerm);
+        return count($this->TipaltiPaymentTerm);
     }
-
 }

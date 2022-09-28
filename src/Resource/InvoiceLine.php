@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class InvoiceLine
 {
-
     /**
      * @var string $Currency
      */
@@ -102,9 +101,9 @@ class InvoiceLine
      */
     public function __construct($Amount, $TaxRate, $Total)
     {
-      $this->Amount = $Amount;
-      $this->TaxRate = $TaxRate;
-      $this->Total = $Total;
+        $this->Amount = $Amount;
+        $this->TaxRate = $TaxRate;
+        $this->Total = $Total;
     }
 
     /**
@@ -112,7 +111,7 @@ class InvoiceLine
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -121,8 +120,8 @@ class InvoiceLine
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
 
     /**
@@ -130,7 +129,7 @@ class InvoiceLine
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -139,8 +138,8 @@ class InvoiceLine
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -148,7 +147,7 @@ class InvoiceLine
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -157,8 +156,8 @@ class InvoiceLine
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -166,7 +165,7 @@ class InvoiceLine
      */
     public function getInvoiceInternalNotes()
     {
-      return $this->InvoiceInternalNotes;
+        return $this->InvoiceInternalNotes;
     }
 
     /**
@@ -175,8 +174,8 @@ class InvoiceLine
      */
     public function setInvoiceInternalNotes($InvoiceInternalNotes)
     {
-      $this->InvoiceInternalNotes = $InvoiceInternalNotes;
-      return $this;
+        $this->InvoiceInternalNotes = $InvoiceInternalNotes;
+        return $this;
     }
 
     /**
@@ -184,7 +183,7 @@ class InvoiceLine
      */
     public function getEWalletMessage()
     {
-      return $this->EWalletMessage;
+        return $this->EWalletMessage;
     }
 
     /**
@@ -193,8 +192,8 @@ class InvoiceLine
      */
     public function setEWalletMessage($EWalletMessage)
     {
-      $this->EWalletMessage = $EWalletMessage;
-      return $this;
+        $this->EWalletMessage = $EWalletMessage;
+        return $this;
     }
 
     /**
@@ -202,7 +201,7 @@ class InvoiceLine
      */
     public function getBankingMessage()
     {
-      return $this->BankingMessage;
+        return $this->BankingMessage;
     }
 
     /**
@@ -211,8 +210,8 @@ class InvoiceLine
      */
     public function setBankingMessage($BankingMessage)
     {
-      $this->BankingMessage = $BankingMessage;
-      return $this;
+        $this->BankingMessage = $BankingMessage;
+        return $this;
     }
 
     /**
@@ -220,7 +219,7 @@ class InvoiceLine
      */
     public function getCustomFields()
     {
-      return $this->CustomFields;
+        return $this->CustomFields;
     }
 
     /**
@@ -229,8 +228,8 @@ class InvoiceLine
      */
     public function setCustomFields($CustomFields)
     {
-      $this->CustomFields = $CustomFields;
-      return $this;
+        $this->CustomFields = $CustomFields;
+        return $this;
     }
 
     /**
@@ -238,7 +237,7 @@ class InvoiceLine
      */
     public function getGLAccount()
     {
-      return $this->GLAccount;
+        return $this->GLAccount;
     }
 
     /**
@@ -247,8 +246,8 @@ class InvoiceLine
      */
     public function setGLAccount($GLAccount)
     {
-      $this->GLAccount = $GLAccount;
-      return $this;
+        $this->GLAccount = $GLAccount;
+        return $this;
     }
 
     /**
@@ -256,7 +255,7 @@ class InvoiceLine
      */
     public function getLineType()
     {
-      return $this->LineType;
+        return $this->LineType;
     }
 
     /**
@@ -265,8 +264,8 @@ class InvoiceLine
      */
     public function setLineType($LineType)
     {
-      $this->LineType = $LineType;
-      return $this;
+        $this->LineType = $LineType;
+        return $this;
     }
 
     /**
@@ -274,7 +273,7 @@ class InvoiceLine
      */
     public function getLineExternalMetadata()
     {
-      return $this->LineExternalMetadata;
+        return $this->LineExternalMetadata;
     }
 
     /**
@@ -283,8 +282,8 @@ class InvoiceLine
      */
     public function setLineExternalMetadata($LineExternalMetadata)
     {
-      $this->LineExternalMetadata = $LineExternalMetadata;
-      return $this;
+        $this->LineExternalMetadata = $LineExternalMetadata;
+        return $this;
     }
 
     /**
@@ -292,7 +291,7 @@ class InvoiceLine
      */
     public function getQuantity()
     {
-      return $this->Quantity;
+        return $this->Quantity;
     }
 
     /**
@@ -301,8 +300,8 @@ class InvoiceLine
      */
     public function setQuantity($Quantity)
     {
-      $this->Quantity = $Quantity;
-      return $this;
+        $this->Quantity = $Quantity;
+        return $this;
     }
 
     /**
@@ -310,7 +309,7 @@ class InvoiceLine
      */
     public function getBillLineID()
     {
-      return $this->BillLineID;
+        return $this->BillLineID;
     }
 
     /**
@@ -319,8 +318,8 @@ class InvoiceLine
      */
     public function setBillLineID($BillLineID)
     {
-      $this->BillLineID = $BillLineID;
-      return $this;
+        $this->BillLineID = $BillLineID;
+        return $this;
     }
 
     /**
@@ -328,7 +327,7 @@ class InvoiceLine
      */
     public function getTaxCodeExternalId()
     {
-      return $this->TaxCodeExternalId;
+        return $this->TaxCodeExternalId;
     }
 
     /**
@@ -337,8 +336,8 @@ class InvoiceLine
      */
     public function setTaxCodeExternalId($TaxCodeExternalId)
     {
-      $this->TaxCodeExternalId = $TaxCodeExternalId;
-      return $this;
+        $this->TaxCodeExternalId = $TaxCodeExternalId;
+        return $this;
     }
 
     /**
@@ -346,7 +345,7 @@ class InvoiceLine
      */
     public function getTaxRate()
     {
-      return $this->TaxRate;
+        return $this->TaxRate;
     }
 
     /**
@@ -355,8 +354,8 @@ class InvoiceLine
      */
     public function setTaxRate($TaxRate)
     {
-      $this->TaxRate = $TaxRate;
-      return $this;
+        $this->TaxRate = $TaxRate;
+        return $this;
     }
 
     /**
@@ -364,7 +363,7 @@ class InvoiceLine
      */
     public function getTaxAmount()
     {
-      return $this->TaxAmount;
+        return $this->TaxAmount;
     }
 
     /**
@@ -373,8 +372,8 @@ class InvoiceLine
      */
     public function setTaxAmount($TaxAmount)
     {
-      $this->TaxAmount = $TaxAmount;
-      return $this;
+        $this->TaxAmount = $TaxAmount;
+        return $this;
     }
 
     /**
@@ -382,7 +381,7 @@ class InvoiceLine
      */
     public function getTotal()
     {
-      return $this->Total;
+        return $this->Total;
     }
 
     /**
@@ -391,8 +390,8 @@ class InvoiceLine
      */
     public function setTotal($Total)
     {
-      $this->Total = $Total;
-      return $this;
+        $this->Total = $Total;
+        return $this;
     }
 
     /**
@@ -400,7 +399,7 @@ class InvoiceLine
      */
     public function getRelatedPurchaseOrders()
     {
-      return $this->RelatedPurchaseOrders;
+        return $this->RelatedPurchaseOrders;
     }
 
     /**
@@ -409,8 +408,8 @@ class InvoiceLine
      */
     public function setRelatedPurchaseOrders($RelatedPurchaseOrders)
     {
-      $this->RelatedPurchaseOrders = $RelatedPurchaseOrders;
-      return $this;
+        $this->RelatedPurchaseOrders = $RelatedPurchaseOrders;
+        return $this;
     }
 
     /**
@@ -418,7 +417,7 @@ class InvoiceLine
      */
     public function getRelatedReceipts()
     {
-      return $this->RelatedReceipts;
+        return $this->RelatedReceipts;
     }
 
     /**
@@ -427,8 +426,7 @@ class InvoiceLine
      */
     public function setRelatedReceipts($RelatedReceipts)
     {
-      $this->RelatedReceipts = $RelatedReceipts;
-      return $this;
+        $this->RelatedReceipts = $RelatedReceipts;
+        return $this;
     }
-
 }

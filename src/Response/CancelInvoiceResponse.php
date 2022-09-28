@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class CancelInvoiceResponse
 {
-
     /**
      * @var TipaltiCancelInvoiceResponse $CancelInvoiceResult
      */
@@ -15,7 +14,7 @@ class CancelInvoiceResponse
      */
     public function __construct($CancelInvoiceResult)
     {
-      $this->CancelInvoiceResult = $CancelInvoiceResult;
+        $this->CancelInvoiceResult = $CancelInvoiceResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class CancelInvoiceResponse
      */
     public function getCancelInvoiceResult()
     {
-      return $this->CancelInvoiceResult;
+        return $this->CancelInvoiceResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class CancelInvoiceResponse
      */
     public function setCancelInvoiceResult($CancelInvoiceResult)
     {
-      $this->CancelInvoiceResult = $CancelInvoiceResult;
-      return $this;
+        $this->CancelInvoiceResult = $CancelInvoiceResult;
+        return $this;
     }
-
 }

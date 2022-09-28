@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetInvoicesPayableAmountResponse
 {
-
     /**
      * @var TipaltiResponse $GetInvoicesPayableAmountResult
      */
@@ -15,7 +14,7 @@ class GetInvoicesPayableAmountResponse
      */
     public function __construct($GetInvoicesPayableAmountResult)
     {
-      $this->GetInvoicesPayableAmountResult = $GetInvoicesPayableAmountResult;
+        $this->GetInvoicesPayableAmountResult = $GetInvoicesPayableAmountResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetInvoicesPayableAmountResponse
      */
     public function getGetInvoicesPayableAmountResult()
     {
-      return $this->GetInvoicesPayableAmountResult;
+        return $this->GetInvoicesPayableAmountResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetInvoicesPayableAmountResponse
      */
     public function setGetInvoicesPayableAmountResult($GetInvoicesPayableAmountResult)
     {
-      $this->GetInvoicesPayableAmountResult = $GetInvoicesPayableAmountResult;
-      return $this;
+        $this->GetInvoicesPayableAmountResult = $GetInvoicesPayableAmountResult;
+        return $this;
     }
-
 }

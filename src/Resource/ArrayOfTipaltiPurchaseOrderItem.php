@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiPurchaseOrderItem[] $TipaltiPurchaseOrderItem
      */
     protected $TipaltiPurchaseOrderItem = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
      */
     public function getTipaltiPurchaseOrderItem()
     {
-      return $this->TipaltiPurchaseOrderItem;
+        return $this->TipaltiPurchaseOrderItem;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
      */
     public function setTipaltiPurchaseOrderItem(array $TipaltiPurchaseOrderItem = null)
     {
-      $this->TipaltiPurchaseOrderItem = $TipaltiPurchaseOrderItem;
-      return $this;
+        $this->TipaltiPurchaseOrderItem = $TipaltiPurchaseOrderItem;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiPurchaseOrderItem[$offset]);
+        return isset($this->TipaltiPurchaseOrderItem[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiPurchaseOrderItem[$offset];
+        return $this->TipaltiPurchaseOrderItem[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiPurchaseOrderItem[] = $value;
-      } else {
-        $this->TipaltiPurchaseOrderItem[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiPurchaseOrderItem[] = $value;
+        } else {
+            $this->TipaltiPurchaseOrderItem[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiPurchaseOrderItem[$offset]);
+        unset($this->TipaltiPurchaseOrderItem[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiPurchaseOrderItem);
+        return current($this->TipaltiPurchaseOrderItem);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiPurchaseOrderItem);
+        next($this->TipaltiPurchaseOrderItem);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiPurchaseOrderItem);
+        return key($this->TipaltiPurchaseOrderItem);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiPurchaseOrderItem);
+        reset($this->TipaltiPurchaseOrderItem);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiPurchaseOrderItem implements \ArrayAccess, \Iterator, \Count
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiPurchaseOrderItem);
+        return count($this->TipaltiPurchaseOrderItem);
     }
-
 }

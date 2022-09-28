@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetLastPaymentDetailsByIdapResponse
 {
-
     /**
      * @var TipaltiPayeeLastPaymentResponse $GetLastPaymentDetailsByIdapResult
      */
@@ -15,7 +14,7 @@ class GetLastPaymentDetailsByIdapResponse
      */
     public function __construct($GetLastPaymentDetailsByIdapResult)
     {
-      $this->GetLastPaymentDetailsByIdapResult = $GetLastPaymentDetailsByIdapResult;
+        $this->GetLastPaymentDetailsByIdapResult = $GetLastPaymentDetailsByIdapResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetLastPaymentDetailsByIdapResponse
      */
     public function getGetLastPaymentDetailsByIdapResult()
     {
-      return $this->GetLastPaymentDetailsByIdapResult;
+        return $this->GetLastPaymentDetailsByIdapResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetLastPaymentDetailsByIdapResponse
      */
     public function setGetLastPaymentDetailsByIdapResult($GetLastPaymentDetailsByIdapResult)
     {
-      $this->GetLastPaymentDetailsByIdapResult = $GetLastPaymentDetailsByIdapResult;
-      return $this;
+        $this->GetLastPaymentDetailsByIdapResult = $GetLastPaymentDetailsByIdapResult;
+        return $this;
     }
-
 }

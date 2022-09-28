@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class CreateExtendedPayeeStatusFile
 {
-
     /**
      * @var string $payerName
      */
@@ -50,12 +49,12 @@ class CreateExtendedPayeeStatusFile
      */
     public function __construct($payerName, $timestamp, $key, $listType, $saveToFile, $changesSinceDate)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->listType = $listType;
-      $this->saveToFile = $saveToFile;
-      $this->changesSinceDate = $changesSinceDate;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->listType = $listType;
+        $this->saveToFile = $saveToFile;
+        $this->changesSinceDate = $changesSinceDate;
     }
 
     /**
@@ -63,7 +62,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -72,8 +71,8 @@ class CreateExtendedPayeeStatusFile
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -81,7 +80,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -90,8 +89,8 @@ class CreateExtendedPayeeStatusFile
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -99,7 +98,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -108,8 +107,8 @@ class CreateExtendedPayeeStatusFile
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -117,7 +116,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function getListType()
     {
-      return $this->listType;
+        return $this->listType;
     }
 
     /**
@@ -126,8 +125,8 @@ class CreateExtendedPayeeStatusFile
      */
     public function setListType($listType)
     {
-      $this->listType = $listType;
-      return $this;
+        $this->listType = $listType;
+        return $this;
     }
 
     /**
@@ -135,7 +134,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function getSaveToFile()
     {
-      return $this->saveToFile;
+        return $this->saveToFile;
     }
 
     /**
@@ -144,8 +143,8 @@ class CreateExtendedPayeeStatusFile
      */
     public function setSaveToFile($saveToFile)
     {
-      $this->saveToFile = $saveToFile;
-      return $this;
+        $this->saveToFile = $saveToFile;
+        return $this;
     }
 
     /**
@@ -153,7 +152,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function getChangesSinceDate()
     {
-      return $this->changesSinceDate;
+        return $this->changesSinceDate;
     }
 
     /**
@@ -162,8 +161,7 @@ class CreateExtendedPayeeStatusFile
      */
     public function setChangesSinceDate($changesSinceDate)
     {
-      $this->changesSinceDate = $changesSinceDate;
-      return $this;
+        $this->changesSinceDate = $changesSinceDate;
+        return $this;
     }
-
 }

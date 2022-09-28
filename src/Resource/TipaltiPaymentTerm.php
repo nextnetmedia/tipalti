@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiPaymentTerm
 {
-
     /**
      * @var string $ExternalId
      */
@@ -31,8 +30,8 @@ class TipaltiPaymentTerm
      */
     public function __construct($Term, $IsDefault)
     {
-      $this->Term = $Term;
-      $this->IsDefault = $IsDefault;
+        $this->Term = $Term;
+        $this->IsDefault = $IsDefault;
     }
 
     /**
@@ -40,7 +39,7 @@ class TipaltiPaymentTerm
      */
     public function getExternalId()
     {
-      return $this->ExternalId;
+        return $this->ExternalId;
     }
 
     /**
@@ -49,8 +48,8 @@ class TipaltiPaymentTerm
      */
     public function setExternalId($ExternalId)
     {
-      $this->ExternalId = $ExternalId;
-      return $this;
+        $this->ExternalId = $ExternalId;
+        return $this;
     }
 
     /**
@@ -58,7 +57,7 @@ class TipaltiPaymentTerm
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -67,8 +66,8 @@ class TipaltiPaymentTerm
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -76,7 +75,7 @@ class TipaltiPaymentTerm
      */
     public function getTerm()
     {
-      return $this->Term;
+        return $this->Term;
     }
 
     /**
@@ -85,8 +84,8 @@ class TipaltiPaymentTerm
      */
     public function setTerm($Term)
     {
-      $this->Term = $Term;
-      return $this;
+        $this->Term = $Term;
+        return $this;
     }
 
     /**
@@ -94,7 +93,7 @@ class TipaltiPaymentTerm
      */
     public function getIsDefault()
     {
-      return $this->IsDefault;
+        return $this->IsDefault;
     }
 
     /**
@@ -103,8 +102,7 @@ class TipaltiPaymentTerm
      */
     public function setIsDefault($IsDefault)
     {
-      $this->IsDefault = $IsDefault;
-      return $this;
+        $this->IsDefault = $IsDefault;
+        return $this;
     }
-
 }

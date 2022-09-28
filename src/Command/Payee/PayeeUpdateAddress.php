@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class PayeeUpdateAddress
 {
-
     /**
      * @var string $payerName
      */
@@ -92,19 +91,19 @@ class PayeeUpdateAddress
      */
     public function __construct($payerName, $idap, $timestamp, $key, $street1, $street2, $city, $state, $zip, $country, $company, $alias, $skipNulls)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->street1 = $street1;
-      $this->street2 = $street2;
-      $this->city = $city;
-      $this->state = $state;
-      $this->zip = $zip;
-      $this->country = $country;
-      $this->company = $company;
-      $this->alias = $alias;
-      $this->skipNulls = $skipNulls;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->street1 = $street1;
+        $this->street2 = $street2;
+        $this->city = $city;
+        $this->state = $state;
+        $this->zip = $zip;
+        $this->country = $country;
+        $this->company = $company;
+        $this->alias = $alias;
+        $this->skipNulls = $skipNulls;
     }
 
     /**
@@ -112,7 +111,7 @@ class PayeeUpdateAddress
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -121,8 +120,8 @@ class PayeeUpdateAddress
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -130,7 +129,7 @@ class PayeeUpdateAddress
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -139,8 +138,8 @@ class PayeeUpdateAddress
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -148,7 +147,7 @@ class PayeeUpdateAddress
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -157,8 +156,8 @@ class PayeeUpdateAddress
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -166,7 +165,7 @@ class PayeeUpdateAddress
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -175,8 +174,8 @@ class PayeeUpdateAddress
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -184,7 +183,7 @@ class PayeeUpdateAddress
      */
     public function getStreet1()
     {
-      return $this->street1;
+        return $this->street1;
     }
 
     /**
@@ -193,8 +192,8 @@ class PayeeUpdateAddress
      */
     public function setStreet1($street1)
     {
-      $this->street1 = $street1;
-      return $this;
+        $this->street1 = $street1;
+        return $this;
     }
 
     /**
@@ -202,7 +201,7 @@ class PayeeUpdateAddress
      */
     public function getStreet2()
     {
-      return $this->street2;
+        return $this->street2;
     }
 
     /**
@@ -211,8 +210,8 @@ class PayeeUpdateAddress
      */
     public function setStreet2($street2)
     {
-      $this->street2 = $street2;
-      return $this;
+        $this->street2 = $street2;
+        return $this;
     }
 
     /**
@@ -220,7 +219,7 @@ class PayeeUpdateAddress
      */
     public function getCity()
     {
-      return $this->city;
+        return $this->city;
     }
 
     /**
@@ -229,8 +228,8 @@ class PayeeUpdateAddress
      */
     public function setCity($city)
     {
-      $this->city = $city;
-      return $this;
+        $this->city = $city;
+        return $this;
     }
 
     /**
@@ -238,7 +237,7 @@ class PayeeUpdateAddress
      */
     public function getState()
     {
-      return $this->state;
+        return $this->state;
     }
 
     /**
@@ -247,8 +246,8 @@ class PayeeUpdateAddress
      */
     public function setState($state)
     {
-      $this->state = $state;
-      return $this;
+        $this->state = $state;
+        return $this;
     }
 
     /**
@@ -256,7 +255,7 @@ class PayeeUpdateAddress
      */
     public function getZip()
     {
-      return $this->zip;
+        return $this->zip;
     }
 
     /**
@@ -265,8 +264,8 @@ class PayeeUpdateAddress
      */
     public function setZip($zip)
     {
-      $this->zip = $zip;
-      return $this;
+        $this->zip = $zip;
+        return $this;
     }
 
     /**
@@ -274,7 +273,7 @@ class PayeeUpdateAddress
      */
     public function getCountry()
     {
-      return $this->country;
+        return $this->country;
     }
 
     /**
@@ -283,8 +282,8 @@ class PayeeUpdateAddress
      */
     public function setCountry($country)
     {
-      $this->country = $country;
-      return $this;
+        $this->country = $country;
+        return $this;
     }
 
     /**
@@ -292,7 +291,7 @@ class PayeeUpdateAddress
      */
     public function getCompany()
     {
-      return $this->company;
+        return $this->company;
     }
 
     /**
@@ -301,8 +300,8 @@ class PayeeUpdateAddress
      */
     public function setCompany($company)
     {
-      $this->company = $company;
-      return $this;
+        $this->company = $company;
+        return $this;
     }
 
     /**
@@ -310,7 +309,7 @@ class PayeeUpdateAddress
      */
     public function getAlias()
     {
-      return $this->alias;
+        return $this->alias;
     }
 
     /**
@@ -319,8 +318,8 @@ class PayeeUpdateAddress
      */
     public function setAlias($alias)
     {
-      $this->alias = $alias;
-      return $this;
+        $this->alias = $alias;
+        return $this;
     }
 
     /**
@@ -328,7 +327,7 @@ class PayeeUpdateAddress
      */
     public function getSkipNulls()
     {
-      return $this->skipNulls;
+        return $this->skipNulls;
     }
 
     /**
@@ -337,8 +336,7 @@ class PayeeUpdateAddress
      */
     public function setSkipNulls($skipNulls)
     {
-      $this->skipNulls = $skipNulls;
-      return $this;
+        $this->skipNulls = $skipNulls;
+        return $this;
     }
-
 }

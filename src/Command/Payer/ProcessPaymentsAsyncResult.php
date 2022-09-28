@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payer;
 
 class ProcessPaymentsAsyncResult
 {
-
     /**
      * @var string $payerName
      */
@@ -33,10 +32,10 @@ class ProcessPaymentsAsyncResult
      */
     public function __construct($payerName, $requestId, $timeStamp, $key)
     {
-      $this->payerName = $payerName;
-      $this->requestId = $requestId;
-      $this->timeStamp = $timeStamp;
-      $this->key = $key;
+        $this->payerName = $payerName;
+        $this->requestId = $requestId;
+        $this->timeStamp = $timeStamp;
+        $this->key = $key;
     }
 
     /**
@@ -44,7 +43,7 @@ class ProcessPaymentsAsyncResult
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -53,8 +52,8 @@ class ProcessPaymentsAsyncResult
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -62,7 +61,7 @@ class ProcessPaymentsAsyncResult
      */
     public function getRequestId()
     {
-      return $this->requestId;
+        return $this->requestId;
     }
 
     /**
@@ -71,8 +70,8 @@ class ProcessPaymentsAsyncResult
      */
     public function setRequestId($requestId)
     {
-      $this->requestId = $requestId;
-      return $this;
+        $this->requestId = $requestId;
+        return $this;
     }
 
     /**
@@ -80,7 +79,7 @@ class ProcessPaymentsAsyncResult
      */
     public function getTimeStamp()
     {
-      return $this->timeStamp;
+        return $this->timeStamp;
     }
 
     /**
@@ -89,8 +88,8 @@ class ProcessPaymentsAsyncResult
      */
     public function setTimeStamp($timeStamp)
     {
-      $this->timeStamp = $timeStamp;
-      return $this;
+        $this->timeStamp = $timeStamp;
+        return $this;
     }
 
     /**
@@ -98,7 +97,7 @@ class ProcessPaymentsAsyncResult
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -107,8 +106,7 @@ class ProcessPaymentsAsyncResult
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
-
 }

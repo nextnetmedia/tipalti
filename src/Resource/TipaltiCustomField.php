@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiCustomField
 {
-
     /**
      * @var string $Title
      */
@@ -51,8 +50,8 @@ class TipaltiCustomField
      */
     public function __construct($Action, $Type)
     {
-      $this->Action = $Action;
-      $this->Type = $Type;
+        $this->Action = $Action;
+        $this->Type = $Type;
     }
 
     /**
@@ -60,7 +59,7 @@ class TipaltiCustomField
      */
     public function getTitle()
     {
-      return $this->Title;
+        return $this->Title;
     }
 
     /**
@@ -69,8 +68,8 @@ class TipaltiCustomField
      */
     public function setTitle($Title)
     {
-      $this->Title = $Title;
-      return $this;
+        $this->Title = $Title;
+        return $this;
     }
 
     /**
@@ -78,7 +77,7 @@ class TipaltiCustomField
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -87,8 +86,8 @@ class TipaltiCustomField
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -96,7 +95,7 @@ class TipaltiCustomField
      */
     public function getAction()
     {
-      return $this->Action;
+        return $this->Action;
     }
 
     /**
@@ -105,8 +104,8 @@ class TipaltiCustomField
      */
     public function setAction($Action)
     {
-      $this->Action = $Action;
-      return $this;
+        $this->Action = $Action;
+        return $this;
     }
 
     /**
@@ -114,7 +113,7 @@ class TipaltiCustomField
      */
     public function getEntity()
     {
-      return $this->Entity;
+        return $this->Entity;
     }
 
     /**
@@ -123,8 +122,8 @@ class TipaltiCustomField
      */
     public function setEntity($Entity)
     {
-      $this->Entity = $Entity;
-      return $this;
+        $this->Entity = $Entity;
+        return $this;
     }
 
     /**
@@ -132,7 +131,7 @@ class TipaltiCustomField
      */
     public function getSubEntity()
     {
-      return $this->SubEntity;
+        return $this->SubEntity;
     }
 
     /**
@@ -141,8 +140,8 @@ class TipaltiCustomField
      */
     public function setSubEntity($SubEntity)
     {
-      $this->SubEntity = $SubEntity;
-      return $this;
+        $this->SubEntity = $SubEntity;
+        return $this;
     }
 
     /**
@@ -150,7 +149,7 @@ class TipaltiCustomField
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -159,8 +158,8 @@ class TipaltiCustomField
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
     /**
@@ -168,7 +167,7 @@ class TipaltiCustomField
      */
     public function getIframeDisplay()
     {
-      return $this->IframeDisplay;
+        return $this->IframeDisplay;
     }
 
     /**
@@ -177,8 +176,8 @@ class TipaltiCustomField
      */
     public function setIframeDisplay($IframeDisplay)
     {
-      $this->IframeDisplay = $IframeDisplay;
-      return $this;
+        $this->IframeDisplay = $IframeDisplay;
+        return $this;
     }
 
     /**
@@ -186,7 +185,7 @@ class TipaltiCustomField
      */
     public function getValues()
     {
-      return $this->Values;
+        return $this->Values;
     }
 
     /**
@@ -195,8 +194,7 @@ class TipaltiCustomField
      */
     public function setValues($Values)
     {
-      $this->Values = $Values;
-      return $this;
+        $this->Values = $Values;
+        return $this;
     }
-
 }

@@ -4,11 +4,9 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiProcessingRequestStatus
 {
-    const __default = 'Processing';
-    const Processing = 'Processing';
-    const Failed = 'Failed';
-    const Cancelled = 'Cancelled';
-    const Completed = 'Completed';
-
-
+    public const __default = 'Processing';
+    public const Processing = 'Processing';
+    public const Failed = 'Failed';
+    public const Cancelled = 'Cancelled';
+    public const Completed = 'Completed';
 }

@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Command\Payee\TipaltiSubPayerSecurityToken;
 
 class GetDynamicKeyOfSubPayerResponse
 {
-
     /**
      * @var TipaltiSubPayerSecurityToken $GetDynamicKeyOfSubPayerResult
      */
@@ -17,7 +16,7 @@ class GetDynamicKeyOfSubPayerResponse
      */
     public function __construct($GetDynamicKeyOfSubPayerResult)
     {
-      $this->GetDynamicKeyOfSubPayerResult = $GetDynamicKeyOfSubPayerResult;
+        $this->GetDynamicKeyOfSubPayerResult = $GetDynamicKeyOfSubPayerResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetDynamicKeyOfSubPayerResponse
      */
     public function getGetDynamicKeyOfSubPayerResult()
     {
-      return $this->GetDynamicKeyOfSubPayerResult;
+        return $this->GetDynamicKeyOfSubPayerResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetDynamicKeyOfSubPayerResponse
      */
     public function setGetDynamicKeyOfSubPayerResult($GetDynamicKeyOfSubPayerResult)
     {
-      $this->GetDynamicKeyOfSubPayerResult = $GetDynamicKeyOfSubPayerResult;
-      return $this;
+        $this->GetDynamicKeyOfSubPayerResult = $GetDynamicKeyOfSubPayerResult;
+        return $this;
     }
-
 }

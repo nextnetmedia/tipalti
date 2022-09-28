@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\TipaltiProcessPaymentAsyncResult;
 
 class ProcessPaymentFileAsyncResponse
 {
-
     /**
      * @var TipaltiProcessPaymentAsyncResult $ProcessPaymentFileAsyncResult
      */
@@ -17,7 +16,7 @@ class ProcessPaymentFileAsyncResponse
      */
     public function __construct($ProcessPaymentFileAsyncResult)
     {
-      $this->ProcessPaymentFileAsyncResult = $ProcessPaymentFileAsyncResult;
+        $this->ProcessPaymentFileAsyncResult = $ProcessPaymentFileAsyncResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class ProcessPaymentFileAsyncResponse
      */
     public function getProcessPaymentFileAsyncResult()
     {
-      return $this->ProcessPaymentFileAsyncResult;
+        return $this->ProcessPaymentFileAsyncResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class ProcessPaymentFileAsyncResponse
      */
     public function setProcessPaymentFileAsyncResult($ProcessPaymentFileAsyncResult)
     {
-      $this->ProcessPaymentFileAsyncResult = $ProcessPaymentFileAsyncResult;
-      return $this;
+        $this->ProcessPaymentFileAsyncResult = $ProcessPaymentFileAsyncResult;
+        return $this;
     }
-
 }

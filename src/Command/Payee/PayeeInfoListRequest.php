@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfString;
 
 class PayeeInfoListRequest
 {
-
     /**
      * @var string $PayerName
      */
@@ -32,7 +31,7 @@ class PayeeInfoListRequest
      */
     public function __construct($Timestamp)
     {
-      $this->Timestamp = $Timestamp;
+        $this->Timestamp = $Timestamp;
     }
 
     /**
@@ -40,7 +39,7 @@ class PayeeInfoListRequest
      */
     public function getPayerName()
     {
-      return $this->PayerName;
+        return $this->PayerName;
     }
 
     /**
@@ -49,8 +48,8 @@ class PayeeInfoListRequest
      */
     public function setPayerName($PayerName)
     {
-      $this->PayerName = $PayerName;
-      return $this;
+        $this->PayerName = $PayerName;
+        return $this;
     }
 
     /**
@@ -58,7 +57,7 @@ class PayeeInfoListRequest
      */
     public function getTimestamp()
     {
-      return $this->Timestamp;
+        return $this->Timestamp;
     }
 
     /**
@@ -67,8 +66,8 @@ class PayeeInfoListRequest
      */
     public function setTimestamp($Timestamp)
     {
-      $this->Timestamp = $Timestamp;
-      return $this;
+        $this->Timestamp = $Timestamp;
+        return $this;
     }
 
     /**
@@ -76,7 +75,7 @@ class PayeeInfoListRequest
      */
     public function getKey()
     {
-      return $this->Key;
+        return $this->Key;
     }
 
     /**
@@ -85,8 +84,8 @@ class PayeeInfoListRequest
      */
     public function setKey($Key)
     {
-      $this->Key = $Key;
-      return $this;
+        $this->Key = $Key;
+        return $this;
     }
 
     /**
@@ -94,7 +93,7 @@ class PayeeInfoListRequest
      */
     public function getIdaps()
     {
-      return $this->Idaps;
+        return $this->Idaps;
     }
 
     /**
@@ -103,8 +102,7 @@ class PayeeInfoListRequest
      */
     public function setIdaps($Idaps)
     {
-      $this->Idaps = $Idaps;
-      return $this;
+        $this->Idaps = $Idaps;
+        return $this;
     }
-
 }

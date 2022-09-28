@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiCustomField[] $TipaltiCustomField
      */
     protected $TipaltiCustomField = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiCustomField()
     {
-      return $this->TipaltiCustomField;
+        return $this->TipaltiCustomField;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiCustomField(array $TipaltiCustomField = null)
     {
-      $this->TipaltiCustomField = $TipaltiCustomField;
-      return $this;
+        $this->TipaltiCustomField = $TipaltiCustomField;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiCustomField[$offset]);
+        return isset($this->TipaltiCustomField[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiCustomField[$offset];
+        return $this->TipaltiCustomField[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiCustomField[] = $value;
-      } else {
-        $this->TipaltiCustomField[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiCustomField[] = $value;
+        } else {
+            $this->TipaltiCustomField[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiCustomField[$offset]);
+        unset($this->TipaltiCustomField[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiCustomField);
+        return current($this->TipaltiCustomField);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiCustomField);
+        next($this->TipaltiCustomField);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiCustomField);
+        return key($this->TipaltiCustomField);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiCustomField);
+        reset($this->TipaltiCustomField);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiCustomField implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiCustomField);
+        return count($this->TipaltiCustomField);
     }
-
 }

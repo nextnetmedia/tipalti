@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiChangedPayeeIdsResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfString $changedIds
      */
@@ -18,7 +17,7 @@ class TipaltiChangedPayeeIdsResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -26,7 +25,7 @@ class TipaltiChangedPayeeIdsResponse extends TipaltiResponse
      */
     public function getChangedIds()
     {
-      return $this->changedIds;
+        return $this->changedIds;
     }
 
     /**
@@ -35,8 +34,7 @@ class TipaltiChangedPayeeIdsResponse extends TipaltiResponse
      */
     public function setChangedIds($changedIds)
     {
-      $this->changedIds = $changedIds;
-      return $this;
+        $this->changedIds = $changedIds;
+        return $this;
     }
-
 }

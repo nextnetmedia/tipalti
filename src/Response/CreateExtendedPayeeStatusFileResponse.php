@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class CreateExtendedPayeeStatusFileResponse
 {
-
     /**
      * @var TipaltiResponse $CreateExtendedPayeeStatusFileResult
      */
@@ -15,7 +14,7 @@ class CreateExtendedPayeeStatusFileResponse
      */
     public function __construct($CreateExtendedPayeeStatusFileResult)
     {
-      $this->CreateExtendedPayeeStatusFileResult = $CreateExtendedPayeeStatusFileResult;
+        $this->CreateExtendedPayeeStatusFileResult = $CreateExtendedPayeeStatusFileResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class CreateExtendedPayeeStatusFileResponse
      */
     public function getCreateExtendedPayeeStatusFileResult()
     {
-      return $this->CreateExtendedPayeeStatusFileResult;
+        return $this->CreateExtendedPayeeStatusFileResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class CreateExtendedPayeeStatusFileResponse
      */
     public function setCreateExtendedPayeeStatusFileResult($CreateExtendedPayeeStatusFileResult)
     {
-      $this->CreateExtendedPayeeStatusFileResult = $CreateExtendedPayeeStatusFileResult;
-      return $this;
+        $this->CreateExtendedPayeeStatusFileResult = $CreateExtendedPayeeStatusFileResult;
+        return $this;
     }
-
 }

@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Result;
 
 class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiGrnItemResult[] $TipaltiGrnItemResult
      */
     protected $TipaltiGrnItemResult = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiGrnItemResult()
     {
-      return $this->TipaltiGrnItemResult;
+        return $this->TipaltiGrnItemResult;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiGrnItemResult(array $TipaltiGrnItemResult = null)
     {
-      $this->TipaltiGrnItemResult = $TipaltiGrnItemResult;
-      return $this;
+        $this->TipaltiGrnItemResult = $TipaltiGrnItemResult;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiGrnItemResult[$offset]);
+        return isset($this->TipaltiGrnItemResult[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiGrnItemResult[$offset];
+        return $this->TipaltiGrnItemResult[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiGrnItemResult[] = $value;
-      } else {
-        $this->TipaltiGrnItemResult[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiGrnItemResult[] = $value;
+        } else {
+            $this->TipaltiGrnItemResult[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiGrnItemResult[$offset]);
+        unset($this->TipaltiGrnItemResult[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiGrnItemResult);
+        return current($this->TipaltiGrnItemResult);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiGrnItemResult);
+        next($this->TipaltiGrnItemResult);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiGrnItemResult);
+        return key($this->TipaltiGrnItemResult);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiGrnItemResult);
+        reset($this->TipaltiGrnItemResult);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiGrnItemResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiGrnItemResult);
+        return count($this->TipaltiGrnItemResult);
     }
-
 }

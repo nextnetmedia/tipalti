@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiPayeeLastPaymentResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -77,7 +76,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -85,7 +84,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -94,8 +93,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -103,7 +102,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -112,8 +111,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -121,7 +120,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getLastSubmissionDate()
     {
-      return $this->LastSubmissionDate;
+        return $this->LastSubmissionDate;
     }
 
     /**
@@ -130,8 +129,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setLastSubmissionDate($LastSubmissionDate)
     {
-      $this->LastSubmissionDate = $LastSubmissionDate;
-      return $this;
+        $this->LastSubmissionDate = $LastSubmissionDate;
+        return $this;
     }
 
     /**
@@ -139,7 +138,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getPaymentStatus()
     {
-      return $this->PaymentStatus;
+        return $this->PaymentStatus;
     }
 
     /**
@@ -148,8 +147,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setPaymentStatus($PaymentStatus)
     {
-      $this->PaymentStatus = $PaymentStatus;
-      return $this;
+        $this->PaymentStatus = $PaymentStatus;
+        return $this;
     }
 
     /**
@@ -157,7 +156,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getAlerts()
     {
-      return $this->Alerts;
+        return $this->Alerts;
     }
 
     /**
@@ -166,8 +165,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setAlerts($Alerts)
     {
-      $this->Alerts = $Alerts;
-      return $this;
+        $this->Alerts = $Alerts;
+        return $this;
     }
 
     /**
@@ -175,7 +174,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getValueDate()
     {
-      return $this->ValueDate;
+        return $this->ValueDate;
     }
 
     /**
@@ -184,8 +183,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setValueDate($ValueDate)
     {
-      $this->ValueDate = $ValueDate;
-      return $this;
+        $this->ValueDate = $ValueDate;
+        return $this;
     }
 
     /**
@@ -193,7 +192,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getAmountSubmitted()
     {
-      return $this->AmountSubmitted;
+        return $this->AmountSubmitted;
     }
 
     /**
@@ -202,8 +201,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setAmountSubmitted($AmountSubmitted)
     {
-      $this->AmountSubmitted = $AmountSubmitted;
-      return $this;
+        $this->AmountSubmitted = $AmountSubmitted;
+        return $this;
     }
 
     /**
@@ -211,7 +210,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getAmountSubmittedCurrency()
     {
-      return $this->AmountSubmittedCurrency;
+        return $this->AmountSubmittedCurrency;
     }
 
     /**
@@ -220,8 +219,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setAmountSubmittedCurrency($AmountSubmittedCurrency)
     {
-      $this->AmountSubmittedCurrency = $AmountSubmittedCurrency;
-      return $this;
+        $this->AmountSubmittedCurrency = $AmountSubmittedCurrency;
+        return $this;
     }
 
     /**
@@ -229,7 +228,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getPaymentAmountInWithdrawCurrency()
     {
-      return $this->PaymentAmountInWithdrawCurrency;
+        return $this->PaymentAmountInWithdrawCurrency;
     }
 
     /**
@@ -238,8 +237,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setPaymentAmountInWithdrawCurrency($PaymentAmountInWithdrawCurrency)
     {
-      $this->PaymentAmountInWithdrawCurrency = $PaymentAmountInWithdrawCurrency;
-      return $this;
+        $this->PaymentAmountInWithdrawCurrency = $PaymentAmountInWithdrawCurrency;
+        return $this;
     }
 
     /**
@@ -247,7 +246,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getWithdrawCurrency()
     {
-      return $this->WithdrawCurrency;
+        return $this->WithdrawCurrency;
     }
 
     /**
@@ -256,8 +255,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setWithdrawCurrency($WithdrawCurrency)
     {
-      $this->WithdrawCurrency = $WithdrawCurrency;
-      return $this;
+        $this->WithdrawCurrency = $WithdrawCurrency;
+        return $this;
     }
 
     /**
@@ -265,7 +264,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getPaymentAmount()
     {
-      return $this->PaymentAmount;
+        return $this->PaymentAmount;
     }
 
     /**
@@ -274,8 +273,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setPaymentAmount($PaymentAmount)
     {
-      $this->PaymentAmount = $PaymentAmount;
-      return $this;
+        $this->PaymentAmount = $PaymentAmount;
+        return $this;
     }
 
     /**
@@ -283,7 +282,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getPaymentCurrency()
     {
-      return $this->PaymentCurrency;
+        return $this->PaymentCurrency;
     }
 
     /**
@@ -292,8 +291,8 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setPaymentCurrency($PaymentCurrency)
     {
-      $this->PaymentCurrency = $PaymentCurrency;
-      return $this;
+        $this->PaymentCurrency = $PaymentCurrency;
+        return $this;
     }
 
     /**
@@ -301,7 +300,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function getRefCode()
     {
-      return $this->RefCode;
+        return $this->RefCode;
     }
 
     /**
@@ -310,8 +309,7 @@ class TipaltiPayeeLastPaymentResponse
      */
     public function setRefCode($RefCode)
     {
-      $this->RefCode = $RefCode;
-      return $this;
+        $this->RefCode = $RefCode;
+        return $this;
     }
-
 }

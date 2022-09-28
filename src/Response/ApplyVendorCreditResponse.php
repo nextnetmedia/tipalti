@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ApplyVendorCreditResponse
 {
-
     /**
      * @var TipaltiApplyVendorCreditResponse $ApplyVendorCreditResult
      */
@@ -15,7 +14,7 @@ class ApplyVendorCreditResponse
      */
     public function __construct($ApplyVendorCreditResult)
     {
-      $this->ApplyVendorCreditResult = $ApplyVendorCreditResult;
+        $this->ApplyVendorCreditResult = $ApplyVendorCreditResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class ApplyVendorCreditResponse
      */
     public function getApplyVendorCreditResult()
     {
-      return $this->ApplyVendorCreditResult;
+        return $this->ApplyVendorCreditResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class ApplyVendorCreditResponse
      */
     public function setApplyVendorCreditResult($ApplyVendorCreditResult)
     {
-      $this->ApplyVendorCreditResult = $ApplyVendorCreditResult;
-      return $this;
+        $this->ApplyVendorCreditResult = $ApplyVendorCreditResult;
+        return $this;
     }
-
 }

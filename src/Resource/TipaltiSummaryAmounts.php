@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiSummaryAmounts
 {
-
     /**
      * @var string $summaryRowCurrency
      */
@@ -62,14 +61,14 @@ class TipaltiSummaryAmounts
      */
     public function __construct($totalAmount, $immediateAmount, $payableAmount, $payerFees, $scheduledAmount, $outstandingAmount, $withholdingAmount, $estimatedProviderFees)
     {
-      $this->totalAmount = $totalAmount;
-      $this->immediateAmount = $immediateAmount;
-      $this->payableAmount = $payableAmount;
-      $this->payerFees = $payerFees;
-      $this->scheduledAmount = $scheduledAmount;
-      $this->outstandingAmount = $outstandingAmount;
-      $this->withholdingAmount = $withholdingAmount;
-      $this->estimatedProviderFees = $estimatedProviderFees;
+        $this->totalAmount = $totalAmount;
+        $this->immediateAmount = $immediateAmount;
+        $this->payableAmount = $payableAmount;
+        $this->payerFees = $payerFees;
+        $this->scheduledAmount = $scheduledAmount;
+        $this->outstandingAmount = $outstandingAmount;
+        $this->withholdingAmount = $withholdingAmount;
+        $this->estimatedProviderFees = $estimatedProviderFees;
     }
 
     /**
@@ -77,7 +76,7 @@ class TipaltiSummaryAmounts
      */
     public function getSummaryRowCurrency()
     {
-      return $this->summaryRowCurrency;
+        return $this->summaryRowCurrency;
     }
 
     /**
@@ -86,8 +85,8 @@ class TipaltiSummaryAmounts
      */
     public function setSummaryRowCurrency($summaryRowCurrency)
     {
-      $this->summaryRowCurrency = $summaryRowCurrency;
-      return $this;
+        $this->summaryRowCurrency = $summaryRowCurrency;
+        return $this;
     }
 
     /**
@@ -95,7 +94,7 @@ class TipaltiSummaryAmounts
      */
     public function getTotalAmount()
     {
-      return $this->totalAmount;
+        return $this->totalAmount;
     }
 
     /**
@@ -104,8 +103,8 @@ class TipaltiSummaryAmounts
      */
     public function setTotalAmount($totalAmount)
     {
-      $this->totalAmount = $totalAmount;
-      return $this;
+        $this->totalAmount = $totalAmount;
+        return $this;
     }
 
     /**
@@ -113,7 +112,7 @@ class TipaltiSummaryAmounts
      */
     public function getImmediateAmount()
     {
-      return $this->immediateAmount;
+        return $this->immediateAmount;
     }
 
     /**
@@ -122,8 +121,8 @@ class TipaltiSummaryAmounts
      */
     public function setImmediateAmount($immediateAmount)
     {
-      $this->immediateAmount = $immediateAmount;
-      return $this;
+        $this->immediateAmount = $immediateAmount;
+        return $this;
     }
 
     /**
@@ -131,7 +130,7 @@ class TipaltiSummaryAmounts
      */
     public function getPayableAmount()
     {
-      return $this->payableAmount;
+        return $this->payableAmount;
     }
 
     /**
@@ -140,8 +139,8 @@ class TipaltiSummaryAmounts
      */
     public function setPayableAmount($payableAmount)
     {
-      $this->payableAmount = $payableAmount;
-      return $this;
+        $this->payableAmount = $payableAmount;
+        return $this;
     }
 
     /**
@@ -149,7 +148,7 @@ class TipaltiSummaryAmounts
      */
     public function getPayerFees()
     {
-      return $this->payerFees;
+        return $this->payerFees;
     }
 
     /**
@@ -158,8 +157,8 @@ class TipaltiSummaryAmounts
      */
     public function setPayerFees($payerFees)
     {
-      $this->payerFees = $payerFees;
-      return $this;
+        $this->payerFees = $payerFees;
+        return $this;
     }
 
     /**
@@ -167,7 +166,7 @@ class TipaltiSummaryAmounts
      */
     public function getScheduledAmount()
     {
-      return $this->scheduledAmount;
+        return $this->scheduledAmount;
     }
 
     /**
@@ -176,8 +175,8 @@ class TipaltiSummaryAmounts
      */
     public function setScheduledAmount($scheduledAmount)
     {
-      $this->scheduledAmount = $scheduledAmount;
-      return $this;
+        $this->scheduledAmount = $scheduledAmount;
+        return $this;
     }
 
     /**
@@ -185,7 +184,7 @@ class TipaltiSummaryAmounts
      */
     public function getOutstandingAmount()
     {
-      return $this->outstandingAmount;
+        return $this->outstandingAmount;
     }
 
     /**
@@ -194,8 +193,8 @@ class TipaltiSummaryAmounts
      */
     public function setOutstandingAmount($outstandingAmount)
     {
-      $this->outstandingAmount = $outstandingAmount;
-      return $this;
+        $this->outstandingAmount = $outstandingAmount;
+        return $this;
     }
 
     /**
@@ -203,7 +202,7 @@ class TipaltiSummaryAmounts
      */
     public function getWithholdingAmount()
     {
-      return $this->withholdingAmount;
+        return $this->withholdingAmount;
     }
 
     /**
@@ -212,8 +211,8 @@ class TipaltiSummaryAmounts
      */
     public function setWithholdingAmount($withholdingAmount)
     {
-      $this->withholdingAmount = $withholdingAmount;
-      return $this;
+        $this->withholdingAmount = $withholdingAmount;
+        return $this;
     }
 
     /**
@@ -221,7 +220,7 @@ class TipaltiSummaryAmounts
      */
     public function getEstimatedProviderFees()
     {
-      return $this->estimatedProviderFees;
+        return $this->estimatedProviderFees;
     }
 
     /**
@@ -230,8 +229,7 @@ class TipaltiSummaryAmounts
      */
     public function setEstimatedProviderFees($estimatedProviderFees)
     {
-      $this->estimatedProviderFees = $estimatedProviderFees;
-      return $this;
+        $this->estimatedProviderFees = $estimatedProviderFees;
+        return $this;
     }
-
 }

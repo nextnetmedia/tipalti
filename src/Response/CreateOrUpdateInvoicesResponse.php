@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\CreateOrUpdateInvoiceResult;
 
 class CreateOrUpdateInvoicesResponse
 {
-
     /**
      * @var CreateOrUpdateInvoiceResult $CreateOrUpdateInvoicesResult
      */
@@ -17,7 +16,7 @@ class CreateOrUpdateInvoicesResponse
      */
     public function __construct($CreateOrUpdateInvoicesResult)
     {
-      $this->CreateOrUpdateInvoicesResult = $CreateOrUpdateInvoicesResult;
+        $this->CreateOrUpdateInvoicesResult = $CreateOrUpdateInvoicesResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class CreateOrUpdateInvoicesResponse
      */
     public function getCreateOrUpdateInvoicesResult()
     {
-      return $this->CreateOrUpdateInvoicesResult;
+        return $this->CreateOrUpdateInvoicesResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class CreateOrUpdateInvoicesResponse
      */
     public function setCreateOrUpdateInvoicesResult($CreateOrUpdateInvoicesResult)
     {
-      $this->CreateOrUpdateInvoicesResult = $CreateOrUpdateInvoicesResult;
-      return $this;
+        $this->CreateOrUpdateInvoicesResult = $CreateOrUpdateInvoicesResult;
+        return $this;
     }
-
 }

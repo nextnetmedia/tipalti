@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiCreatePayeeInfoAutoIdapResponse extends TipaltiResponse
 {
-
     /**
      * @var string $createdIdap
      */
@@ -17,7 +16,7 @@ class TipaltiCreatePayeeInfoAutoIdapResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -25,7 +24,7 @@ class TipaltiCreatePayeeInfoAutoIdapResponse extends TipaltiResponse
      */
     public function getCreatedIdap()
     {
-      return $this->createdIdap;
+        return $this->createdIdap;
     }
 
     /**
@@ -34,8 +33,7 @@ class TipaltiCreatePayeeInfoAutoIdapResponse extends TipaltiResponse
      */
     public function setCreatedIdap($createdIdap)
     {
-      $this->createdIdap = $createdIdap;
-      return $this;
+        $this->createdIdap = $createdIdap;
+        return $this;
     }
-
 }

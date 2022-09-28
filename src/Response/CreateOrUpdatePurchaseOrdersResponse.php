@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\CreateOrUpdatePurchaseOrderResult;
 
 class CreateOrUpdatePurchaseOrdersResponse
 {
-
     /**
      * @var CreateOrUpdatePurchaseOrderResult $CreateOrUpdatePurchaseOrdersResult
      */
@@ -17,7 +16,7 @@ class CreateOrUpdatePurchaseOrdersResponse
      */
     public function __construct($CreateOrUpdatePurchaseOrdersResult)
     {
-      $this->CreateOrUpdatePurchaseOrdersResult = $CreateOrUpdatePurchaseOrdersResult;
+        $this->CreateOrUpdatePurchaseOrdersResult = $CreateOrUpdatePurchaseOrdersResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class CreateOrUpdatePurchaseOrdersResponse
      */
     public function getCreateOrUpdatePurchaseOrdersResult()
     {
-      return $this->CreateOrUpdatePurchaseOrdersResult;
+        return $this->CreateOrUpdatePurchaseOrdersResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class CreateOrUpdatePurchaseOrdersResponse
      */
     public function setCreateOrUpdatePurchaseOrdersResult($CreateOrUpdatePurchaseOrdersResult)
     {
-      $this->CreateOrUpdatePurchaseOrdersResult = $CreateOrUpdatePurchaseOrdersResult;
-      return $this;
+        $this->CreateOrUpdatePurchaseOrdersResult = $CreateOrUpdatePurchaseOrdersResult;
+        return $this;
     }
-
 }

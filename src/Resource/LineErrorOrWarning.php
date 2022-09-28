@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class LineErrorOrWarning
 {
-
     /**
      * @var int $lineNumber
      */
@@ -26,8 +25,8 @@ class LineErrorOrWarning
      */
     public function __construct($lineNumber, $isWarning)
     {
-      $this->lineNumber = $lineNumber;
-      $this->isWarning = $isWarning;
+        $this->lineNumber = $lineNumber;
+        $this->isWarning = $isWarning;
     }
 
     /**
@@ -35,7 +34,7 @@ class LineErrorOrWarning
      */
     public function getLineNumber()
     {
-      return $this->lineNumber;
+        return $this->lineNumber;
     }
 
     /**
@@ -44,8 +43,8 @@ class LineErrorOrWarning
      */
     public function setLineNumber($lineNumber)
     {
-      $this->lineNumber = $lineNumber;
-      return $this;
+        $this->lineNumber = $lineNumber;
+        return $this;
     }
 
     /**
@@ -53,7 +52,7 @@ class LineErrorOrWarning
      */
     public function getIsWarning()
     {
-      return $this->isWarning;
+        return $this->isWarning;
     }
 
     /**
@@ -62,8 +61,8 @@ class LineErrorOrWarning
      */
     public function setIsWarning($isWarning)
     {
-      $this->isWarning = $isWarning;
-      return $this;
+        $this->isWarning = $isWarning;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class LineErrorOrWarning
      */
     public function getMessage()
     {
-      return $this->message;
+        return $this->message;
     }
 
     /**
@@ -80,8 +79,7 @@ class LineErrorOrWarning
      */
     public function setMessage($message)
     {
-      $this->message = $message;
-      return $this;
+        $this->message = $message;
+        return $this;
     }
-
 }

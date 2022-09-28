@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetExtendedPODetailsResponse
 {
-
     /**
      * @var TipaltiExtendedPaymentOrderResponse $GetExtendedPODetailsResult
      */
@@ -15,7 +14,7 @@ class GetExtendedPODetailsResponse
      */
     public function __construct($GetExtendedPODetailsResult)
     {
-      $this->GetExtendedPODetailsResult = $GetExtendedPODetailsResult;
+        $this->GetExtendedPODetailsResult = $GetExtendedPODetailsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetExtendedPODetailsResponse
      */
     public function getGetExtendedPODetailsResult()
     {
-      return $this->GetExtendedPODetailsResult;
+        return $this->GetExtendedPODetailsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetExtendedPODetailsResponse
      */
     public function setGetExtendedPODetailsResult($GetExtendedPODetailsResult)
     {
-      $this->GetExtendedPODetailsResult = $GetExtendedPODetailsResult;
-      return $this;
+        $this->GetExtendedPODetailsResult = $GetExtendedPODetailsResult;
+        return $this;
     }
-
 }

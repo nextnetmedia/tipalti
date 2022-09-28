@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ManualPaymentDetails
 {
-
     /**
      * @var string $GLAccountExternalId
      */
@@ -15,10 +14,9 @@ class ManualPaymentDetails
      */
     protected $TransactionDate = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -26,7 +24,7 @@ class ManualPaymentDetails
      */
     public function getGLAccountExternalId()
     {
-      return $this->GLAccountExternalId;
+        return $this->GLAccountExternalId;
     }
 
     /**
@@ -35,8 +33,8 @@ class ManualPaymentDetails
      */
     public function setGLAccountExternalId($GLAccountExternalId)
     {
-      $this->GLAccountExternalId = $GLAccountExternalId;
-      return $this;
+        $this->GLAccountExternalId = $GLAccountExternalId;
+        return $this;
     }
 
     /**
@@ -44,15 +42,15 @@ class ManualPaymentDetails
      */
     public function getTransactionDate()
     {
-      if ($this->TransactionDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->TransactionDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->TransactionDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->TransactionDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -61,12 +59,11 @@ class ManualPaymentDetails
      */
     public function setTransactionDate(\DateTime $TransactionDate = null)
     {
-      if ($TransactionDate == null) {
-       $this->TransactionDate = null;
-      } else {
-        $this->TransactionDate = $TransactionDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($TransactionDate == null) {
+            $this->TransactionDate = null;
+        } else {
+            $this->TransactionDate = $TransactionDate->format(\DateTime::ATOM);
+        }
+        return $this;
     }
-
 }

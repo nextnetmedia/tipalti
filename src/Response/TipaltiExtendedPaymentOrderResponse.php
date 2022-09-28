@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfKeyValuePair $Properties
      */
@@ -23,7 +22,7 @@ class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -31,7 +30,7 @@ class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
      */
     public function getProperties()
     {
-      return $this->Properties;
+        return $this->Properties;
     }
 
     /**
@@ -40,8 +39,8 @@ class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
      */
     public function setProperties($Properties)
     {
-      $this->Properties = $Properties;
-      return $this;
+        $this->Properties = $Properties;
+        return $this;
     }
 
     /**
@@ -49,7 +48,7 @@ class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
      */
     public function getCustomFields()
     {
-      return $this->CustomFields;
+        return $this->CustomFields;
     }
 
     /**
@@ -58,8 +57,7 @@ class TipaltiExtendedPaymentOrderResponse extends TipaltiResponse
      */
     public function setCustomFields($CustomFields)
     {
-      $this->CustomFields = $CustomFields;
-      return $this;
+        $this->CustomFields = $CustomFields;
+        return $this;
     }
-
 }

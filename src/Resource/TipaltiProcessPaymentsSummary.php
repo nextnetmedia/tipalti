@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiProcessPaymentsSummary
 {
-
     /**
      * @var int $accountType
      */
@@ -37,9 +36,9 @@ class TipaltiProcessPaymentsSummary
      */
     public function __construct($accountType, $fundsRequired, $outstandingAmount)
     {
-      $this->accountType = $accountType;
-      $this->fundsRequired = $fundsRequired;
-      $this->outstandingAmount = $outstandingAmount;
+        $this->accountType = $accountType;
+        $this->fundsRequired = $fundsRequired;
+        $this->outstandingAmount = $outstandingAmount;
     }
 
     /**
@@ -47,7 +46,7 @@ class TipaltiProcessPaymentsSummary
      */
     public function getAccountType()
     {
-      return $this->accountType;
+        return $this->accountType;
     }
 
     /**
@@ -56,8 +55,8 @@ class TipaltiProcessPaymentsSummary
      */
     public function setAccountType($accountType)
     {
-      $this->accountType = $accountType;
-      return $this;
+        $this->accountType = $accountType;
+        return $this;
     }
 
     /**
@@ -65,7 +64,7 @@ class TipaltiProcessPaymentsSummary
      */
     public function getAccountCurrency()
     {
-      return $this->accountCurrency;
+        return $this->accountCurrency;
     }
 
     /**
@@ -74,8 +73,8 @@ class TipaltiProcessPaymentsSummary
      */
     public function setAccountCurrency($accountCurrency)
     {
-      $this->accountCurrency = $accountCurrency;
-      return $this;
+        $this->accountCurrency = $accountCurrency;
+        return $this;
     }
 
     /**
@@ -83,7 +82,7 @@ class TipaltiProcessPaymentsSummary
      */
     public function getFundsRequired()
     {
-      return $this->fundsRequired;
+        return $this->fundsRequired;
     }
 
     /**
@@ -92,8 +91,8 @@ class TipaltiProcessPaymentsSummary
      */
     public function setFundsRequired($fundsRequired)
     {
-      $this->fundsRequired = $fundsRequired;
-      return $this;
+        $this->fundsRequired = $fundsRequired;
+        return $this;
     }
 
     /**
@@ -101,7 +100,7 @@ class TipaltiProcessPaymentsSummary
      */
     public function getOutstandingAmount()
     {
-      return $this->outstandingAmount;
+        return $this->outstandingAmount;
     }
 
     /**
@@ -110,8 +109,8 @@ class TipaltiProcessPaymentsSummary
      */
     public function setOutstandingAmount($outstandingAmount)
     {
-      $this->outstandingAmount = $outstandingAmount;
-      return $this;
+        $this->outstandingAmount = $outstandingAmount;
+        return $this;
     }
 
     /**
@@ -119,7 +118,7 @@ class TipaltiProcessPaymentsSummary
      */
     public function getTipaltiSummaryAmounts()
     {
-      return $this->tipaltiSummaryAmounts;
+        return $this->tipaltiSummaryAmounts;
     }
 
     /**
@@ -128,8 +127,7 @@ class TipaltiProcessPaymentsSummary
      */
     public function setTipaltiSummaryAmounts($tipaltiSummaryAmounts)
     {
-      $this->tipaltiSummaryAmounts = $tipaltiSummaryAmounts;
-      return $this;
+        $this->tipaltiSummaryAmounts = $tipaltiSummaryAmounts;
+        return $this;
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 
 class GetPayeePendingInvoiceTotal
 {
-
     /**
      * @var string $payerName
      */
@@ -33,10 +32,10 @@ class GetPayeePendingInvoiceTotal
      */
     public function __construct($payerName, $timestamp, $key, $idap)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->idap = $idap;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->idap = $idap;
     }
 
     /**
@@ -44,7 +43,7 @@ class GetPayeePendingInvoiceTotal
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -53,8 +52,8 @@ class GetPayeePendingInvoiceTotal
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -62,7 +61,7 @@ class GetPayeePendingInvoiceTotal
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -71,8 +70,8 @@ class GetPayeePendingInvoiceTotal
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -80,7 +79,7 @@ class GetPayeePendingInvoiceTotal
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -89,8 +88,8 @@ class GetPayeePendingInvoiceTotal
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -98,7 +97,7 @@ class GetPayeePendingInvoiceTotal
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -107,8 +106,7 @@ class GetPayeePendingInvoiceTotal
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
-
 }

@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiProcessPaymentAsyncResult
 {
-
     /**
      * @var string $errorMessage
      */
@@ -28,8 +27,8 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function __construct($errorCode, $requestId)
     {
-      $this->errorCode = $errorCode;
-      $this->requestId = $requestId;
+        $this->errorCode = $errorCode;
+        $this->requestId = $requestId;
     }
 
     /**
@@ -37,7 +36,7 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -46,8 +45,8 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -55,7 +54,7 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -64,8 +63,8 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -73,7 +72,7 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function getRequestId()
     {
-      return $this->requestId;
+        return $this->requestId;
     }
 
     /**
@@ -82,8 +81,7 @@ class TipaltiProcessPaymentAsyncResult
      */
     public function setRequestId($requestId)
     {
-      $this->requestId = $requestId;
-      return $this;
+        $this->requestId = $requestId;
+        return $this;
     }
-
 }

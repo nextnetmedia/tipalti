@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\GetPayerEntitiesResult;
 
 class GetPayerEntitiesResponse
 {
-
     /**
      * @var GetPayerEntitiesResult $GetPayerEntitiesResult
      */
@@ -17,7 +16,7 @@ class GetPayerEntitiesResponse
      */
     public function __construct($GetPayerEntitiesResult)
     {
-      $this->GetPayerEntitiesResult = $GetPayerEntitiesResult;
+        $this->GetPayerEntitiesResult = $GetPayerEntitiesResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetPayerEntitiesResponse
      */
     public function getGetPayerEntitiesResult()
     {
-      return $this->GetPayerEntitiesResult;
+        return $this->GetPayerEntitiesResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetPayerEntitiesResponse
      */
     public function setGetPayerEntitiesResult($GetPayerEntitiesResult)
     {
-      $this->GetPayerEntitiesResult = $GetPayerEntitiesResult;
-      return $this;
+        $this->GetPayerEntitiesResult = $GetPayerEntitiesResult;
+        return $this;
     }
-
 }

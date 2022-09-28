@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetPayerFeesResponse
 {
-
     /**
      * @var TipaltiGetPayerFeesResponse $GetPayerFeesResult
      */
@@ -15,7 +14,7 @@ class GetPayerFeesResponse
      */
     public function __construct($GetPayerFeesResult)
     {
-      $this->GetPayerFeesResult = $GetPayerFeesResult;
+        $this->GetPayerFeesResult = $GetPayerFeesResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetPayerFeesResponse
      */
     public function getGetPayerFeesResult()
     {
-      return $this->GetPayerFeesResult;
+        return $this->GetPayerFeesResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetPayerFeesResponse
      */
     public function setGetPayerFeesResult($GetPayerFeesResult)
     {
-      $this->GetPayerFeesResult = $GetPayerFeesResult;
-      return $this;
+        $this->GetPayerFeesResult = $GetPayerFeesResult;
+        return $this;
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiTaxCode
 {
-
     /**
      * @var string $ExternalId
      */
@@ -35,7 +34,7 @@ class TipaltiTaxCode
      */
     public function __construct($Active)
     {
-      $this->Active = $Active;
+        $this->Active = $Active;
     }
 
     /**
@@ -43,7 +42,7 @@ class TipaltiTaxCode
      */
     public function getExternalId()
     {
-      return $this->ExternalId;
+        return $this->ExternalId;
     }
 
     /**
@@ -52,8 +51,8 @@ class TipaltiTaxCode
      */
     public function setExternalId($ExternalId)
     {
-      $this->ExternalId = $ExternalId;
-      return $this;
+        $this->ExternalId = $ExternalId;
+        return $this;
     }
 
     /**
@@ -61,7 +60,7 @@ class TipaltiTaxCode
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -70,8 +69,8 @@ class TipaltiTaxCode
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -79,7 +78,7 @@ class TipaltiTaxCode
      */
     public function getActive()
     {
-      return $this->Active;
+        return $this->Active;
     }
 
     /**
@@ -88,8 +87,8 @@ class TipaltiTaxCode
      */
     public function setActive($Active)
     {
-      $this->Active = $Active;
-      return $this;
+        $this->Active = $Active;
+        return $this;
     }
 
     /**
@@ -97,7 +96,7 @@ class TipaltiTaxCode
      */
     public function getRate()
     {
-      return $this->Rate;
+        return $this->Rate;
     }
 
     /**
@@ -106,8 +105,8 @@ class TipaltiTaxCode
      */
     public function setRate($Rate)
     {
-      $this->Rate = $Rate;
-      return $this;
+        $this->Rate = $Rate;
+        return $this;
     }
 
     /**
@@ -115,7 +114,7 @@ class TipaltiTaxCode
      */
     public function getPayerEntities()
     {
-      return $this->PayerEntities;
+        return $this->PayerEntities;
     }
 
     /**
@@ -124,8 +123,7 @@ class TipaltiTaxCode
      */
     public function setPayerEntities($PayerEntities)
     {
-      $this->PayerEntities = $PayerEntities;
-      return $this;
+        $this->PayerEntities = $PayerEntities;
+        return $this;
     }
-
 }

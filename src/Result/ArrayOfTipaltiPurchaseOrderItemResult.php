@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Result;
 
 class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiPurchaseOrderItemResult[] $TipaltiPurchaseOrderItemResult
      */
     protected $TipaltiPurchaseOrderItemResult = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
      */
     public function getTipaltiPurchaseOrderItemResult()
     {
-      return $this->TipaltiPurchaseOrderItemResult;
+        return $this->TipaltiPurchaseOrderItemResult;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
      */
     public function setTipaltiPurchaseOrderItemResult(array $TipaltiPurchaseOrderItemResult = null)
     {
-      $this->TipaltiPurchaseOrderItemResult = $TipaltiPurchaseOrderItemResult;
-      return $this;
+        $this->TipaltiPurchaseOrderItemResult = $TipaltiPurchaseOrderItemResult;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiPurchaseOrderItemResult[$offset]);
+        return isset($this->TipaltiPurchaseOrderItemResult[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiPurchaseOrderItemResult[$offset];
+        return $this->TipaltiPurchaseOrderItemResult[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiPurchaseOrderItemResult[] = $value;
-      } else {
-        $this->TipaltiPurchaseOrderItemResult[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiPurchaseOrderItemResult[] = $value;
+        } else {
+            $this->TipaltiPurchaseOrderItemResult[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiPurchaseOrderItemResult[$offset]);
+        unset($this->TipaltiPurchaseOrderItemResult[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiPurchaseOrderItemResult);
+        return current($this->TipaltiPurchaseOrderItemResult);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiPurchaseOrderItemResult);
+        next($this->TipaltiPurchaseOrderItemResult);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiPurchaseOrderItemResult);
+        return key($this->TipaltiPurchaseOrderItemResult);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiPurchaseOrderItemResult);
+        reset($this->TipaltiPurchaseOrderItemResult);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiPurchaseOrderItemResult implements \ArrayAccess, \Iterator, 
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiPurchaseOrderItemResult);
+        return count($this->TipaltiPurchaseOrderItemResult);
     }
-
 }

@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var PayerEntityInfo[] $PayerEntityInfo
      */
     protected $PayerEntityInfo = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function getPayerEntityInfo()
     {
-      return $this->PayerEntityInfo;
+        return $this->PayerEntityInfo;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function setPayerEntityInfo(array $PayerEntityInfo = null)
     {
-      $this->PayerEntityInfo = $PayerEntityInfo;
-      return $this;
+        $this->PayerEntityInfo = $PayerEntityInfo;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->PayerEntityInfo[$offset]);
+        return isset($this->PayerEntityInfo[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->PayerEntityInfo[$offset];
+        return $this->PayerEntityInfo[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->PayerEntityInfo[] = $value;
-      } else {
-        $this->PayerEntityInfo[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->PayerEntityInfo[] = $value;
+        } else {
+            $this->PayerEntityInfo[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->PayerEntityInfo[$offset]);
+        unset($this->PayerEntityInfo[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->PayerEntityInfo);
+        return current($this->PayerEntityInfo);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->PayerEntityInfo);
+        next($this->PayerEntityInfo);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->PayerEntityInfo);
+        return key($this->PayerEntityInfo);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->PayerEntityInfo);
+        reset($this->PayerEntityInfo);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfPayerEntityInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->PayerEntityInfo);
+        return count($this->PayerEntityInfo);
     }
-
 }

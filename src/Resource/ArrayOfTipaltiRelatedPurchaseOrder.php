@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiRelatedPurchaseOrder[] $TipaltiRelatedPurchaseOrder
      */
     protected $TipaltiRelatedPurchaseOrder = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      */
     public function getTipaltiRelatedPurchaseOrder()
     {
-      return $this->TipaltiRelatedPurchaseOrder;
+        return $this->TipaltiRelatedPurchaseOrder;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
      */
     public function setTipaltiRelatedPurchaseOrder(array $TipaltiRelatedPurchaseOrder = null)
     {
-      $this->TipaltiRelatedPurchaseOrder = $TipaltiRelatedPurchaseOrder;
-      return $this;
+        $this->TipaltiRelatedPurchaseOrder = $TipaltiRelatedPurchaseOrder;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiRelatedPurchaseOrder[$offset]);
+        return isset($this->TipaltiRelatedPurchaseOrder[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiRelatedPurchaseOrder[$offset];
+        return $this->TipaltiRelatedPurchaseOrder[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiRelatedPurchaseOrder[] = $value;
-      } else {
-        $this->TipaltiRelatedPurchaseOrder[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiRelatedPurchaseOrder[] = $value;
+        } else {
+            $this->TipaltiRelatedPurchaseOrder[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiRelatedPurchaseOrder[$offset]);
+        unset($this->TipaltiRelatedPurchaseOrder[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiRelatedPurchaseOrder);
+        return current($this->TipaltiRelatedPurchaseOrder);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiRelatedPurchaseOrder);
+        next($this->TipaltiRelatedPurchaseOrder);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiRelatedPurchaseOrder);
+        return key($this->TipaltiRelatedPurchaseOrder);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiRelatedPurchaseOrder);
+        reset($this->TipaltiRelatedPurchaseOrder);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiRelatedPurchaseOrder implements \ArrayAccess, \Iterator, \Co
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiRelatedPurchaseOrder);
+        return count($this->TipaltiRelatedPurchaseOrder);
     }
-
 }

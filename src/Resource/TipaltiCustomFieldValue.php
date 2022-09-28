@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiCustomFieldValue
 {
-
     /**
      * @var string $CustomFieldName
      */
@@ -35,7 +34,7 @@ class TipaltiCustomFieldValue
      */
     public function __construct($IsActive)
     {
-      $this->IsActive = $IsActive;
+        $this->IsActive = $IsActive;
     }
 
     /**
@@ -43,7 +42,7 @@ class TipaltiCustomFieldValue
      */
     public function getCustomFieldName()
     {
-      return $this->CustomFieldName;
+        return $this->CustomFieldName;
     }
 
     /**
@@ -52,8 +51,8 @@ class TipaltiCustomFieldValue
      */
     public function setCustomFieldName($CustomFieldName)
     {
-      $this->CustomFieldName = $CustomFieldName;
-      return $this;
+        $this->CustomFieldName = $CustomFieldName;
+        return $this;
     }
 
     /**
@@ -61,7 +60,7 @@ class TipaltiCustomFieldValue
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -70,8 +69,8 @@ class TipaltiCustomFieldValue
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -79,7 +78,7 @@ class TipaltiCustomFieldValue
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -88,8 +87,8 @@ class TipaltiCustomFieldValue
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
     /**
@@ -97,7 +96,7 @@ class TipaltiCustomFieldValue
      */
     public function getPayerEntityName()
     {
-      return $this->PayerEntityName;
+        return $this->PayerEntityName;
     }
 
     /**
@@ -106,8 +105,8 @@ class TipaltiCustomFieldValue
      */
     public function setPayerEntityName($PayerEntityName)
     {
-      $this->PayerEntityName = $PayerEntityName;
-      return $this;
+        $this->PayerEntityName = $PayerEntityName;
+        return $this;
     }
 
     /**
@@ -115,7 +114,7 @@ class TipaltiCustomFieldValue
      */
     public function getIsActive()
     {
-      return $this->IsActive;
+        return $this->IsActive;
     }
 
     /**
@@ -124,8 +123,7 @@ class TipaltiCustomFieldValue
      */
     public function setIsActive($IsActive)
     {
-      $this->IsActive = $IsActive;
-      return $this;
+        $this->IsActive = $IsActive;
+        return $this;
     }
-
 }

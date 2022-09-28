@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfTipaltiPaymentTerm;
 
 class DeletePaymentTerms
 {
-
     /**
      * @var string $payerName
      */
@@ -35,10 +34,10 @@ class DeletePaymentTerms
      */
     public function __construct($payerName, $timestamp, $key, $paymentTerms)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->paymentTerms = $paymentTerms;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->paymentTerms = $paymentTerms;
     }
 
     /**
@@ -46,7 +45,7 @@ class DeletePaymentTerms
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -55,8 +54,8 @@ class DeletePaymentTerms
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -64,7 +63,7 @@ class DeletePaymentTerms
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -73,8 +72,8 @@ class DeletePaymentTerms
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -82,7 +81,7 @@ class DeletePaymentTerms
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -91,8 +90,8 @@ class DeletePaymentTerms
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -100,7 +99,7 @@ class DeletePaymentTerms
      */
     public function getPaymentTerms()
     {
-      return $this->paymentTerms;
+        return $this->paymentTerms;
     }
 
     /**
@@ -109,8 +108,7 @@ class DeletePaymentTerms
      */
     public function setPaymentTerms($paymentTerms)
     {
-      $this->paymentTerms = $paymentTerms;
-      return $this;
+        $this->paymentTerms = $paymentTerms;
+        return $this;
     }
-
 }

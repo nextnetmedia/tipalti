@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiPaymentQueryResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -42,7 +41,7 @@ class TipaltiPaymentQueryResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -50,7 +49,7 @@ class TipaltiPaymentQueryResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -59,8 +58,8 @@ class TipaltiPaymentQueryResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -68,7 +67,7 @@ class TipaltiPaymentQueryResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -77,8 +76,8 @@ class TipaltiPaymentQueryResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -86,7 +85,7 @@ class TipaltiPaymentQueryResponse
      */
     public function getSubmittedTotal()
     {
-      return $this->submittedTotal;
+        return $this->submittedTotal;
     }
 
     /**
@@ -95,8 +94,8 @@ class TipaltiPaymentQueryResponse
      */
     public function setSubmittedTotal($submittedTotal)
     {
-      $this->submittedTotal = $submittedTotal;
-      return $this;
+        $this->submittedTotal = $submittedTotal;
+        return $this;
     }
 
     /**
@@ -104,7 +103,7 @@ class TipaltiPaymentQueryResponse
      */
     public function getPendingTotal()
     {
-      return $this->pendingTotal;
+        return $this->pendingTotal;
     }
 
     /**
@@ -113,8 +112,8 @@ class TipaltiPaymentQueryResponse
      */
     public function setPendingTotal($pendingTotal)
     {
-      $this->pendingTotal = $pendingTotal;
-      return $this;
+        $this->pendingTotal = $pendingTotal;
+        return $this;
     }
 
     /**
@@ -122,7 +121,7 @@ class TipaltiPaymentQueryResponse
      */
     public function getRejectedTotal()
     {
-      return $this->rejectedTotal;
+        return $this->rejectedTotal;
     }
 
     /**
@@ -131,8 +130,8 @@ class TipaltiPaymentQueryResponse
      */
     public function setRejectedTotal($rejectedTotal)
     {
-      $this->rejectedTotal = $rejectedTotal;
-      return $this;
+        $this->rejectedTotal = $rejectedTotal;
+        return $this;
     }
 
     /**
@@ -140,7 +139,7 @@ class TipaltiPaymentQueryResponse
      */
     public function getSkippedTotal()
     {
-      return $this->skippedTotal;
+        return $this->skippedTotal;
     }
 
     /**
@@ -149,8 +148,7 @@ class TipaltiPaymentQueryResponse
      */
     public function setSkippedTotal($skippedTotal)
     {
-      $this->skippedTotal = $skippedTotal;
-      return $this;
+        $this->skippedTotal = $skippedTotal;
+        return $this;
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiVendorCredit
 {
-
     /**
      * @var string $RefCode
      */
@@ -20,7 +19,7 @@ class TipaltiVendorCredit
      */
     public function __construct($AppliedAmount)
     {
-      $this->AppliedAmount = $AppliedAmount;
+        $this->AppliedAmount = $AppliedAmount;
     }
 
     /**
@@ -28,7 +27,7 @@ class TipaltiVendorCredit
      */
     public function getRefCode()
     {
-      return $this->RefCode;
+        return $this->RefCode;
     }
 
     /**
@@ -37,8 +36,8 @@ class TipaltiVendorCredit
      */
     public function setRefCode($RefCode)
     {
-      $this->RefCode = $RefCode;
-      return $this;
+        $this->RefCode = $RefCode;
+        return $this;
     }
 
     /**
@@ -46,7 +45,7 @@ class TipaltiVendorCredit
      */
     public function getAppliedAmount()
     {
-      return $this->AppliedAmount;
+        return $this->AppliedAmount;
     }
 
     /**
@@ -55,8 +54,7 @@ class TipaltiVendorCredit
      */
     public function setAppliedAmount($AppliedAmount)
     {
-      $this->AppliedAmount = $AppliedAmount;
-      return $this;
+        $this->AppliedAmount = $AppliedAmount;
+        return $this;
     }
-
 }

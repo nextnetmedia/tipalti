@@ -8,7 +8,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class CreateOrUpdateTaxCodesResult extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiTaxCode $TaxCodes
      */
@@ -19,7 +18,7 @@ class CreateOrUpdateTaxCodesResult extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -27,7 +26,7 @@ class CreateOrUpdateTaxCodesResult extends TipaltiResponse
      */
     public function getTaxCodes()
     {
-      return $this->TaxCodes;
+        return $this->TaxCodes;
     }
 
     /**
@@ -36,8 +35,7 @@ class CreateOrUpdateTaxCodesResult extends TipaltiResponse
      */
     public function setTaxCodes($TaxCodes)
     {
-      $this->TaxCodes = $TaxCodes;
-      return $this;
+        $this->TaxCodes = $TaxCodes;
+        return $this;
     }
-
 }

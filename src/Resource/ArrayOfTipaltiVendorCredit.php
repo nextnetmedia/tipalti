@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiVendorCredit[] $TipaltiVendorCredit
      */
     protected $TipaltiVendorCredit = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiVendorCredit()
     {
-      return $this->TipaltiVendorCredit;
+        return $this->TipaltiVendorCredit;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiVendorCredit(array $TipaltiVendorCredit = null)
     {
-      $this->TipaltiVendorCredit = $TipaltiVendorCredit;
-      return $this;
+        $this->TipaltiVendorCredit = $TipaltiVendorCredit;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiVendorCredit[$offset]);
+        return isset($this->TipaltiVendorCredit[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiVendorCredit[$offset];
+        return $this->TipaltiVendorCredit[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiVendorCredit[] = $value;
-      } else {
-        $this->TipaltiVendorCredit[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiVendorCredit[] = $value;
+        } else {
+            $this->TipaltiVendorCredit[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiVendorCredit[$offset]);
+        unset($this->TipaltiVendorCredit[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiVendorCredit);
+        return current($this->TipaltiVendorCredit);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiVendorCredit);
+        next($this->TipaltiVendorCredit);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiVendorCredit);
+        return key($this->TipaltiVendorCredit);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiVendorCredit);
+        reset($this->TipaltiVendorCredit);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiVendorCredit implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiVendorCredit);
+        return count($this->TipaltiVendorCredit);
     }
-
 }

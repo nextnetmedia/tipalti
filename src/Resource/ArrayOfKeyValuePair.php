@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var KeyValuePair[] $KeyValuePair
      */
     protected $KeyValuePair = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
      */
     public function getKeyValuePair()
     {
-      return $this->KeyValuePair;
+        return $this->KeyValuePair;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
      */
     public function setKeyValuePair(array $KeyValuePair = null)
     {
-      $this->KeyValuePair = $KeyValuePair;
-      return $this;
+        $this->KeyValuePair = $KeyValuePair;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->KeyValuePair[$offset]);
+        return isset($this->KeyValuePair[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->KeyValuePair[$offset];
+        return $this->KeyValuePair[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->KeyValuePair[] = $value;
-      } else {
-        $this->KeyValuePair[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->KeyValuePair[] = $value;
+        } else {
+            $this->KeyValuePair[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->KeyValuePair[$offset]);
+        unset($this->KeyValuePair[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->KeyValuePair);
+        return current($this->KeyValuePair);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->KeyValuePair);
+        next($this->KeyValuePair);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->KeyValuePair);
+        return key($this->KeyValuePair);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->KeyValuePair);
+        reset($this->KeyValuePair);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->KeyValuePair);
+        return count($this->KeyValuePair);
     }
-
 }

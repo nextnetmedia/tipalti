@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetBalancesResponse
 {
-
     /**
      * @var TipaltiGetBalanceResponse $GetBalancesResult
      */
@@ -15,7 +14,7 @@ class GetBalancesResponse
      */
     public function __construct($GetBalancesResult)
     {
-      $this->GetBalancesResult = $GetBalancesResult;
+        $this->GetBalancesResult = $GetBalancesResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetBalancesResponse
      */
     public function getGetBalancesResult()
     {
-      return $this->GetBalancesResult;
+        return $this->GetBalancesResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetBalancesResponse
      */
     public function setGetBalancesResult($GetBalancesResult)
     {
-      $this->GetBalancesResult = $GetBalancesResult;
-      return $this;
+        $this->GetBalancesResult = $GetBalancesResult;
+        return $this;
     }
-
 }

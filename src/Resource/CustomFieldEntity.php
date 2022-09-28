@@ -4,11 +4,9 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class CustomFieldEntity
 {
-    const __default = 'PaymentOrder';
-    const PaymentOrder = 'PaymentOrder';
-    const Payee = 'Payee';
-    const Invoice = 'Invoice';
-    const PurchaseOrder = 'PurchaseOrder';
-
-
+    public const __default = 'PaymentOrder';
+    public const PaymentOrder = 'PaymentOrder';
+    public const Payee = 'Payee';
+    public const Invoice = 'Invoice';
+    public const PurchaseOrder = 'PurchaseOrder';
 }

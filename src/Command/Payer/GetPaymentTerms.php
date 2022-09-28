@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payer;
 
 class GetPaymentTerms
 {
-
     /**
      * @var string $payerName
      */
@@ -27,9 +26,9 @@ class GetPaymentTerms
      */
     public function __construct($payerName, $timestamp, $key)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
     }
 
     /**
@@ -37,7 +36,7 @@ class GetPaymentTerms
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -46,8 +45,8 @@ class GetPaymentTerms
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -55,7 +54,7 @@ class GetPaymentTerms
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -64,8 +63,8 @@ class GetPaymentTerms
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -73,7 +72,7 @@ class GetPaymentTerms
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -82,8 +81,7 @@ class GetPaymentTerms
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
-
 }

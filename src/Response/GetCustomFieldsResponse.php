@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetCustomFieldsResponse
 {
-
     /**
      * @var TipaltiGetCustomFieldsResponse $GetCustomFieldsResult
      */
@@ -15,7 +14,7 @@ class GetCustomFieldsResponse
      */
     public function __construct($GetCustomFieldsResult)
     {
-      $this->GetCustomFieldsResult = $GetCustomFieldsResult;
+        $this->GetCustomFieldsResult = $GetCustomFieldsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetCustomFieldsResponse
      */
     public function getGetCustomFieldsResult()
     {
-      return $this->GetCustomFieldsResult;
+        return $this->GetCustomFieldsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetCustomFieldsResponse
      */
     public function setGetCustomFieldsResult($GetCustomFieldsResult)
     {
-      $this->GetCustomFieldsResult = $GetCustomFieldsResult;
-      return $this;
+        $this->GetCustomFieldsResult = $GetCustomFieldsResult;
+        return $this;
     }
-
 }

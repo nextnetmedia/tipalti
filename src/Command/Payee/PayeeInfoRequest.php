@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 
 class PayeeInfoRequest
 {
-
     /**
      * @var string $PayerName
      */
@@ -30,7 +29,7 @@ class PayeeInfoRequest
      */
     public function __construct($Timestamp)
     {
-      $this->Timestamp = $Timestamp;
+        $this->Timestamp = $Timestamp;
     }
 
     /**
@@ -38,7 +37,7 @@ class PayeeInfoRequest
      */
     public function getPayerName()
     {
-      return $this->PayerName;
+        return $this->PayerName;
     }
 
     /**
@@ -47,8 +46,8 @@ class PayeeInfoRequest
      */
     public function setPayerName($PayerName)
     {
-      $this->PayerName = $PayerName;
-      return $this;
+        $this->PayerName = $PayerName;
+        return $this;
     }
 
     /**
@@ -56,7 +55,7 @@ class PayeeInfoRequest
      */
     public function getTimestamp()
     {
-      return $this->Timestamp;
+        return $this->Timestamp;
     }
 
     /**
@@ -65,8 +64,8 @@ class PayeeInfoRequest
      */
     public function setTimestamp($Timestamp)
     {
-      $this->Timestamp = $Timestamp;
-      return $this;
+        $this->Timestamp = $Timestamp;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class PayeeInfoRequest
      */
     public function getKey()
     {
-      return $this->Key;
+        return $this->Key;
     }
 
     /**
@@ -83,8 +82,8 @@ class PayeeInfoRequest
      */
     public function setKey($Key)
     {
-      $this->Key = $Key;
-      return $this;
+        $this->Key = $Key;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class PayeeInfoRequest
      */
     public function getIdap()
     {
-      return $this->Idap;
+        return $this->Idap;
     }
 
     /**
@@ -101,8 +100,7 @@ class PayeeInfoRequest
      */
     public function setIdap($Idap)
     {
-      $this->Idap = $Idap;
-      return $this;
+        $this->Idap = $Idap;
+        return $this;
     }
-
 }

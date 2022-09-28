@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiGetPayeeInvoicesListDetailsResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiInvoiceItemError $InvoiceErrors
      */
@@ -23,7 +22,7 @@ class TipaltiGetPayeeInvoicesListDetailsResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -31,7 +30,7 @@ class TipaltiGetPayeeInvoicesListDetailsResponse extends TipaltiResponse
      */
     public function getInvoiceErrors()
     {
-      return $this->InvoiceErrors;
+        return $this->InvoiceErrors;
     }
 
     /**
@@ -40,8 +39,8 @@ class TipaltiGetPayeeInvoicesListDetailsResponse extends TipaltiResponse
      */
     public function setInvoiceErrors($InvoiceErrors)
     {
-      $this->InvoiceErrors = $InvoiceErrors;
-      return $this;
+        $this->InvoiceErrors = $InvoiceErrors;
+        return $this;
     }
 
     /**
@@ -49,7 +48,7 @@ class TipaltiGetPayeeInvoicesListDetailsResponse extends TipaltiResponse
      */
     public function getInvoices()
     {
-      return $this->Invoices;
+        return $this->Invoices;
     }
 
     /**
@@ -58,8 +57,7 @@ class TipaltiGetPayeeInvoicesListDetailsResponse extends TipaltiResponse
      */
     public function setInvoices($Invoices)
     {
-      $this->Invoices = $Invoices;
-      return $this;
+        $this->Invoices = $Invoices;
+        return $this;
     }
-
 }

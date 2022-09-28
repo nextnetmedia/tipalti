@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class TestMultiCurrencyPaymentFileResponse
 {
-
     /**
      * @var TipaltiProcessPaymentResponse $TestMultiCurrencyPaymentFileResult
      */
@@ -15,7 +14,7 @@ class TestMultiCurrencyPaymentFileResponse
      */
     public function __construct($TestMultiCurrencyPaymentFileResult)
     {
-      $this->TestMultiCurrencyPaymentFileResult = $TestMultiCurrencyPaymentFileResult;
+        $this->TestMultiCurrencyPaymentFileResult = $TestMultiCurrencyPaymentFileResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class TestMultiCurrencyPaymentFileResponse
      */
     public function getTestMultiCurrencyPaymentFileResult()
     {
-      return $this->TestMultiCurrencyPaymentFileResult;
+        return $this->TestMultiCurrencyPaymentFileResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class TestMultiCurrencyPaymentFileResponse
      */
     public function setTestMultiCurrencyPaymentFileResult($TestMultiCurrencyPaymentFileResult)
     {
-      $this->TestMultiCurrencyPaymentFileResult = $TestMultiCurrencyPaymentFileResult;
-      return $this;
+        $this->TestMultiCurrencyPaymentFileResult = $TestMultiCurrencyPaymentFileResult;
+        return $this;
     }
-
 }

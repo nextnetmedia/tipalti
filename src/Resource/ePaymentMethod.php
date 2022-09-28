@@ -4,21 +4,19 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ePaymentMethod
 {
-    const __default = 'NoPM';
-    const NoPM = 'NoPM';
-    const PayPal = 'PayPal';
-    const Payoneer = 'Payoneer';
-    const WireTransfer = 'WireTransfer';
-    const ACH = 'ACH';
-    const Check = 'Check';
-    const Cash = 'Cash';
-    const eCheck = 'eCheck';
-    const HoldMyPayments = 'HoldMyPayments';
-    const Custom = 'Custom';
-    const EntroPay = 'EntroPay';
-    const Skrill = 'Skrill';
-    const Intercash = 'Intercash';
-    const TipaltiCard = 'TipaltiCard';
-
-
+    public const __default = 'NoPM';
+    public const NoPM = 'NoPM';
+    public const PayPal = 'PayPal';
+    public const Payoneer = 'Payoneer';
+    public const WireTransfer = 'WireTransfer';
+    public const ACH = 'ACH';
+    public const Check = 'Check';
+    public const Cash = 'Cash';
+    public const eCheck = 'eCheck';
+    public const HoldMyPayments = 'HoldMyPayments';
+    public const Custom = 'Custom';
+    public const EntroPay = 'EntroPay';
+    public const Skrill = 'Skrill';
+    public const Intercash = 'Intercash';
+    public const TipaltiCard = 'TipaltiCard';
 }

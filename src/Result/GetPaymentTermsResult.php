@@ -8,7 +8,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class GetPaymentTermsResult extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiPaymentTerm $PaymentTerms
      */
@@ -19,7 +18,7 @@ class GetPaymentTermsResult extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -27,7 +26,7 @@ class GetPaymentTermsResult extends TipaltiResponse
      */
     public function getPaymentTerms()
     {
-      return $this->PaymentTerms;
+        return $this->PaymentTerms;
     }
 
     /**
@@ -36,8 +35,7 @@ class GetPaymentTermsResult extends TipaltiResponse
      */
     public function setPaymentTerms($PaymentTerms)
     {
-      $this->PaymentTerms = $PaymentTerms;
-      return $this;
+        $this->PaymentTerms = $PaymentTerms;
+        return $this;
     }
-
 }

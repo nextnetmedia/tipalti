@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payer;
 
 class GetPayerFees
 {
-
     /**
      * @var string $payerName
      */
@@ -39,11 +38,11 @@ class GetPayerFees
      */
     public function __construct($payerName, $timestamp, $key, $beginDateTimeStamp, $endDateTimeStamp)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->beginDateTimeStamp = $beginDateTimeStamp;
-      $this->endDateTimeStamp = $endDateTimeStamp;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->beginDateTimeStamp = $beginDateTimeStamp;
+        $this->endDateTimeStamp = $endDateTimeStamp;
     }
 
     /**
@@ -51,7 +50,7 @@ class GetPayerFees
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -60,8 +59,8 @@ class GetPayerFees
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -69,7 +68,7 @@ class GetPayerFees
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -78,8 +77,8 @@ class GetPayerFees
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -87,7 +86,7 @@ class GetPayerFees
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -96,8 +95,8 @@ class GetPayerFees
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -105,7 +104,7 @@ class GetPayerFees
      */
     public function getBeginDateTimeStamp()
     {
-      return $this->beginDateTimeStamp;
+        return $this->beginDateTimeStamp;
     }
 
     /**
@@ -114,8 +113,8 @@ class GetPayerFees
      */
     public function setBeginDateTimeStamp($beginDateTimeStamp)
     {
-      $this->beginDateTimeStamp = $beginDateTimeStamp;
-      return $this;
+        $this->beginDateTimeStamp = $beginDateTimeStamp;
+        return $this;
     }
 
     /**
@@ -123,7 +122,7 @@ class GetPayerFees
      */
     public function getEndDateTimeStamp()
     {
-      return $this->endDateTimeStamp;
+        return $this->endDateTimeStamp;
     }
 
     /**
@@ -132,8 +131,7 @@ class GetPayerFees
      */
     public function setEndDateTimeStamp($endDateTimeStamp)
     {
-      $this->endDateTimeStamp = $endDateTimeStamp;
-      return $this;
+        $this->endDateTimeStamp = $endDateTimeStamp;
+        return $this;
     }
-
 }

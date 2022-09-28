@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class PayeePaymentMethodResponse
 {
-
     /**
      * @var TipaltiResponse $PayeePaymentMethodResult
      */
@@ -15,7 +14,7 @@ class PayeePaymentMethodResponse
      */
     public function __construct($PayeePaymentMethodResult)
     {
-      $this->PayeePaymentMethodResult = $PayeePaymentMethodResult;
+        $this->PayeePaymentMethodResult = $PayeePaymentMethodResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class PayeePaymentMethodResponse
      */
     public function getPayeePaymentMethodResult()
     {
-      return $this->PayeePaymentMethodResult;
+        return $this->PayeePaymentMethodResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class PayeePaymentMethodResponse
      */
     public function setPayeePaymentMethodResult($PayeePaymentMethodResult)
     {
-      $this->PayeePaymentMethodResult = $PayeePaymentMethodResult;
-      return $this;
+        $this->PayeePaymentMethodResult = $PayeePaymentMethodResult;
+        return $this;
     }
-
 }

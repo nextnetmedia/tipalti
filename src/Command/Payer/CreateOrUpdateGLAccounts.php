@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfUpdateGLAccountRequest;
 
 class CreateOrUpdateGLAccounts
 {
-
     /**
      * @var string $payerName
      */
@@ -41,11 +40,11 @@ class CreateOrUpdateGLAccounts
      */
     public function __construct($payerName, $timestamp, $key, $skipNulls, $glAccounts)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->skipNulls = $skipNulls;
-      $this->glAccounts = $glAccounts;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->skipNulls = $skipNulls;
+        $this->glAccounts = $glAccounts;
     }
 
     /**
@@ -53,7 +52,7 @@ class CreateOrUpdateGLAccounts
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -62,8 +61,8 @@ class CreateOrUpdateGLAccounts
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class CreateOrUpdateGLAccounts
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -80,8 +79,8 @@ class CreateOrUpdateGLAccounts
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -89,7 +88,7 @@ class CreateOrUpdateGLAccounts
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -98,8 +97,8 @@ class CreateOrUpdateGLAccounts
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -107,7 +106,7 @@ class CreateOrUpdateGLAccounts
      */
     public function getSkipNulls()
     {
-      return $this->skipNulls;
+        return $this->skipNulls;
     }
 
     /**
@@ -116,8 +115,8 @@ class CreateOrUpdateGLAccounts
      */
     public function setSkipNulls($skipNulls)
     {
-      $this->skipNulls = $skipNulls;
-      return $this;
+        $this->skipNulls = $skipNulls;
+        return $this;
     }
 
     /**
@@ -125,7 +124,7 @@ class CreateOrUpdateGLAccounts
      */
     public function getGlAccounts()
     {
-      return $this->glAccounts;
+        return $this->glAccounts;
     }
 
     /**
@@ -134,8 +133,7 @@ class CreateOrUpdateGLAccounts
      */
     public function setGlAccounts($glAccounts)
     {
-      $this->glAccounts = $glAccounts;
-      return $this;
+        $this->glAccounts = $glAccounts;
+        return $this;
     }
-
 }

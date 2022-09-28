@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiFee[] $TipaltiFee
      */
     protected $TipaltiFee = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiFee()
     {
-      return $this->TipaltiFee;
+        return $this->TipaltiFee;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiFee(array $TipaltiFee = null)
     {
-      $this->TipaltiFee = $TipaltiFee;
-      return $this;
+        $this->TipaltiFee = $TipaltiFee;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiFee[$offset]);
+        return isset($this->TipaltiFee[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiFee[$offset];
+        return $this->TipaltiFee[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiFee[] = $value;
-      } else {
-        $this->TipaltiFee[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiFee[] = $value;
+        } else {
+            $this->TipaltiFee[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiFee[$offset]);
+        unset($this->TipaltiFee[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiFee);
+        return current($this->TipaltiFee);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiFee);
+        next($this->TipaltiFee);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiFee);
+        return key($this->TipaltiFee);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiFee);
+        reset($this->TipaltiFee);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiFee implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiFee);
+        return count($this->TipaltiFee);
     }
-
 }

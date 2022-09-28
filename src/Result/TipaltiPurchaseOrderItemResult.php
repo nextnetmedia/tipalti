@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Result;
 
 class TipaltiPurchaseOrderItemResult
 {
-
     /**
      * @var string $ErrorMessage
      */
@@ -25,7 +24,7 @@ class TipaltiPurchaseOrderItemResult
      */
     public function __construct($Succeeded)
     {
-      $this->Succeeded = $Succeeded;
+        $this->Succeeded = $Succeeded;
     }
 
     /**
@@ -33,7 +32,7 @@ class TipaltiPurchaseOrderItemResult
      */
     public function getErrorMessage()
     {
-      return $this->ErrorMessage;
+        return $this->ErrorMessage;
     }
 
     /**
@@ -42,8 +41,8 @@ class TipaltiPurchaseOrderItemResult
      */
     public function setErrorMessage($ErrorMessage)
     {
-      $this->ErrorMessage = $ErrorMessage;
-      return $this;
+        $this->ErrorMessage = $ErrorMessage;
+        return $this;
     }
 
     /**
@@ -51,7 +50,7 @@ class TipaltiPurchaseOrderItemResult
      */
     public function getSucceeded()
     {
-      return $this->Succeeded;
+        return $this->Succeeded;
     }
 
     /**
@@ -60,8 +59,8 @@ class TipaltiPurchaseOrderItemResult
      */
     public function setSucceeded($Succeeded)
     {
-      $this->Succeeded = $Succeeded;
-      return $this;
+        $this->Succeeded = $Succeeded;
+        return $this;
     }
 
     /**
@@ -69,7 +68,7 @@ class TipaltiPurchaseOrderItemResult
      */
     public function getPurchaseOrderNumber()
     {
-      return $this->PurchaseOrderNumber;
+        return $this->PurchaseOrderNumber;
     }
 
     /**
@@ -78,8 +77,7 @@ class TipaltiPurchaseOrderItemResult
      */
     public function setPurchaseOrderNumber($PurchaseOrderNumber)
     {
-      $this->PurchaseOrderNumber = $PurchaseOrderNumber;
-      return $this;
+        $this->PurchaseOrderNumber = $PurchaseOrderNumber;
+        return $this;
     }
-
 }

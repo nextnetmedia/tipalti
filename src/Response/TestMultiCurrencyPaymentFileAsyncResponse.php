@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\TipaltiProcessPaymentAsyncResult;
 
 class TestMultiCurrencyPaymentFileAsyncResponse
 {
-
     /**
      * @var TipaltiProcessPaymentAsyncResult $TestMultiCurrencyPaymentFileAsyncResult
      */
@@ -17,7 +16,7 @@ class TestMultiCurrencyPaymentFileAsyncResponse
      */
     public function __construct($TestMultiCurrencyPaymentFileAsyncResult)
     {
-      $this->TestMultiCurrencyPaymentFileAsyncResult = $TestMultiCurrencyPaymentFileAsyncResult;
+        $this->TestMultiCurrencyPaymentFileAsyncResult = $TestMultiCurrencyPaymentFileAsyncResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class TestMultiCurrencyPaymentFileAsyncResponse
      */
     public function getTestMultiCurrencyPaymentFileAsyncResult()
     {
-      return $this->TestMultiCurrencyPaymentFileAsyncResult;
+        return $this->TestMultiCurrencyPaymentFileAsyncResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class TestMultiCurrencyPaymentFileAsyncResponse
      */
     public function setTestMultiCurrencyPaymentFileAsyncResult($TestMultiCurrencyPaymentFileAsyncResult)
     {
-      $this->TestMultiCurrencyPaymentFileAsyncResult = $TestMultiCurrencyPaymentFileAsyncResult;
-      return $this;
+        $this->TestMultiCurrencyPaymentFileAsyncResult = $TestMultiCurrencyPaymentFileAsyncResult;
+        return $this;
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetProviderAccountsResponse
 {
-
     /**
      * @var TipaltiGetProviderAccountsResponse $GetProviderAccountsResult
      */
@@ -15,7 +14,7 @@ class GetProviderAccountsResponse
      */
     public function __construct($GetProviderAccountsResult)
     {
-      $this->GetProviderAccountsResult = $GetProviderAccountsResult;
+        $this->GetProviderAccountsResult = $GetProviderAccountsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetProviderAccountsResponse
      */
     public function getGetProviderAccountsResult()
     {
-      return $this->GetProviderAccountsResult;
+        return $this->GetProviderAccountsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetProviderAccountsResponse
      */
     public function setGetProviderAccountsResult($GetProviderAccountsResult)
     {
-      $this->GetProviderAccountsResult = $GetProviderAccountsResult;
-      return $this;
+        $this->GetProviderAccountsResult = $GetProviderAccountsResult;
+        return $this;
     }
-
 }

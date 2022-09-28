@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiApplyVendorCreditResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiApplyVendorCreditItemResponse $InvoiceResponses
      */
@@ -22,7 +21,7 @@ class TipaltiApplyVendorCreditResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -30,7 +29,7 @@ class TipaltiApplyVendorCreditResponse extends TipaltiResponse
      */
     public function getInvoiceResponses()
     {
-      return $this->InvoiceResponses;
+        return $this->InvoiceResponses;
     }
 
     /**
@@ -39,8 +38,8 @@ class TipaltiApplyVendorCreditResponse extends TipaltiResponse
      */
     public function setInvoiceResponses($InvoiceResponses)
     {
-      $this->InvoiceResponses = $InvoiceResponses;
-      return $this;
+        $this->InvoiceResponses = $InvoiceResponses;
+        return $this;
     }
 
     /**
@@ -48,7 +47,7 @@ class TipaltiApplyVendorCreditResponse extends TipaltiResponse
      */
     public function getVendorCreditResponse()
     {
-      return $this->VendorCreditResponse;
+        return $this->VendorCreditResponse;
     }
 
     /**
@@ -57,8 +56,7 @@ class TipaltiApplyVendorCreditResponse extends TipaltiResponse
      */
     public function setVendorCreditResponse($VendorCreditResponse)
     {
-      $this->VendorCreditResponse = $VendorCreditResponse;
-      return $this;
+        $this->VendorCreditResponse = $VendorCreditResponse;
+        return $this;
     }
-
 }

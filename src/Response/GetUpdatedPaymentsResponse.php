@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetUpdatedPaymentsResponse
 {
-
     /**
      * @var TipaltiGetUpdatedPaymentsResponse $GetUpdatedPaymentsResult
      */
@@ -15,7 +14,7 @@ class GetUpdatedPaymentsResponse
      */
     public function __construct($GetUpdatedPaymentsResult)
     {
-      $this->GetUpdatedPaymentsResult = $GetUpdatedPaymentsResult;
+        $this->GetUpdatedPaymentsResult = $GetUpdatedPaymentsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetUpdatedPaymentsResponse
      */
     public function getGetUpdatedPaymentsResult()
     {
-      return $this->GetUpdatedPaymentsResult;
+        return $this->GetUpdatedPaymentsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetUpdatedPaymentsResponse
      */
     public function setGetUpdatedPaymentsResult($GetUpdatedPaymentsResult)
     {
-      $this->GetUpdatedPaymentsResult = $GetUpdatedPaymentsResult;
-      return $this;
+        $this->GetUpdatedPaymentsResult = $GetUpdatedPaymentsResult;
+        return $this;
     }
-
 }

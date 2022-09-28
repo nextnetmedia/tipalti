@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiInvoiceApprover[] $TipaltiInvoiceApprover
      */
     protected $TipaltiInvoiceApprover = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      */
     public function getTipaltiInvoiceApprover()
     {
-      return $this->TipaltiInvoiceApprover;
+        return $this->TipaltiInvoiceApprover;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
      */
     public function setTipaltiInvoiceApprover(array $TipaltiInvoiceApprover = null)
     {
-      $this->TipaltiInvoiceApprover = $TipaltiInvoiceApprover;
-      return $this;
+        $this->TipaltiInvoiceApprover = $TipaltiInvoiceApprover;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiInvoiceApprover[$offset]);
+        return isset($this->TipaltiInvoiceApprover[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiInvoiceApprover[$offset];
+        return $this->TipaltiInvoiceApprover[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiInvoiceApprover[] = $value;
-      } else {
-        $this->TipaltiInvoiceApprover[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiInvoiceApprover[] = $value;
+        } else {
+            $this->TipaltiInvoiceApprover[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiInvoiceApprover[$offset]);
+        unset($this->TipaltiInvoiceApprover[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiInvoiceApprover);
+        return current($this->TipaltiInvoiceApprover);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiInvoiceApprover);
+        next($this->TipaltiInvoiceApprover);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiInvoiceApprover);
+        return key($this->TipaltiInvoiceApprover);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiInvoiceApprover);
+        reset($this->TipaltiInvoiceApprover);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiInvoiceApprover implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiInvoiceApprover);
+        return count($this->TipaltiInvoiceApprover);
     }
-
 }

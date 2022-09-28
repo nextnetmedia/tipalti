@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class LinkedPurchaseOrder
 {
-
     /**
      * @var string $PurchaseOrderNumber
      */
     protected $PurchaseOrderNumber = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class LinkedPurchaseOrder
      */
     public function getPurchaseOrderNumber()
     {
-      return $this->PurchaseOrderNumber;
+        return $this->PurchaseOrderNumber;
     }
 
     /**
@@ -30,8 +28,7 @@ class LinkedPurchaseOrder
      */
     public function setPurchaseOrderNumber($PurchaseOrderNumber)
     {
-      $this->PurchaseOrderNumber = $PurchaseOrderNumber;
-      return $this;
+        $this->PurchaseOrderNumber = $PurchaseOrderNumber;
+        return $this;
     }
-
 }

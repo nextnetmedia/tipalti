@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiExtendedPaymentOrderResponse[] $TipaltiExtendedPaymentOrderResponse
      */
     protected $TipaltiExtendedPaymentOrderResponse = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
      */
     public function getTipaltiExtendedPaymentOrderResponse()
     {
-      return $this->TipaltiExtendedPaymentOrderResponse;
+        return $this->TipaltiExtendedPaymentOrderResponse;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
      */
     public function setTipaltiExtendedPaymentOrderResponse(array $TipaltiExtendedPaymentOrderResponse = null)
     {
-      $this->TipaltiExtendedPaymentOrderResponse = $TipaltiExtendedPaymentOrderResponse;
-      return $this;
+        $this->TipaltiExtendedPaymentOrderResponse = $TipaltiExtendedPaymentOrderResponse;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiExtendedPaymentOrderResponse[$offset]);
+        return isset($this->TipaltiExtendedPaymentOrderResponse[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiExtendedPaymentOrderResponse[$offset];
+        return $this->TipaltiExtendedPaymentOrderResponse[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiExtendedPaymentOrderResponse[] = $value;
-      } else {
-        $this->TipaltiExtendedPaymentOrderResponse[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiExtendedPaymentOrderResponse[] = $value;
+        } else {
+            $this->TipaltiExtendedPaymentOrderResponse[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiExtendedPaymentOrderResponse[$offset]);
+        unset($this->TipaltiExtendedPaymentOrderResponse[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiExtendedPaymentOrderResponse);
+        return current($this->TipaltiExtendedPaymentOrderResponse);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiExtendedPaymentOrderResponse);
+        next($this->TipaltiExtendedPaymentOrderResponse);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiExtendedPaymentOrderResponse);
+        return key($this->TipaltiExtendedPaymentOrderResponse);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiExtendedPaymentOrderResponse);
+        reset($this->TipaltiExtendedPaymentOrderResponse);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiExtendedPaymentOrderResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiExtendedPaymentOrderResponse);
+        return count($this->TipaltiExtendedPaymentOrderResponse);
     }
-
 }

@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Exception;
 
 class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiInvoiceItemError[] $TipaltiInvoiceItemError
      */
     protected $TipaltiInvoiceItemError = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
      */
     public function getTipaltiInvoiceItemError()
     {
-      return $this->TipaltiInvoiceItemError;
+        return $this->TipaltiInvoiceItemError;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
      */
     public function setTipaltiInvoiceItemError(array $TipaltiInvoiceItemError = null)
     {
-      $this->TipaltiInvoiceItemError = $TipaltiInvoiceItemError;
-      return $this;
+        $this->TipaltiInvoiceItemError = $TipaltiInvoiceItemError;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiInvoiceItemError[$offset]);
+        return isset($this->TipaltiInvoiceItemError[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiInvoiceItemError[$offset];
+        return $this->TipaltiInvoiceItemError[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiInvoiceItemError[] = $value;
-      } else {
-        $this->TipaltiInvoiceItemError[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiInvoiceItemError[] = $value;
+        } else {
+            $this->TipaltiInvoiceItemError[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiInvoiceItemError[$offset]);
+        unset($this->TipaltiInvoiceItemError[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiInvoiceItemError);
+        return current($this->TipaltiInvoiceItemError);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiInvoiceItemError);
+        next($this->TipaltiInvoiceItemError);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiInvoiceItemError);
+        return key($this->TipaltiInvoiceItemError);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiInvoiceItemError);
+        reset($this->TipaltiInvoiceItemError);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiInvoiceItemError implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiInvoiceItemError);
+        return count($this->TipaltiInvoiceItemError);
     }
-
 }

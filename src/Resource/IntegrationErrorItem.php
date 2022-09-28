@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class IntegrationErrorItem
 {
-
     /**
      * @var int $CreationTimestamp
      */
@@ -40,7 +39,7 @@ class IntegrationErrorItem
      */
     public function __construct($CreationTimestamp)
     {
-      $this->CreationTimestamp = $CreationTimestamp;
+        $this->CreationTimestamp = $CreationTimestamp;
     }
 
     /**
@@ -48,7 +47,7 @@ class IntegrationErrorItem
      */
     public function getCreationTimestamp()
     {
-      return $this->CreationTimestamp;
+        return $this->CreationTimestamp;
     }
 
     /**
@@ -57,8 +56,8 @@ class IntegrationErrorItem
      */
     public function setCreationTimestamp($CreationTimestamp)
     {
-      $this->CreationTimestamp = $CreationTimestamp;
-      return $this;
+        $this->CreationTimestamp = $CreationTimestamp;
+        return $this;
     }
 
     /**
@@ -66,7 +65,7 @@ class IntegrationErrorItem
      */
     public function getSyncDirection()
     {
-      return $this->SyncDirection;
+        return $this->SyncDirection;
     }
 
     /**
@@ -75,8 +74,8 @@ class IntegrationErrorItem
      */
     public function setSyncDirection($SyncDirection)
     {
-      $this->SyncDirection = $SyncDirection;
-      return $this;
+        $this->SyncDirection = $SyncDirection;
+        return $this;
     }
 
     /**
@@ -84,7 +83,7 @@ class IntegrationErrorItem
      */
     public function getErrorSubject()
     {
-      return $this->ErrorSubject;
+        return $this->ErrorSubject;
     }
 
     /**
@@ -93,8 +92,8 @@ class IntegrationErrorItem
      */
     public function setErrorSubject($ErrorSubject)
     {
-      $this->ErrorSubject = $ErrorSubject;
-      return $this;
+        $this->ErrorSubject = $ErrorSubject;
+        return $this;
     }
 
     /**
@@ -102,7 +101,7 @@ class IntegrationErrorItem
      */
     public function getErrorDetails()
     {
-      return $this->ErrorDetails;
+        return $this->ErrorDetails;
     }
 
     /**
@@ -111,8 +110,8 @@ class IntegrationErrorItem
      */
     public function setErrorDetails($ErrorDetails)
     {
-      $this->ErrorDetails = $ErrorDetails;
-      return $this;
+        $this->ErrorDetails = $ErrorDetails;
+        return $this;
     }
 
     /**
@@ -120,7 +119,7 @@ class IntegrationErrorItem
      */
     public function getIntegrationName()
     {
-      return $this->IntegrationName;
+        return $this->IntegrationName;
     }
 
     /**
@@ -129,8 +128,8 @@ class IntegrationErrorItem
      */
     public function setIntegrationName($IntegrationName)
     {
-      $this->IntegrationName = $IntegrationName;
-      return $this;
+        $this->IntegrationName = $IntegrationName;
+        return $this;
     }
 
     /**
@@ -138,7 +137,7 @@ class IntegrationErrorItem
      */
     public function getIntegrationVersion()
     {
-      return $this->IntegrationVersion;
+        return $this->IntegrationVersion;
     }
 
     /**
@@ -147,8 +146,7 @@ class IntegrationErrorItem
      */
     public function setIntegrationVersion($IntegrationVersion)
     {
-      $this->IntegrationVersion = $IntegrationVersion;
-      return $this;
+        $this->IntegrationVersion = $IntegrationVersion;
+        return $this;
     }
-
 }

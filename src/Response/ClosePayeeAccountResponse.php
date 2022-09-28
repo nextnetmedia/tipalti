@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ClosePayeeAccountResponse
 {
-
     /**
      * @var TipaltiResponse $ClosePayeeAccountResult
      */
@@ -15,7 +14,7 @@ class ClosePayeeAccountResponse
      */
     public function __construct($ClosePayeeAccountResult)
     {
-      $this->ClosePayeeAccountResult = $ClosePayeeAccountResult;
+        $this->ClosePayeeAccountResult = $ClosePayeeAccountResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class ClosePayeeAccountResponse
      */
     public function getClosePayeeAccountResult()
     {
-      return $this->ClosePayeeAccountResult;
+        return $this->ClosePayeeAccountResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class ClosePayeeAccountResponse
      */
     public function setClosePayeeAccountResult($ClosePayeeAccountResult)
     {
-      $this->ClosePayeeAccountResult = $ClosePayeeAccountResult;
-      return $this;
+        $this->ClosePayeeAccountResult = $ClosePayeeAccountResult;
+        return $this;
     }
-
 }

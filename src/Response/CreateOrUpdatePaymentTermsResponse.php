@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\CreateOrUpdatePaymentTermsResult;
 
 class CreateOrUpdatePaymentTermsResponse
 {
-
     /**
      * @var CreateOrUpdatePaymentTermsResult $CreateOrUpdatePaymentTermsResult
      */
@@ -17,7 +16,7 @@ class CreateOrUpdatePaymentTermsResponse
      */
     public function __construct($CreateOrUpdatePaymentTermsResult)
     {
-      $this->CreateOrUpdatePaymentTermsResult = $CreateOrUpdatePaymentTermsResult;
+        $this->CreateOrUpdatePaymentTermsResult = $CreateOrUpdatePaymentTermsResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class CreateOrUpdatePaymentTermsResponse
      */
     public function getCreateOrUpdatePaymentTermsResult()
     {
-      return $this->CreateOrUpdatePaymentTermsResult;
+        return $this->CreateOrUpdatePaymentTermsResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class CreateOrUpdatePaymentTermsResponse
      */
     public function setCreateOrUpdatePaymentTermsResult($CreateOrUpdatePaymentTermsResult)
     {
-      $this->CreateOrUpdatePaymentTermsResult = $CreateOrUpdatePaymentTermsResult;
-      return $this;
+        $this->CreateOrUpdatePaymentTermsResult = $CreateOrUpdatePaymentTermsResult;
+        return $this;
     }
-
 }

@@ -32,13 +32,13 @@ use Nextnetmedia\Tipalti\Client\Nextnetmedia;
  * @method Nextnetmedia\Tipalti\Command\Payee\UpdateOrCreatePayeeInfo UpdateOrCreatePayeeInfo($idap, $skipNulls, $overridePayableCountry, $item)
  * @method Nextnetmedia\Tipalti\Command\Payee\UpdatePayeeCustomFields UpdatePayeeCustomFields($idap, $customFieldsValues)
  **/
-class PayeeClient extends TipaltiClient {
+class PayeeClient extends TipaltiClient
+{
+    public const COMMAND_NAMESPACE = "Nextnetmedia\\Tipalti\\Command\\Payee";
 
-  const COMMAND_NAMESPACE = "Nextnetmedia\\Tipalti\\Command\\Payee";
-
-  public function __construct($apikey, $payerName, $production = false) {
-    $wsdl = $production ? 'https://api.tipalti.com/v11/payeefunctions.asmx?wsdl' : 'https://api.sandbox.tipalti.com/v11/payeefunctions.asmx?wsdl';
-    parent::__construct($wsdl, self::COMMAND_NAMESPACE, $apikey, $payerName, $production);
-  }
-
+    public function __construct($apikey, $payerName, $production = false)
+    {
+        $wsdl = $production ? 'https://api.tipalti.com/v11/payeefunctions.asmx?wsdl' : 'https://api.sandbox.tipalti.com/v11/payeefunctions.asmx?wsdl';
+        parent::__construct($wsdl, self::COMMAND_NAMESPACE, $apikey, $payerName, $production);
+    }
 }

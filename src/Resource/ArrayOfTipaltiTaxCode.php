@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiTaxCode[] $TipaltiTaxCode
      */
     protected $TipaltiTaxCode = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
      */
     public function getTipaltiTaxCode()
     {
-      return $this->TipaltiTaxCode;
+        return $this->TipaltiTaxCode;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
      */
     public function setTipaltiTaxCode(array $TipaltiTaxCode = null)
     {
-      $this->TipaltiTaxCode = $TipaltiTaxCode;
-      return $this;
+        $this->TipaltiTaxCode = $TipaltiTaxCode;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiTaxCode[$offset]);
+        return isset($this->TipaltiTaxCode[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiTaxCode[$offset];
+        return $this->TipaltiTaxCode[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiTaxCode[] = $value;
-      } else {
-        $this->TipaltiTaxCode[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiTaxCode[] = $value;
+        } else {
+            $this->TipaltiTaxCode[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiTaxCode[$offset]);
+        unset($this->TipaltiTaxCode[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiTaxCode);
+        return current($this->TipaltiTaxCode);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiTaxCode);
+        next($this->TipaltiTaxCode);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiTaxCode);
+        return key($this->TipaltiTaxCode);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiTaxCode);
+        reset($this->TipaltiTaxCode);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiTaxCode implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiTaxCode);
+        return count($this->TipaltiTaxCode);
     }
-
 }

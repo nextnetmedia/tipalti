@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var LineErrorOrWarning[] $LineErrorOrWarning
      */
     protected $LineErrorOrWarning = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
      */
     public function getLineErrorOrWarning()
     {
-      return $this->LineErrorOrWarning;
+        return $this->LineErrorOrWarning;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
      */
     public function setLineErrorOrWarning(array $LineErrorOrWarning = null)
     {
-      $this->LineErrorOrWarning = $LineErrorOrWarning;
-      return $this;
+        $this->LineErrorOrWarning = $LineErrorOrWarning;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->LineErrorOrWarning[$offset]);
+        return isset($this->LineErrorOrWarning[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->LineErrorOrWarning[$offset];
+        return $this->LineErrorOrWarning[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->LineErrorOrWarning[] = $value;
-      } else {
-        $this->LineErrorOrWarning[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->LineErrorOrWarning[] = $value;
+        } else {
+            $this->LineErrorOrWarning[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->LineErrorOrWarning[$offset]);
+        unset($this->LineErrorOrWarning[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->LineErrorOrWarning);
+        return current($this->LineErrorOrWarning);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->LineErrorOrWarning);
+        next($this->LineErrorOrWarning);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->LineErrorOrWarning);
+        return key($this->LineErrorOrWarning);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->LineErrorOrWarning);
+        reset($this->LineErrorOrWarning);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfLineErrorOrWarning implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->LineErrorOrWarning);
+        return count($this->LineErrorOrWarning);
     }
-
 }

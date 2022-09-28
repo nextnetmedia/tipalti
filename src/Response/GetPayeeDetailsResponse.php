@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetPayeeDetailsResponse
 {
-
     /**
      * @var TipaltiPayeeDetailsResponse $GetPayeeDetailsResult
      */
@@ -15,7 +14,7 @@ class GetPayeeDetailsResponse
      */
     public function __construct($GetPayeeDetailsResult)
     {
-      $this->GetPayeeDetailsResult = $GetPayeeDetailsResult;
+        $this->GetPayeeDetailsResult = $GetPayeeDetailsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetPayeeDetailsResponse
      */
     public function getGetPayeeDetailsResult()
     {
-      return $this->GetPayeeDetailsResult;
+        return $this->GetPayeeDetailsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetPayeeDetailsResponse
      */
     public function setGetPayeeDetailsResult($GetPayeeDetailsResult)
     {
-      $this->GetPayeeDetailsResult = $GetPayeeDetailsResult;
-      return $this;
+        $this->GetPayeeDetailsResult = $GetPayeeDetailsResult;
+        return $this;
     }
-
 }

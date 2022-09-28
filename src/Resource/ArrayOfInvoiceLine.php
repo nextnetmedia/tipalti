@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var InvoiceLine[] $InvoiceLine
      */
     protected $InvoiceLine = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
      */
     public function getInvoiceLine()
     {
-      return $this->InvoiceLine;
+        return $this->InvoiceLine;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
      */
     public function setInvoiceLine(array $InvoiceLine = null)
     {
-      $this->InvoiceLine = $InvoiceLine;
-      return $this;
+        $this->InvoiceLine = $InvoiceLine;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->InvoiceLine[$offset]);
+        return isset($this->InvoiceLine[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->InvoiceLine[$offset];
+        return $this->InvoiceLine[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->InvoiceLine[] = $value;
-      } else {
-        $this->InvoiceLine[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->InvoiceLine[] = $value;
+        } else {
+            $this->InvoiceLine[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->InvoiceLine[$offset]);
+        unset($this->InvoiceLine[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->InvoiceLine);
+        return current($this->InvoiceLine);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->InvoiceLine);
+        next($this->InvoiceLine);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->InvoiceLine);
+        return key($this->InvoiceLine);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->InvoiceLine);
+        reset($this->InvoiceLine);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfInvoiceLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->InvoiceLine);
+        return count($this->InvoiceLine);
     }
-
 }
