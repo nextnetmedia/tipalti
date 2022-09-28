@@ -101,7 +101,8 @@ class TipaltiClient extends SoapClient
           else throw new Exception("Error: ". $finalreply->getErrorCode());
         } else {
             // Sometimes we get a response that isn't a properly-formed object; try to handle those by converting to a regular array and digging into it for an errorMessage
-            $possiblyBrokenResponse = array_shift(json_decode(json_encode($reply),true));
+            $replyArray = json_decode(json_encode($reply),true);
+            $possiblyBrokenResponse = array_shift($replyArray);
             if(!empty($possiblyBrokenResponse['errorMessage']) && strtolower(trim($possiblyBrokenResponse['errorMessage'], " .")) !== "ok") {
                 throw new Exception("Unknown Error: ".$possiblyBrokenResponse['errorMessage']);
             }
