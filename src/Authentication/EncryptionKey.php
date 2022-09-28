@@ -12,14 +12,14 @@ use ReflectionClass;
  */
 class EncryptionKey
 {
-  /**
-   * @param string $className
-   * @param array $args
-   * @param string $apiKey
-   *
-   * @return string
-   * @throws Exception
-   */
+    /**
+     * @param string $className
+     * @param array $args
+     * @param string $apiKey
+     *
+     * @return string
+     * @throws Exception
+     */
     public static function generate($className, array $args, $apiKey)
     {
         if (!isset($args['payerName'])) {
