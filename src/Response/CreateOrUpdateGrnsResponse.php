@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\CreateOrUpdateGrnResult;
 
 class CreateOrUpdateGrnsResponse
 {
-
     /**
      * @var CreateOrUpdateGrnResult $CreateOrUpdateGrnsResult
      */
@@ -17,7 +16,7 @@ class CreateOrUpdateGrnsResponse
      */
     public function __construct($CreateOrUpdateGrnsResult)
     {
-      $this->CreateOrUpdateGrnsResult = $CreateOrUpdateGrnsResult;
+        $this->CreateOrUpdateGrnsResult = $CreateOrUpdateGrnsResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class CreateOrUpdateGrnsResponse
      */
     public function getCreateOrUpdateGrnsResult()
     {
-      return $this->CreateOrUpdateGrnsResult;
+        return $this->CreateOrUpdateGrnsResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class CreateOrUpdateGrnsResponse
      */
     public function setCreateOrUpdateGrnsResult($CreateOrUpdateGrnsResult)
     {
-      $this->CreateOrUpdateGrnsResult = $CreateOrUpdateGrnsResult;
-      return $this;
+        $this->CreateOrUpdateGrnsResult = $CreateOrUpdateGrnsResult;
+        return $this;
     }
-
 }

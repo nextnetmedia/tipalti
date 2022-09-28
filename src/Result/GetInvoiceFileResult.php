@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class GetInvoiceFileResult extends TipaltiResponse
 {
-
     /**
      * @var string $FileName
      */
@@ -29,8 +28,8 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function __construct($errorCode, $FileSize)
     {
-      parent::__construct($errorCode);
-      $this->FileSize = $FileSize;
+        parent::__construct($errorCode);
+        $this->FileSize = $FileSize;
     }
 
     /**
@@ -38,7 +37,7 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function getFileName()
     {
-      return $this->FileName;
+        return $this->FileName;
     }
 
     /**
@@ -47,8 +46,8 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function setFileName($FileName)
     {
-      $this->FileName = $FileName;
-      return $this;
+        $this->FileName = $FileName;
+        return $this;
     }
 
     /**
@@ -56,7 +55,7 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function getFileSize()
     {
-      return $this->FileSize;
+        return $this->FileSize;
     }
 
     /**
@@ -65,8 +64,8 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function setFileSize($FileSize)
     {
-      $this->FileSize = $FileSize;
-      return $this;
+        $this->FileSize = $FileSize;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function getFile()
     {
-      return $this->File;
+        return $this->File;
     }
 
     /**
@@ -83,8 +82,7 @@ class GetInvoiceFileResult extends TipaltiResponse
      */
     public function setFile($File)
     {
-      $this->File = $File;
-      return $this;
+        $this->File = $File;
+        return $this;
     }
-
 }

@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var string[] $string
      */
     protected $string = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
      */
     public function getString()
     {
-      return $this->string;
+        return $this->string;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
      */
     public function setString(array $string = null)
     {
-      $this->string = $string;
-      return $this;
+        $this->string = $string;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->string[$offset]);
+        return isset($this->string[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->string[$offset];
+        return $this->string[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->string[] = $value;
-      } else {
-        $this->string[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->string[] = $value;
+        } else {
+            $this->string[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->string[$offset]);
+        unset($this->string[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->string);
+        return current($this->string);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->string);
+        next($this->string);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->string);
+        return key($this->string);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->string);
+        reset($this->string);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->string);
+        return count($this->string);
     }
-
 }

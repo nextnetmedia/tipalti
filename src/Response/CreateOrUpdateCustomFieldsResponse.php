@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class CreateOrUpdateCustomFieldsResponse
 {
-
     /**
      * @var TipaltiCustomFieldsUpdateResponse $CreateOrUpdateCustomFieldsResult
      */
@@ -15,7 +14,7 @@ class CreateOrUpdateCustomFieldsResponse
      */
     public function __construct($CreateOrUpdateCustomFieldsResult)
     {
-      $this->CreateOrUpdateCustomFieldsResult = $CreateOrUpdateCustomFieldsResult;
+        $this->CreateOrUpdateCustomFieldsResult = $CreateOrUpdateCustomFieldsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class CreateOrUpdateCustomFieldsResponse
      */
     public function getCreateOrUpdateCustomFieldsResult()
     {
-      return $this->CreateOrUpdateCustomFieldsResult;
+        return $this->CreateOrUpdateCustomFieldsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class CreateOrUpdateCustomFieldsResponse
      */
     public function setCreateOrUpdateCustomFieldsResult($CreateOrUpdateCustomFieldsResult)
     {
-      $this->CreateOrUpdateCustomFieldsResult = $CreateOrUpdateCustomFieldsResult;
-      return $this;
+        $this->CreateOrUpdateCustomFieldsResult = $CreateOrUpdateCustomFieldsResult;
+        return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class GetProcessingRequestStatus
 {
-
     /**
      * @var string $payerName
      */
@@ -38,10 +37,10 @@ class GetProcessingRequestStatus
      */
     public function __construct($payerName, $requestId, $timeStamp, $key)
     {
-      $this->payerName = $payerName;
-      $this->requestId = $requestId;
-      $this->timeStamp = $timeStamp;
-      $this->key = $key;
+        $this->payerName = $payerName;
+        $this->requestId = $requestId;
+        $this->timeStamp = $timeStamp;
+        $this->key = $key;
     }
 
     /**
@@ -49,7 +48,7 @@ class GetProcessingRequestStatus
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -58,8 +57,8 @@ class GetProcessingRequestStatus
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -67,7 +66,7 @@ class GetProcessingRequestStatus
      */
     public function getRequestId()
     {
-      return $this->requestId;
+        return $this->requestId;
     }
 
     /**
@@ -76,8 +75,8 @@ class GetProcessingRequestStatus
      */
     public function setRequestId($requestId)
     {
-      $this->requestId = $requestId;
-      return $this;
+        $this->requestId = $requestId;
+        return $this;
     }
 
     /**
@@ -85,7 +84,7 @@ class GetProcessingRequestStatus
      */
     public function getTimeStamp()
     {
-      return $this->timeStamp;
+        return $this->timeStamp;
     }
 
     /**
@@ -94,8 +93,8 @@ class GetProcessingRequestStatus
      */
     public function setTimeStamp($timeStamp)
     {
-      $this->timeStamp = $timeStamp;
-      return $this;
+        $this->timeStamp = $timeStamp;
+        return $this;
     }
 
     /**
@@ -103,7 +102,7 @@ class GetProcessingRequestStatus
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -112,8 +111,7 @@ class GetProcessingRequestStatus
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
-
 }

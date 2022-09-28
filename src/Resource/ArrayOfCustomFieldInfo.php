@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var CustomFieldInfo[] $CustomFieldInfo
      */
     protected $CustomFieldInfo = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function getCustomFieldInfo()
     {
-      return $this->CustomFieldInfo;
+        return $this->CustomFieldInfo;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function setCustomFieldInfo(array $CustomFieldInfo = null)
     {
-      $this->CustomFieldInfo = $CustomFieldInfo;
-      return $this;
+        $this->CustomFieldInfo = $CustomFieldInfo;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->CustomFieldInfo[$offset]);
+        return isset($this->CustomFieldInfo[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->CustomFieldInfo[$offset];
+        return $this->CustomFieldInfo[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->CustomFieldInfo[] = $value;
-      } else {
-        $this->CustomFieldInfo[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->CustomFieldInfo[] = $value;
+        } else {
+            $this->CustomFieldInfo[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->CustomFieldInfo[$offset]);
+        unset($this->CustomFieldInfo[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->CustomFieldInfo);
+        return current($this->CustomFieldInfo);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->CustomFieldInfo);
+        next($this->CustomFieldInfo);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->CustomFieldInfo);
+        return key($this->CustomFieldInfo);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->CustomFieldInfo);
+        reset($this->CustomFieldInfo);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfCustomFieldInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->CustomFieldInfo);
+        return count($this->CustomFieldInfo);
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 
 class PayeeStatusUpdate
 {
-
     /**
      * @var string $payerName
      */
@@ -45,12 +44,12 @@ class PayeeStatusUpdate
      */
     public function __construct($payerName, $idap, $timestamp, $key, $status, $reason)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->status = $status;
-      $this->reason = $reason;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->status = $status;
+        $this->reason = $reason;
     }
 
     /**
@@ -58,7 +57,7 @@ class PayeeStatusUpdate
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -67,8 +66,8 @@ class PayeeStatusUpdate
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -76,7 +75,7 @@ class PayeeStatusUpdate
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -85,8 +84,8 @@ class PayeeStatusUpdate
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -94,7 +93,7 @@ class PayeeStatusUpdate
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -103,8 +102,8 @@ class PayeeStatusUpdate
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -112,7 +111,7 @@ class PayeeStatusUpdate
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -121,8 +120,8 @@ class PayeeStatusUpdate
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -130,7 +129,7 @@ class PayeeStatusUpdate
      */
     public function getStatus()
     {
-      return $this->status;
+        return $this->status;
     }
 
     /**
@@ -139,8 +138,8 @@ class PayeeStatusUpdate
      */
     public function setStatus($status)
     {
-      $this->status = $status;
-      return $this;
+        $this->status = $status;
+        return $this;
     }
 
     /**
@@ -148,7 +147,7 @@ class PayeeStatusUpdate
      */
     public function getReason()
     {
-      return $this->reason;
+        return $this->reason;
     }
 
     /**
@@ -157,8 +156,7 @@ class PayeeStatusUpdate
      */
     public function setReason($reason)
     {
-      $this->reason = $reason;
-      return $this;
+        $this->reason = $reason;
+        return $this;
     }
-
 }

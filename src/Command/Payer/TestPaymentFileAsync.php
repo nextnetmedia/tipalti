@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class TestPaymentFileAsync
 {
-
     /**
      * @var string $payerName
      */
@@ -44,11 +43,11 @@ class TestPaymentFileAsync
      */
     public function __construct($payerName, $timestamp, $key, $fileName, $totalAmount)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->fileName = $fileName;
-      $this->totalAmount = $totalAmount;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->fileName = $fileName;
+        $this->totalAmount = $totalAmount;
     }
 
     /**
@@ -56,7 +55,7 @@ class TestPaymentFileAsync
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -65,8 +64,8 @@ class TestPaymentFileAsync
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class TestPaymentFileAsync
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -83,8 +82,8 @@ class TestPaymentFileAsync
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class TestPaymentFileAsync
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -101,8 +100,8 @@ class TestPaymentFileAsync
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -110,7 +109,7 @@ class TestPaymentFileAsync
      */
     public function getFileName()
     {
-      return $this->fileName;
+        return $this->fileName;
     }
 
     /**
@@ -119,8 +118,8 @@ class TestPaymentFileAsync
      */
     public function setFileName($fileName)
     {
-      $this->fileName = $fileName;
-      return $this;
+        $this->fileName = $fileName;
+        return $this;
     }
 
     /**
@@ -128,7 +127,7 @@ class TestPaymentFileAsync
      */
     public function getTotalAmount()
     {
-      return $this->totalAmount;
+        return $this->totalAmount;
     }
 
     /**
@@ -137,8 +136,7 @@ class TestPaymentFileAsync
      */
     public function setTotalAmount($totalAmount)
     {
-      $this->totalAmount = $totalAmount;
-      return $this;
+        $this->totalAmount = $totalAmount;
+        return $this;
     }
-
 }

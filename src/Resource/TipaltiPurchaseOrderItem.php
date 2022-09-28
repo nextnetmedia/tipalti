@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiPurchaseOrderItem
 {
-
     /**
      * @var string $Idap
      */
@@ -66,8 +65,8 @@ class TipaltiPurchaseOrderItem
      */
     public function __construct($Status, \DateTime $PurchaseOrderDate)
     {
-      $this->Status = $Status;
-      $this->PurchaseOrderDate = $PurchaseOrderDate->format(\DateTime::ATOM);
+        $this->Status = $Status;
+        $this->PurchaseOrderDate = $PurchaseOrderDate->format(\DateTime::ATOM);
     }
 
     /**
@@ -75,7 +74,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getIdap()
     {
-      return $this->Idap;
+        return $this->Idap;
     }
 
     /**
@@ -84,8 +83,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setIdap($Idap)
     {
-      $this->Idap = $Idap;
-      return $this;
+        $this->Idap = $Idap;
+        return $this;
     }
 
     /**
@@ -93,7 +92,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getPurchaseOrderNumber()
     {
-      return $this->PurchaseOrderNumber;
+        return $this->PurchaseOrderNumber;
     }
 
     /**
@@ -102,8 +101,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setPurchaseOrderNumber($PurchaseOrderNumber)
     {
-      $this->PurchaseOrderNumber = $PurchaseOrderNumber;
-      return $this;
+        $this->PurchaseOrderNumber = $PurchaseOrderNumber;
+        return $this;
     }
 
     /**
@@ -111,7 +110,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -120,8 +119,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -129,7 +128,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getMemo()
     {
-      return $this->Memo;
+        return $this->Memo;
     }
 
     /**
@@ -138,8 +137,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setMemo($Memo)
     {
-      $this->Memo = $Memo;
-      return $this;
+        $this->Memo = $Memo;
+        return $this;
     }
 
     /**
@@ -147,15 +146,15 @@ class TipaltiPurchaseOrderItem
      */
     public function getPurchaseOrderDate()
     {
-      if ($this->PurchaseOrderDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->PurchaseOrderDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->PurchaseOrderDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->PurchaseOrderDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -164,8 +163,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setPurchaseOrderDate(\DateTime $PurchaseOrderDate)
     {
-      $this->PurchaseOrderDate = $PurchaseOrderDate->format(\DateTime::ATOM);
-      return $this;
+        $this->PurchaseOrderDate = $PurchaseOrderDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -173,7 +172,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getPayerEntity()
     {
-      return $this->PayerEntity;
+        return $this->PayerEntity;
     }
 
     /**
@@ -182,8 +181,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setPayerEntity($PayerEntity)
     {
-      $this->PayerEntity = $PayerEntity;
-      return $this;
+        $this->PayerEntity = $PayerEntity;
+        return $this;
     }
 
     /**
@@ -191,7 +190,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -200,8 +199,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
 
     /**
@@ -209,7 +208,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getApprovers()
     {
-      return $this->Approvers;
+        return $this->Approvers;
     }
 
     /**
@@ -218,8 +217,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setApprovers($Approvers)
     {
-      $this->Approvers = $Approvers;
-      return $this;
+        $this->Approvers = $Approvers;
+        return $this;
     }
 
     /**
@@ -227,7 +226,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getCustomFields()
     {
-      return $this->CustomFields;
+        return $this->CustomFields;
     }
 
     /**
@@ -236,8 +235,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setCustomFields($CustomFields)
     {
-      $this->CustomFields = $CustomFields;
-      return $this;
+        $this->CustomFields = $CustomFields;
+        return $this;
     }
 
     /**
@@ -245,7 +244,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getPurchaseOrderLines()
     {
-      return $this->PurchaseOrderLines;
+        return $this->PurchaseOrderLines;
     }
 
     /**
@@ -254,8 +253,8 @@ class TipaltiPurchaseOrderItem
      */
     public function setPurchaseOrderLines($PurchaseOrderLines)
     {
-      $this->PurchaseOrderLines = $PurchaseOrderLines;
-      return $this;
+        $this->PurchaseOrderLines = $PurchaseOrderLines;
+        return $this;
     }
 
     /**
@@ -263,7 +262,7 @@ class TipaltiPurchaseOrderItem
      */
     public function getOldPurchaseOrderNumber()
     {
-      return $this->OldPurchaseOrderNumber;
+        return $this->OldPurchaseOrderNumber;
     }
 
     /**
@@ -272,8 +271,7 @@ class TipaltiPurchaseOrderItem
      */
     public function setOldPurchaseOrderNumber($OldPurchaseOrderNumber)
     {
-      $this->OldPurchaseOrderNumber = $OldPurchaseOrderNumber;
-      return $this;
+        $this->OldPurchaseOrderNumber = $OldPurchaseOrderNumber;
+        return $this;
     }
-
 }

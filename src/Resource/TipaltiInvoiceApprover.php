@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiInvoiceApprover
 {
-
     /**
      * @var string $Name
      */
@@ -20,10 +19,9 @@ class TipaltiInvoiceApprover
      */
     protected $Order = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -31,7 +29,7 @@ class TipaltiInvoiceApprover
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -40,8 +38,8 @@ class TipaltiInvoiceApprover
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -49,7 +47,7 @@ class TipaltiInvoiceApprover
      */
     public function getEmail()
     {
-      return $this->Email;
+        return $this->Email;
     }
 
     /**
@@ -58,8 +56,8 @@ class TipaltiInvoiceApprover
      */
     public function setEmail($Email)
     {
-      $this->Email = $Email;
-      return $this;
+        $this->Email = $Email;
+        return $this;
     }
 
     /**
@@ -67,7 +65,7 @@ class TipaltiInvoiceApprover
      */
     public function getOrder()
     {
-      return $this->Order;
+        return $this->Order;
     }
 
     /**
@@ -76,8 +74,7 @@ class TipaltiInvoiceApprover
      */
     public function setOrder($Order)
     {
-      $this->Order = $Order;
-      return $this;
+        $this->Order = $Order;
+        return $this;
     }
-
 }

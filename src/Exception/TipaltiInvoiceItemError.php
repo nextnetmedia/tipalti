@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiInvoiceItemError
 {
-
     /**
      * @var string $ErrorMessage
      */
@@ -27,7 +26,7 @@ class TipaltiInvoiceItemError
      */
     public function __construct($ErrorCode)
     {
-      $this->ErrorCode = $ErrorCode;
+        $this->ErrorCode = $ErrorCode;
     }
 
     /**
@@ -35,7 +34,7 @@ class TipaltiInvoiceItemError
      */
     public function getErrorMessage()
     {
-      return $this->ErrorMessage;
+        return $this->ErrorMessage;
     }
 
     /**
@@ -44,8 +43,8 @@ class TipaltiInvoiceItemError
      */
     public function setErrorMessage($ErrorMessage)
     {
-      $this->ErrorMessage = $ErrorMessage;
-      return $this;
+        $this->ErrorMessage = $ErrorMessage;
+        return $this;
     }
 
     /**
@@ -53,7 +52,7 @@ class TipaltiInvoiceItemError
      */
     public function getErrorCode()
     {
-      return $this->ErrorCode;
+        return $this->ErrorCode;
     }
 
     /**
@@ -62,8 +61,8 @@ class TipaltiInvoiceItemError
      */
     public function setErrorCode($ErrorCode)
     {
-      $this->ErrorCode = $ErrorCode;
-      return $this;
+        $this->ErrorCode = $ErrorCode;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class TipaltiInvoiceItemError
      */
     public function getInvoiceRefCode()
     {
-      return $this->InvoiceRefCode;
+        return $this->InvoiceRefCode;
     }
 
     /**
@@ -80,8 +79,7 @@ class TipaltiInvoiceItemError
      */
     public function setInvoiceRefCode($InvoiceRefCode)
     {
-      $this->InvoiceRefCode = $InvoiceRefCode;
-      return $this;
+        $this->InvoiceRefCode = $InvoiceRefCode;
+        return $this;
     }
-
 }

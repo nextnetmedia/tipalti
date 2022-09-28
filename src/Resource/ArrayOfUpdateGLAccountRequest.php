@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var UpdateGLAccountRequest[] $UpdateGLAccountRequest
      */
     protected $UpdateGLAccountRequest = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
      */
     public function getUpdateGLAccountRequest()
     {
-      return $this->UpdateGLAccountRequest;
+        return $this->UpdateGLAccountRequest;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
      */
     public function setUpdateGLAccountRequest(array $UpdateGLAccountRequest = null)
     {
-      $this->UpdateGLAccountRequest = $UpdateGLAccountRequest;
-      return $this;
+        $this->UpdateGLAccountRequest = $UpdateGLAccountRequest;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->UpdateGLAccountRequest[$offset]);
+        return isset($this->UpdateGLAccountRequest[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->UpdateGLAccountRequest[$offset];
+        return $this->UpdateGLAccountRequest[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->UpdateGLAccountRequest[] = $value;
-      } else {
-        $this->UpdateGLAccountRequest[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->UpdateGLAccountRequest[] = $value;
+        } else {
+            $this->UpdateGLAccountRequest[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->UpdateGLAccountRequest[$offset]);
+        unset($this->UpdateGLAccountRequest[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->UpdateGLAccountRequest);
+        return current($this->UpdateGLAccountRequest);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->UpdateGLAccountRequest);
+        next($this->UpdateGLAccountRequest);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->UpdateGLAccountRequest);
+        return key($this->UpdateGLAccountRequest);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->UpdateGLAccountRequest);
+        reset($this->UpdateGLAccountRequest);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfUpdateGLAccountRequest implements \ArrayAccess, \Iterator, \Countab
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->UpdateGLAccountRequest);
+        return count($this->UpdateGLAccountRequest);
     }
-
 }

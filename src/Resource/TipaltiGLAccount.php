@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiGLAccount
 {
-
     /**
      * @var string $Name
      */
@@ -40,10 +39,9 @@ class TipaltiGLAccount
      */
     protected $Currency = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -51,7 +49,7 @@ class TipaltiGLAccount
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -60,8 +58,8 @@ class TipaltiGLAccount
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -69,7 +67,7 @@ class TipaltiGLAccount
      */
     public function getNumber()
     {
-      return $this->Number;
+        return $this->Number;
     }
 
     /**
@@ -78,8 +76,8 @@ class TipaltiGLAccount
      */
     public function setNumber($Number)
     {
-      $this->Number = $Number;
-      return $this;
+        $this->Number = $Number;
+        return $this;
     }
 
     /**
@@ -87,7 +85,7 @@ class TipaltiGLAccount
      */
     public function getExternalId()
     {
-      return $this->ExternalId;
+        return $this->ExternalId;
     }
 
     /**
@@ -96,8 +94,8 @@ class TipaltiGLAccount
      */
     public function setExternalId($ExternalId)
     {
-      $this->ExternalId = $ExternalId;
-      return $this;
+        $this->ExternalId = $ExternalId;
+        return $this;
     }
 
     /**
@@ -105,7 +103,7 @@ class TipaltiGLAccount
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -114,8 +112,8 @@ class TipaltiGLAccount
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -123,7 +121,7 @@ class TipaltiGLAccount
      */
     public function getMiscBox1099()
     {
-      return $this->MiscBox1099;
+        return $this->MiscBox1099;
     }
 
     /**
@@ -132,8 +130,8 @@ class TipaltiGLAccount
      */
     public function setMiscBox1099($MiscBox1099)
     {
-      $this->MiscBox1099 = $MiscBox1099;
-      return $this;
+        $this->MiscBox1099 = $MiscBox1099;
+        return $this;
     }
 
     /**
@@ -141,7 +139,7 @@ class TipaltiGLAccount
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -150,8 +148,8 @@ class TipaltiGLAccount
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
     /**
@@ -159,7 +157,7 @@ class TipaltiGLAccount
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -168,8 +166,7 @@ class TipaltiGLAccount
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
-
 }

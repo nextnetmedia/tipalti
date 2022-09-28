@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class DeletePaymentTermsResult extends TipaltiResponse
 {
-
     /**
      * @var int $DeletedCount
      */
@@ -19,8 +18,8 @@ class DeletePaymentTermsResult extends TipaltiResponse
      */
     public function __construct($errorCode, $DeletedCount)
     {
-      parent::__construct($errorCode);
-      $this->DeletedCount = $DeletedCount;
+        parent::__construct($errorCode);
+        $this->DeletedCount = $DeletedCount;
     }
 
     /**
@@ -28,7 +27,7 @@ class DeletePaymentTermsResult extends TipaltiResponse
      */
     public function getDeletedCount()
     {
-      return $this->DeletedCount;
+        return $this->DeletedCount;
     }
 
     /**
@@ -37,8 +36,7 @@ class DeletePaymentTermsResult extends TipaltiResponse
      */
     public function setDeletedCount($DeletedCount)
     {
-      $this->DeletedCount = $DeletedCount;
-      return $this;
+        $this->DeletedCount = $DeletedCount;
+        return $this;
     }
-
 }

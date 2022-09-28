@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiRelatedPurchaseOrder
 {
-
     /**
      * @var string $PurchaseOrderNumber
      */
@@ -50,10 +49,9 @@ class TipaltiRelatedPurchaseOrder
      */
     protected $PoLineUnitExternalId = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -61,7 +59,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getPurchaseOrderNumber()
     {
-      return $this->PurchaseOrderNumber;
+        return $this->PurchaseOrderNumber;
     }
 
     /**
@@ -70,8 +68,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setPurchaseOrderNumber($PurchaseOrderNumber)
     {
-      $this->PurchaseOrderNumber = $PurchaseOrderNumber;
-      return $this;
+        $this->PurchaseOrderNumber = $PurchaseOrderNumber;
+        return $this;
     }
 
     /**
@@ -79,7 +77,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getItemNumber()
     {
-      return $this->ItemNumber;
+        return $this->ItemNumber;
     }
 
     /**
@@ -88,8 +86,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setItemNumber($ItemNumber)
     {
-      $this->ItemNumber = $ItemNumber;
-      return $this;
+        $this->ItemNumber = $ItemNumber;
+        return $this;
     }
 
     /**
@@ -97,7 +95,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getQuantity()
     {
-      return $this->Quantity;
+        return $this->Quantity;
     }
 
     /**
@@ -106,8 +104,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setQuantity($Quantity)
     {
-      $this->Quantity = $Quantity;
-      return $this;
+        $this->Quantity = $Quantity;
+        return $this;
     }
 
     /**
@@ -115,7 +113,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -124,8 +122,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -133,7 +131,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getExternalLineId()
     {
-      return $this->ExternalLineId;
+        return $this->ExternalLineId;
     }
 
     /**
@@ -142,8 +140,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setExternalLineId($ExternalLineId)
     {
-      $this->ExternalLineId = $ExternalLineId;
-      return $this;
+        $this->ExternalLineId = $ExternalLineId;
+        return $this;
     }
 
     /**
@@ -151,7 +149,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getItemExternalId()
     {
-      return $this->ItemExternalId;
+        return $this->ItemExternalId;
     }
 
     /**
@@ -160,8 +158,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setItemExternalId($ItemExternalId)
     {
-      $this->ItemExternalId = $ItemExternalId;
-      return $this;
+        $this->ItemExternalId = $ItemExternalId;
+        return $this;
     }
 
     /**
@@ -169,7 +167,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getPoLineGlAccountExternalId()
     {
-      return $this->PoLineGlAccountExternalId;
+        return $this->PoLineGlAccountExternalId;
     }
 
     /**
@@ -178,8 +176,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setPoLineGlAccountExternalId($PoLineGlAccountExternalId)
     {
-      $this->PoLineGlAccountExternalId = $PoLineGlAccountExternalId;
-      return $this;
+        $this->PoLineGlAccountExternalId = $PoLineGlAccountExternalId;
+        return $this;
     }
 
     /**
@@ -187,7 +185,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getPoLineUnitName()
     {
-      return $this->PoLineUnitName;
+        return $this->PoLineUnitName;
     }
 
     /**
@@ -196,8 +194,8 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setPoLineUnitName($PoLineUnitName)
     {
-      $this->PoLineUnitName = $PoLineUnitName;
-      return $this;
+        $this->PoLineUnitName = $PoLineUnitName;
+        return $this;
     }
 
     /**
@@ -205,7 +203,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function getPoLineUnitExternalId()
     {
-      return $this->PoLineUnitExternalId;
+        return $this->PoLineUnitExternalId;
     }
 
     /**
@@ -214,8 +212,7 @@ class TipaltiRelatedPurchaseOrder
      */
     public function setPoLineUnitExternalId($PoLineUnitExternalId)
     {
-      $this->PoLineUnitExternalId = $PoLineUnitExternalId;
-      return $this;
+        $this->PoLineUnitExternalId = $PoLineUnitExternalId;
+        return $this;
     }
-
 }

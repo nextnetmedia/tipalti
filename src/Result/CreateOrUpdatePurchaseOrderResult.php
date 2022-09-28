@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class CreateOrUpdatePurchaseOrderResult extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiPurchaseOrderItemResult $PurchaseOrderErrors
      */
@@ -18,7 +17,7 @@ class CreateOrUpdatePurchaseOrderResult extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -26,7 +25,7 @@ class CreateOrUpdatePurchaseOrderResult extends TipaltiResponse
      */
     public function getPurchaseOrderErrors()
     {
-      return $this->PurchaseOrderErrors;
+        return $this->PurchaseOrderErrors;
     }
 
     /**
@@ -35,8 +34,7 @@ class CreateOrUpdatePurchaseOrderResult extends TipaltiResponse
      */
     public function setPurchaseOrderErrors($PurchaseOrderErrors)
     {
-      $this->PurchaseOrderErrors = $PurchaseOrderErrors;
-      return $this;
+        $this->PurchaseOrderErrors = $PurchaseOrderErrors;
+        return $this;
     }
-
 }

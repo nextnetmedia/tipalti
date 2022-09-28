@@ -10,7 +10,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfTipaltiPaymentOrderItem;
  */
 class TestPaymentsAsync
 {
-
     /**
      * @var string $payerName
      */
@@ -45,11 +44,11 @@ class TestPaymentsAsync
      */
     public function __construct($payerName, $paymentGroupTitle, $tipaltiPaymentsOrders, $timeStamp, $key)
     {
-      $this->payerName = $payerName;
-      $this->paymentGroupTitle = $paymentGroupTitle;
-      $this->tipaltiPaymentsOrders = $tipaltiPaymentsOrders;
-      $this->timeStamp = $timeStamp;
-      $this->key = $key;
+        $this->payerName = $payerName;
+        $this->paymentGroupTitle = $paymentGroupTitle;
+        $this->tipaltiPaymentsOrders = $tipaltiPaymentsOrders;
+        $this->timeStamp = $timeStamp;
+        $this->key = $key;
     }
 
     /**
@@ -57,7 +56,7 @@ class TestPaymentsAsync
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -66,8 +65,8 @@ class TestPaymentsAsync
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -75,7 +74,7 @@ class TestPaymentsAsync
      */
     public function getPaymentGroupTitle()
     {
-      return $this->paymentGroupTitle;
+        return $this->paymentGroupTitle;
     }
 
     /**
@@ -84,8 +83,8 @@ class TestPaymentsAsync
      */
     public function setPaymentGroupTitle($paymentGroupTitle)
     {
-      $this->paymentGroupTitle = $paymentGroupTitle;
-      return $this;
+        $this->paymentGroupTitle = $paymentGroupTitle;
+        return $this;
     }
 
     /**
@@ -93,7 +92,7 @@ class TestPaymentsAsync
      */
     public function getTipaltiPaymentsOrders()
     {
-      return $this->tipaltiPaymentsOrders;
+        return $this->tipaltiPaymentsOrders;
     }
 
     /**
@@ -102,8 +101,8 @@ class TestPaymentsAsync
      */
     public function setTipaltiPaymentsOrders($tipaltiPaymentsOrders)
     {
-      $this->tipaltiPaymentsOrders = $tipaltiPaymentsOrders;
-      return $this;
+        $this->tipaltiPaymentsOrders = $tipaltiPaymentsOrders;
+        return $this;
     }
 
     /**
@@ -111,7 +110,7 @@ class TestPaymentsAsync
      */
     public function getTimeStamp()
     {
-      return $this->timeStamp;
+        return $this->timeStamp;
     }
 
     /**
@@ -120,8 +119,8 @@ class TestPaymentsAsync
      */
     public function setTimeStamp($timeStamp)
     {
-      $this->timeStamp = $timeStamp;
-      return $this;
+        $this->timeStamp = $timeStamp;
+        return $this;
     }
 
     /**
@@ -129,7 +128,7 @@ class TestPaymentsAsync
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -138,8 +137,7 @@ class TestPaymentsAsync
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
-
 }

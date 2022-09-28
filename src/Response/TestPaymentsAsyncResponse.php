@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\TipaltiProcessPaymentAsyncResult;
 
 class TestPaymentsAsyncResponse
 {
-
     /**
      * @var TipaltiProcessPaymentAsyncResult $TestPaymentsAsyncResult
      */
@@ -17,7 +16,7 @@ class TestPaymentsAsyncResponse
      */
     public function __construct($TestPaymentsAsyncResult)
     {
-      $this->TestPaymentsAsyncResult = $TestPaymentsAsyncResult;
+        $this->TestPaymentsAsyncResult = $TestPaymentsAsyncResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class TestPaymentsAsyncResponse
      */
     public function getTestPaymentsAsyncResult()
     {
-      return $this->TestPaymentsAsyncResult;
+        return $this->TestPaymentsAsyncResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class TestPaymentsAsyncResponse
      */
     public function setTestPaymentsAsyncResult($TestPaymentsAsyncResult)
     {
-      $this->TestPaymentsAsyncResult = $TestPaymentsAsyncResult;
-      return $this;
+        $this->TestPaymentsAsyncResult = $TestPaymentsAsyncResult;
+        return $this;
     }
-
 }

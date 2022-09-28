@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var AccountInfo[] $AccountInfo
      */
     protected $AccountInfo = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function getAccountInfo()
     {
-      return $this->AccountInfo;
+        return $this->AccountInfo;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
      */
     public function setAccountInfo(array $AccountInfo = null)
     {
-      $this->AccountInfo = $AccountInfo;
-      return $this;
+        $this->AccountInfo = $AccountInfo;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->AccountInfo[$offset]);
+        return isset($this->AccountInfo[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->AccountInfo[$offset];
+        return $this->AccountInfo[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->AccountInfo[] = $value;
-      } else {
-        $this->AccountInfo[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->AccountInfo[] = $value;
+        } else {
+            $this->AccountInfo[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->AccountInfo[$offset]);
+        unset($this->AccountInfo[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->AccountInfo);
+        return current($this->AccountInfo);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->AccountInfo);
+        next($this->AccountInfo);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->AccountInfo);
+        return key($this->AccountInfo);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->AccountInfo);
+        reset($this->AccountInfo);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->AccountInfo);
+        return count($this->AccountInfo);
     }
-
 }

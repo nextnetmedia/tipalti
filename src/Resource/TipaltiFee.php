@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiFee
 {
-
     /**
      * @var string $TipaltiFeeReference
      */
@@ -51,8 +50,8 @@ class TipaltiFee
      */
     public function __construct(\DateTime $FeeCollectionDate, $FeeAmount)
     {
-      $this->FeeCollectionDate = $FeeCollectionDate->format(\DateTime::ATOM);
-      $this->FeeAmount = $FeeAmount;
+        $this->FeeCollectionDate = $FeeCollectionDate->format(\DateTime::ATOM);
+        $this->FeeAmount = $FeeAmount;
     }
 
     /**
@@ -60,7 +59,7 @@ class TipaltiFee
      */
     public function getTipaltiFeeReference()
     {
-      return $this->TipaltiFeeReference;
+        return $this->TipaltiFeeReference;
     }
 
     /**
@@ -69,8 +68,8 @@ class TipaltiFee
      */
     public function setTipaltiFeeReference($TipaltiFeeReference)
     {
-      $this->TipaltiFeeReference = $TipaltiFeeReference;
-      return $this;
+        $this->TipaltiFeeReference = $TipaltiFeeReference;
+        return $this;
     }
 
     /**
@@ -78,15 +77,15 @@ class TipaltiFee
      */
     public function getFeeCollectionDate()
     {
-      if ($this->FeeCollectionDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->FeeCollectionDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->FeeCollectionDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->FeeCollectionDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -95,8 +94,8 @@ class TipaltiFee
      */
     public function setFeeCollectionDate(\DateTime $FeeCollectionDate)
     {
-      $this->FeeCollectionDate = $FeeCollectionDate->format(\DateTime::ATOM);
-      return $this;
+        $this->FeeCollectionDate = $FeeCollectionDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -104,7 +103,7 @@ class TipaltiFee
      */
     public function getFeeCurrency()
     {
-      return $this->FeeCurrency;
+        return $this->FeeCurrency;
     }
 
     /**
@@ -113,8 +112,8 @@ class TipaltiFee
      */
     public function setFeeCurrency($FeeCurrency)
     {
-      $this->FeeCurrency = $FeeCurrency;
-      return $this;
+        $this->FeeCurrency = $FeeCurrency;
+        return $this;
     }
 
     /**
@@ -122,7 +121,7 @@ class TipaltiFee
      */
     public function getFeeAmount()
     {
-      return $this->FeeAmount;
+        return $this->FeeAmount;
     }
 
     /**
@@ -131,8 +130,8 @@ class TipaltiFee
      */
     public function setFeeAmount($FeeAmount)
     {
-      $this->FeeAmount = $FeeAmount;
-      return $this;
+        $this->FeeAmount = $FeeAmount;
+        return $this;
     }
 
     /**
@@ -140,7 +139,7 @@ class TipaltiFee
      */
     public function getFeeDescription()
     {
-      return $this->FeeDescription;
+        return $this->FeeDescription;
     }
 
     /**
@@ -149,8 +148,8 @@ class TipaltiFee
      */
     public function setFeeDescription($FeeDescription)
     {
-      $this->FeeDescription = $FeeDescription;
-      return $this;
+        $this->FeeDescription = $FeeDescription;
+        return $this;
     }
 
     /**
@@ -158,7 +157,7 @@ class TipaltiFee
      */
     public function getPayerEntityName()
     {
-      return $this->PayerEntityName;
+        return $this->PayerEntityName;
     }
 
     /**
@@ -167,8 +166,8 @@ class TipaltiFee
      */
     public function setPayerEntityName($PayerEntityName)
     {
-      $this->PayerEntityName = $PayerEntityName;
-      return $this;
+        $this->PayerEntityName = $PayerEntityName;
+        return $this;
     }
 
     /**
@@ -176,7 +175,7 @@ class TipaltiFee
      */
     public function getProvider()
     {
-      return $this->Provider;
+        return $this->Provider;
     }
 
     /**
@@ -185,8 +184,8 @@ class TipaltiFee
      */
     public function setProvider($Provider)
     {
-      $this->Provider = $Provider;
-      return $this;
+        $this->Provider = $Provider;
+        return $this;
     }
 
     /**
@@ -194,7 +193,7 @@ class TipaltiFee
      */
     public function getAccountIdentifier()
     {
-      return $this->AccountIdentifier;
+        return $this->AccountIdentifier;
     }
 
     /**
@@ -203,8 +202,7 @@ class TipaltiFee
      */
     public function setAccountIdentifier($AccountIdentifier)
     {
-      $this->AccountIdentifier = $AccountIdentifier;
-      return $this;
+        $this->AccountIdentifier = $AccountIdentifier;
+        return $this;
     }
-
 }

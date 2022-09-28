@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiPaymentOrderItem[] $TipaltiPaymentOrderItem
      */
     protected $TipaltiPaymentOrderItem = [];
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
      */
     public function getTipaltiPaymentOrderItem()
     {
-      return $this->TipaltiPaymentOrderItem;
+        return $this->TipaltiPaymentOrderItem;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
      */
     public function setTipaltiPaymentOrderItem(array $TipaltiPaymentOrderItem = null)
     {
-      $this->TipaltiPaymentOrderItem = $TipaltiPaymentOrderItem;
-      return $this;
+        $this->TipaltiPaymentOrderItem = $TipaltiPaymentOrderItem;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiPaymentOrderItem[$offset]);
+        return isset($this->TipaltiPaymentOrderItem[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiPaymentOrderItem[$offset];
+        return $this->TipaltiPaymentOrderItem[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiPaymentOrderItem[] = $value;
-      } else {
-        $this->TipaltiPaymentOrderItem[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiPaymentOrderItem[] = $value;
+        } else {
+            $this->TipaltiPaymentOrderItem[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiPaymentOrderItem[$offset]);
+        unset($this->TipaltiPaymentOrderItem[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiPaymentOrderItem);
+        return current($this->TipaltiPaymentOrderItem);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiPaymentOrderItem);
+        next($this->TipaltiPaymentOrderItem);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiPaymentOrderItem);
+        return key($this->TipaltiPaymentOrderItem);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiPaymentOrderItem);
+        reset($this->TipaltiPaymentOrderItem);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiPaymentOrderItem implements \ArrayAccess, \Iterator, \Counta
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiPaymentOrderItem);
+        return count($this->TipaltiPaymentOrderItem);
     }
-
 }

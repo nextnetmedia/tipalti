@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class PayeePaymentMethod
 {
-
     /**
      * @var string $payerName
      */
@@ -38,10 +37,10 @@ class PayeePaymentMethod
      */
     public function __construct($payerName, $idap, $timestamp, $key)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
     }
 
     /**
@@ -49,7 +48,7 @@ class PayeePaymentMethod
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -58,8 +57,8 @@ class PayeePaymentMethod
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -67,7 +66,7 @@ class PayeePaymentMethod
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -76,8 +75,8 @@ class PayeePaymentMethod
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -85,7 +84,7 @@ class PayeePaymentMethod
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -94,8 +93,8 @@ class PayeePaymentMethod
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -103,7 +102,7 @@ class PayeePaymentMethod
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -112,8 +111,7 @@ class PayeePaymentMethod
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
-
 }

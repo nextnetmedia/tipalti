@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var PurchaseOrderLine[] $PurchaseOrderLine
      */
     protected $PurchaseOrderLine = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
      */
     public function getPurchaseOrderLine()
     {
-      return $this->PurchaseOrderLine;
+        return $this->PurchaseOrderLine;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
      */
     public function setPurchaseOrderLine(array $PurchaseOrderLine = null)
     {
-      $this->PurchaseOrderLine = $PurchaseOrderLine;
-      return $this;
+        $this->PurchaseOrderLine = $PurchaseOrderLine;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->PurchaseOrderLine[$offset]);
+        return isset($this->PurchaseOrderLine[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->PurchaseOrderLine[$offset];
+        return $this->PurchaseOrderLine[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->PurchaseOrderLine[] = $value;
-      } else {
-        $this->PurchaseOrderLine[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->PurchaseOrderLine[] = $value;
+        } else {
+            $this->PurchaseOrderLine[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->PurchaseOrderLine[$offset]);
+        unset($this->PurchaseOrderLine[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->PurchaseOrderLine);
+        return current($this->PurchaseOrderLine);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->PurchaseOrderLine);
+        next($this->PurchaseOrderLine);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->PurchaseOrderLine);
+        return key($this->PurchaseOrderLine);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->PurchaseOrderLine);
+        reset($this->PurchaseOrderLine);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfPurchaseOrderLine implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->PurchaseOrderLine);
+        return count($this->PurchaseOrderLine);
     }
-
 }

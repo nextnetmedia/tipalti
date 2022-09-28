@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 
 class GetPayeeInvoiceList
 {
-
     /**
      * @var string $payerName
      */
@@ -39,11 +38,11 @@ class GetPayeeInvoiceList
      */
     public function __construct($payerName, $idap, $timestamp, $key, $includePaidInvoices)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->includePaidInvoices = $includePaidInvoices;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->includePaidInvoices = $includePaidInvoices;
     }
 
     /**
@@ -51,7 +50,7 @@ class GetPayeeInvoiceList
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -60,8 +59,8 @@ class GetPayeeInvoiceList
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -69,7 +68,7 @@ class GetPayeeInvoiceList
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -78,8 +77,8 @@ class GetPayeeInvoiceList
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -87,7 +86,7 @@ class GetPayeeInvoiceList
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -96,8 +95,8 @@ class GetPayeeInvoiceList
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -105,7 +104,7 @@ class GetPayeeInvoiceList
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -114,8 +113,8 @@ class GetPayeeInvoiceList
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -123,7 +122,7 @@ class GetPayeeInvoiceList
      */
     public function getIncludePaidInvoices()
     {
-      return $this->includePaidInvoices;
+        return $this->includePaidInvoices;
     }
 
     /**
@@ -132,8 +131,7 @@ class GetPayeeInvoiceList
      */
     public function setIncludePaidInvoices($includePaidInvoices)
     {
-      $this->includePaidInvoices = $includePaidInvoices;
-      return $this;
+        $this->includePaidInvoices = $includePaidInvoices;
+        return $this;
     }
-
 }

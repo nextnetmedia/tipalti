@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var GoodsReceivedNotificationLine[] $GoodsReceivedNotificationLine
      */
     protected $GoodsReceivedNotificationLine = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
      */
     public function getGoodsReceivedNotificationLine()
     {
-      return $this->GoodsReceivedNotificationLine;
+        return $this->GoodsReceivedNotificationLine;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
      */
     public function setGoodsReceivedNotificationLine(array $GoodsReceivedNotificationLine = null)
     {
-      $this->GoodsReceivedNotificationLine = $GoodsReceivedNotificationLine;
-      return $this;
+        $this->GoodsReceivedNotificationLine = $GoodsReceivedNotificationLine;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->GoodsReceivedNotificationLine[$offset]);
+        return isset($this->GoodsReceivedNotificationLine[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->GoodsReceivedNotificationLine[$offset];
+        return $this->GoodsReceivedNotificationLine[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->GoodsReceivedNotificationLine[] = $value;
-      } else {
-        $this->GoodsReceivedNotificationLine[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->GoodsReceivedNotificationLine[] = $value;
+        } else {
+            $this->GoodsReceivedNotificationLine[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->GoodsReceivedNotificationLine[$offset]);
+        unset($this->GoodsReceivedNotificationLine[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->GoodsReceivedNotificationLine);
+        return current($this->GoodsReceivedNotificationLine);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->GoodsReceivedNotificationLine);
+        next($this->GoodsReceivedNotificationLine);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->GoodsReceivedNotificationLine);
+        return key($this->GoodsReceivedNotificationLine);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->GoodsReceivedNotificationLine);
+        reset($this->GoodsReceivedNotificationLine);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfGoodsReceivedNotificationLine implements \ArrayAccess, \Iterator, \
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->GoodsReceivedNotificationLine);
+        return count($this->GoodsReceivedNotificationLine);
     }
-
 }

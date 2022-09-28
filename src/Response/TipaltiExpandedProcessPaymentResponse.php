@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Result\ArrayOfExpandedLineResult;
 
 class TipaltiExpandedProcessPaymentResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -33,7 +32,7 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -41,7 +40,7 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -50,8 +49,8 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -59,7 +58,7 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -68,8 +67,8 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -77,7 +76,7 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function getLinesResults()
     {
-      return $this->linesResults;
+        return $this->linesResults;
     }
 
     /**
@@ -86,8 +85,8 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function setLinesResults($linesResults)
     {
-      $this->linesResults = $linesResults;
-      return $this;
+        $this->linesResults = $linesResults;
+        return $this;
     }
 
     /**
@@ -95,7 +94,7 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function getSummary()
     {
-      return $this->summary;
+        return $this->summary;
     }
 
     /**
@@ -104,8 +103,7 @@ class TipaltiExpandedProcessPaymentResponse
      */
     public function setSummary($summary)
     {
-      $this->summary = $summary;
-      return $this;
+        $this->summary = $summary;
+        return $this;
     }
-
 }

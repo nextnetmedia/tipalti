@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiSummaryAmounts[] $TipaltiSummaryAmounts
      */
     protected $TipaltiSummaryAmounts = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      */
     public function getTipaltiSummaryAmounts()
     {
-      return $this->TipaltiSummaryAmounts;
+        return $this->TipaltiSummaryAmounts;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
      */
     public function setTipaltiSummaryAmounts(array $TipaltiSummaryAmounts = null)
     {
-      $this->TipaltiSummaryAmounts = $TipaltiSummaryAmounts;
-      return $this;
+        $this->TipaltiSummaryAmounts = $TipaltiSummaryAmounts;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiSummaryAmounts[$offset]);
+        return isset($this->TipaltiSummaryAmounts[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiSummaryAmounts[$offset];
+        return $this->TipaltiSummaryAmounts[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiSummaryAmounts[] = $value;
-      } else {
-        $this->TipaltiSummaryAmounts[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiSummaryAmounts[] = $value;
+        } else {
+            $this->TipaltiSummaryAmounts[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiSummaryAmounts[$offset]);
+        unset($this->TipaltiSummaryAmounts[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiSummaryAmounts);
+        return current($this->TipaltiSummaryAmounts);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiSummaryAmounts);
+        next($this->TipaltiSummaryAmounts);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiSummaryAmounts);
+        return key($this->TipaltiSummaryAmounts);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiSummaryAmounts);
+        reset($this->TipaltiSummaryAmounts);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiSummaryAmounts implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiSummaryAmounts);
+        return count($this->TipaltiSummaryAmounts);
     }
-
 }

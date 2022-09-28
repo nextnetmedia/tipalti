@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiPayeeDetailsResponse extends TipaltiResponse
 {
-
     /**
      * @var string $Name
      */
@@ -44,8 +43,8 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function __construct($errorCode, $PaymentMethod)
     {
-      parent::__construct($errorCode);
-      $this->PaymentMethod = $PaymentMethod;
+        parent::__construct($errorCode);
+        $this->PaymentMethod = $PaymentMethod;
     }
 
     /**
@@ -53,7 +52,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -62,8 +61,8 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function getCompanyName()
     {
-      return $this->CompanyName;
+        return $this->CompanyName;
     }
 
     /**
@@ -80,8 +79,8 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function setCompanyName($CompanyName)
     {
-      $this->CompanyName = $CompanyName;
-      return $this;
+        $this->CompanyName = $CompanyName;
+        return $this;
     }
 
     /**
@@ -89,7 +88,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function getAlias()
     {
-      return $this->Alias;
+        return $this->Alias;
     }
 
     /**
@@ -98,8 +97,8 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function setAlias($Alias)
     {
-      $this->Alias = $Alias;
-      return $this;
+        $this->Alias = $Alias;
+        return $this;
     }
 
     /**
@@ -107,7 +106,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function getAddress()
     {
-      return $this->Address;
+        return $this->Address;
     }
 
     /**
@@ -116,8 +115,8 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function setAddress($Address)
     {
-      $this->Address = $Address;
-      return $this;
+        $this->Address = $Address;
+        return $this;
     }
 
     /**
@@ -125,7 +124,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function getPaymentMethod()
     {
-      return $this->PaymentMethod;
+        return $this->PaymentMethod;
     }
 
     /**
@@ -134,8 +133,8 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function setPaymentMethod($PaymentMethod)
     {
-      $this->PaymentMethod = $PaymentMethod;
-      return $this;
+        $this->PaymentMethod = $PaymentMethod;
+        return $this;
     }
 
     /**
@@ -143,7 +142,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function getEmail()
     {
-      return $this->Email;
+        return $this->Email;
     }
 
     /**
@@ -152,8 +151,7 @@ class TipaltiPayeeDetailsResponse extends TipaltiResponse
      */
     public function setEmail($Email)
     {
-      $this->Email = $Email;
-      return $this;
+        $this->Email = $Email;
+        return $this;
     }
-
 }

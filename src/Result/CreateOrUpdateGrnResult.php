@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class CreateOrUpdateGrnResult extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiGrnItemResult $GrnErrors
      */
@@ -18,7 +17,7 @@ class CreateOrUpdateGrnResult extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -26,7 +25,7 @@ class CreateOrUpdateGrnResult extends TipaltiResponse
      */
     public function getGrnErrors()
     {
-      return $this->GrnErrors;
+        return $this->GrnErrors;
     }
 
     /**
@@ -35,8 +34,7 @@ class CreateOrUpdateGrnResult extends TipaltiResponse
      */
     public function setGrnErrors($GrnErrors)
     {
-      $this->GrnErrors = $GrnErrors;
-      return $this;
+        $this->GrnErrors = $GrnErrors;
+        return $this;
     }
-
 }

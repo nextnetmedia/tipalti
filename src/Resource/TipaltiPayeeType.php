@@ -4,9 +4,7 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiPayeeType
 {
-    const __default = 'Individual';
-    const Individual = 'Individual';
-    const Company = 'Company';
-
-
+    public const __default = 'Individual';
+    public const Individual = 'Individual';
+    public const Company = 'Company';
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class PayerEntityInfo
 {
-
     /**
      * @var string $EntityName
      */
@@ -35,7 +34,7 @@ class PayerEntityInfo
      */
     public function __construct($IsDefault)
     {
-      $this->IsDefault = $IsDefault;
+        $this->IsDefault = $IsDefault;
     }
 
     /**
@@ -43,7 +42,7 @@ class PayerEntityInfo
      */
     public function getEntityName()
     {
-      return $this->EntityName;
+        return $this->EntityName;
     }
 
     /**
@@ -52,8 +51,8 @@ class PayerEntityInfo
      */
     public function setEntityName($EntityName)
     {
-      $this->EntityName = $EntityName;
-      return $this;
+        $this->EntityName = $EntityName;
+        return $this;
     }
 
     /**
@@ -61,7 +60,7 @@ class PayerEntityInfo
      */
     public function getLegalName()
     {
-      return $this->LegalName;
+        return $this->LegalName;
     }
 
     /**
@@ -70,8 +69,8 @@ class PayerEntityInfo
      */
     public function setLegalName($LegalName)
     {
-      $this->LegalName = $LegalName;
-      return $this;
+        $this->LegalName = $LegalName;
+        return $this;
     }
 
     /**
@@ -79,7 +78,7 @@ class PayerEntityInfo
      */
     public function getIsDefault()
     {
-      return $this->IsDefault;
+        return $this->IsDefault;
     }
 
     /**
@@ -88,8 +87,8 @@ class PayerEntityInfo
      */
     public function setIsDefault($IsDefault)
     {
-      $this->IsDefault = $IsDefault;
-      return $this;
+        $this->IsDefault = $IsDefault;
+        return $this;
     }
 
     /**
@@ -97,7 +96,7 @@ class PayerEntityInfo
      */
     public function getBrandName()
     {
-      return $this->BrandName;
+        return $this->BrandName;
     }
 
     /**
@@ -106,8 +105,8 @@ class PayerEntityInfo
      */
     public function setBrandName($BrandName)
     {
-      $this->BrandName = $BrandName;
-      return $this;
+        $this->BrandName = $BrandName;
+        return $this;
     }
 
     /**
@@ -115,7 +114,7 @@ class PayerEntityInfo
      */
     public function getExternalId()
     {
-      return $this->ExternalId;
+        return $this->ExternalId;
     }
 
     /**
@@ -124,8 +123,7 @@ class PayerEntityInfo
      */
     public function setExternalId($ExternalId)
     {
-      $this->ExternalId = $ExternalId;
-      return $this;
+        $this->ExternalId = $ExternalId;
+        return $this;
     }
-
 }

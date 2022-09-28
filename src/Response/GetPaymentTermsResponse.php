@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\GetPaymentTermsResult;
 
 class GetPaymentTermsResponse
 {
-
     /**
      * @var GetPaymentTermsResult $GetPaymentTermsResult
      */
@@ -17,7 +16,7 @@ class GetPaymentTermsResponse
      */
     public function __construct($GetPaymentTermsResult)
     {
-      $this->GetPaymentTermsResult = $GetPaymentTermsResult;
+        $this->GetPaymentTermsResult = $GetPaymentTermsResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetPaymentTermsResponse
      */
     public function getGetPaymentTermsResult()
     {
-      return $this->GetPaymentTermsResult;
+        return $this->GetPaymentTermsResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetPaymentTermsResponse
      */
     public function setGetPaymentTermsResult($GetPaymentTermsResult)
     {
-      $this->GetPaymentTermsResult = $GetPaymentTermsResult;
-      return $this;
+        $this->GetPaymentTermsResult = $GetPaymentTermsResult;
+        return $this;
     }
-
 }

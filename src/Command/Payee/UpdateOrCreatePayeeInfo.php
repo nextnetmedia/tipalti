@@ -10,7 +10,6 @@ use Nextnetmedia\Tipalti\Resource\PayeeDetailsItem;
  */
 class UpdateOrCreatePayeeInfo
 {
-
     /**
      * @var string $payerName
      */
@@ -57,13 +56,13 @@ class UpdateOrCreatePayeeInfo
      */
     public function __construct($payerName, $idap, $timestamp, $key, $skipNulls, $overridePayableCountry, $item)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->skipNulls = $skipNulls;
-      $this->overridePayableCountry = $overridePayableCountry;
-      $this->item = $item;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->skipNulls = $skipNulls;
+        $this->overridePayableCountry = $overridePayableCountry;
+        $this->item = $item;
     }
 
     /**
@@ -71,7 +70,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -80,8 +79,8 @@ class UpdateOrCreatePayeeInfo
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -89,7 +88,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -98,8 +97,8 @@ class UpdateOrCreatePayeeInfo
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -107,7 +106,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -116,8 +115,8 @@ class UpdateOrCreatePayeeInfo
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -125,7 +124,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -134,8 +133,8 @@ class UpdateOrCreatePayeeInfo
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -143,7 +142,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getSkipNulls()
     {
-      return $this->skipNulls;
+        return $this->skipNulls;
     }
 
     /**
@@ -152,8 +151,8 @@ class UpdateOrCreatePayeeInfo
      */
     public function setSkipNulls($skipNulls)
     {
-      $this->skipNulls = $skipNulls;
-      return $this;
+        $this->skipNulls = $skipNulls;
+        return $this;
     }
 
     /**
@@ -161,7 +160,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getOverridePayableCountry()
     {
-      return $this->overridePayableCountry;
+        return $this->overridePayableCountry;
     }
 
     /**
@@ -170,8 +169,8 @@ class UpdateOrCreatePayeeInfo
      */
     public function setOverridePayableCountry($overridePayableCountry)
     {
-      $this->overridePayableCountry = $overridePayableCountry;
-      return $this;
+        $this->overridePayableCountry = $overridePayableCountry;
+        return $this;
     }
 
     /**
@@ -179,7 +178,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function getItem()
     {
-      return $this->item;
+        return $this->item;
     }
 
     /**
@@ -188,8 +187,7 @@ class UpdateOrCreatePayeeInfo
      */
     public function setItem($item)
     {
-      $this->item = $item;
-      return $this;
+        $this->item = $item;
+        return $this;
     }
-
 }

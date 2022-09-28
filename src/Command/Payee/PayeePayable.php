@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class PayeePayable
 {
-
     /**
      * @var string $payerName
      */
@@ -44,11 +43,11 @@ class PayeePayable
      */
     public function __construct($payerName, $idap, $timestamp, $key, $amount)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->amount = $amount;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->amount = $amount;
     }
 
     /**
@@ -56,7 +55,7 @@ class PayeePayable
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -65,8 +64,8 @@ class PayeePayable
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class PayeePayable
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -83,8 +82,8 @@ class PayeePayable
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class PayeePayable
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -101,8 +100,8 @@ class PayeePayable
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -110,7 +109,7 @@ class PayeePayable
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -119,8 +118,8 @@ class PayeePayable
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -128,7 +127,7 @@ class PayeePayable
      */
     public function getAmount()
     {
-      return $this->amount;
+        return $this->amount;
     }
 
     /**
@@ -137,8 +136,7 @@ class PayeePayable
      */
     public function setAmount($amount)
     {
-      $this->amount = $amount;
-      return $this;
+        $this->amount = $amount;
+        return $this;
     }
-
 }

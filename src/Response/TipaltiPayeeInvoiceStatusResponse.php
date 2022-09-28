@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiPayeeInvoiceStatusResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -34,8 +33,8 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function __construct($errorCode, $TotalScheduledForPayment)
     {
-      $this->errorCode = $errorCode;
-      $this->TotalScheduledForPayment = $TotalScheduledForPayment;
+        $this->errorCode = $errorCode;
+        $this->TotalScheduledForPayment = $TotalScheduledForPayment;
     }
 
     /**
@@ -43,7 +42,7 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -52,8 +51,8 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -61,7 +60,7 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -70,8 +69,8 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -79,7 +78,7 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function getPayeeInvoices()
     {
-      return $this->PayeeInvoices;
+        return $this->PayeeInvoices;
     }
 
     /**
@@ -88,8 +87,8 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function setPayeeInvoices($PayeeInvoices)
     {
-      $this->PayeeInvoices = $PayeeInvoices;
-      return $this;
+        $this->PayeeInvoices = $PayeeInvoices;
+        return $this;
     }
 
     /**
@@ -97,7 +96,7 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function getTotalScheduledForPayment()
     {
-      return $this->TotalScheduledForPayment;
+        return $this->TotalScheduledForPayment;
     }
 
     /**
@@ -106,8 +105,7 @@ class TipaltiPayeeInvoiceStatusResponse
      */
     public function setTotalScheduledForPayment($TotalScheduledForPayment)
     {
-      $this->TotalScheduledForPayment = $TotalScheduledForPayment;
-      return $this;
+        $this->TotalScheduledForPayment = $TotalScheduledForPayment;
+        return $this;
     }
-
 }

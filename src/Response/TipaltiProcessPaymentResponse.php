@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiProcessPaymentResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -33,7 +32,7 @@ class TipaltiProcessPaymentResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -41,7 +40,7 @@ class TipaltiProcessPaymentResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -50,8 +49,8 @@ class TipaltiProcessPaymentResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -59,7 +58,7 @@ class TipaltiProcessPaymentResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -68,8 +67,8 @@ class TipaltiProcessPaymentResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -77,7 +76,7 @@ class TipaltiProcessPaymentResponse
      */
     public function getLineErrorsOrWarning()
     {
-      return $this->LineErrorsOrWarning;
+        return $this->LineErrorsOrWarning;
     }
 
     /**
@@ -86,8 +85,8 @@ class TipaltiProcessPaymentResponse
      */
     public function setLineErrorsOrWarning($LineErrorsOrWarning)
     {
-      $this->LineErrorsOrWarning = $LineErrorsOrWarning;
-      return $this;
+        $this->LineErrorsOrWarning = $LineErrorsOrWarning;
+        return $this;
     }
 
     /**
@@ -95,7 +94,7 @@ class TipaltiProcessPaymentResponse
      */
     public function getResultsFile()
     {
-      return $this->resultsFile;
+        return $this->resultsFile;
     }
 
     /**
@@ -104,8 +103,7 @@ class TipaltiProcessPaymentResponse
      */
     public function setResultsFile($resultsFile)
     {
-      $this->resultsFile = $resultsFile;
-      return $this;
+        $this->resultsFile = $resultsFile;
+        return $this;
     }
-
 }

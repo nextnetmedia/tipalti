@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class CustomFieldValue
 {
-
     /**
      * @var string $Value
      */
@@ -30,7 +29,7 @@ class CustomFieldValue
      */
     public function __construct($IsActive)
     {
-      $this->IsActive = $IsActive;
+        $this->IsActive = $IsActive;
     }
 
     /**
@@ -38,7 +37,7 @@ class CustomFieldValue
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -47,8 +46,8 @@ class CustomFieldValue
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
     /**
@@ -56,7 +55,7 @@ class CustomFieldValue
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -65,8 +64,8 @@ class CustomFieldValue
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class CustomFieldValue
      */
     public function getPayerEntityName()
     {
-      return $this->PayerEntityName;
+        return $this->PayerEntityName;
     }
 
     /**
@@ -83,8 +82,8 @@ class CustomFieldValue
      */
     public function setPayerEntityName($PayerEntityName)
     {
-      $this->PayerEntityName = $PayerEntityName;
-      return $this;
+        $this->PayerEntityName = $PayerEntityName;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class CustomFieldValue
      */
     public function getIsActive()
     {
-      return $this->IsActive;
+        return $this->IsActive;
     }
 
     /**
@@ -101,8 +100,7 @@ class CustomFieldValue
      */
     public function setIsActive($IsActive)
     {
-      $this->IsActive = $IsActive;
-      return $this;
+        $this->IsActive = $IsActive;
+        return $this;
     }
-
 }

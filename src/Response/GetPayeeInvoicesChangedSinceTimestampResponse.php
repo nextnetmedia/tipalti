@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetPayeeInvoicesChangedSinceTimestampResponse
 {
-
     /**
      * @var TipaltiGetPayeeInvoicesChangedSinceTimestampResponse $GetPayeeInvoicesChangedSinceTimestampResult
      */
@@ -15,7 +14,7 @@ class GetPayeeInvoicesChangedSinceTimestampResponse
      */
     public function __construct($GetPayeeInvoicesChangedSinceTimestampResult)
     {
-      $this->GetPayeeInvoicesChangedSinceTimestampResult = $GetPayeeInvoicesChangedSinceTimestampResult;
+        $this->GetPayeeInvoicesChangedSinceTimestampResult = $GetPayeeInvoicesChangedSinceTimestampResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetPayeeInvoicesChangedSinceTimestampResponse
      */
     public function getGetPayeeInvoicesChangedSinceTimestampResult()
     {
-      return $this->GetPayeeInvoicesChangedSinceTimestampResult;
+        return $this->GetPayeeInvoicesChangedSinceTimestampResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetPayeeInvoicesChangedSinceTimestampResponse
      */
     public function setGetPayeeInvoicesChangedSinceTimestampResult($GetPayeeInvoicesChangedSinceTimestampResult)
     {
-      $this->GetPayeeInvoicesChangedSinceTimestampResult = $GetPayeeInvoicesChangedSinceTimestampResult;
-      return $this;
+        $this->GetPayeeInvoicesChangedSinceTimestampResult = $GetPayeeInvoicesChangedSinceTimestampResult;
+        return $this;
     }
-
 }

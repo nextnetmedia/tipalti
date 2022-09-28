@@ -8,7 +8,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
 {
-
     /**
      * @var int $CreatedCount
      */
@@ -31,9 +30,9 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function __construct($errorCode, $CreatedCount, $UpdatedCount)
     {
-      parent::__construct($errorCode);
-      $this->CreatedCount = $CreatedCount;
-      $this->UpdatedCount = $UpdatedCount;
+        parent::__construct($errorCode);
+        $this->CreatedCount = $CreatedCount;
+        $this->UpdatedCount = $UpdatedCount;
     }
 
     /**
@@ -41,7 +40,7 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function getCreatedCount()
     {
-      return $this->CreatedCount;
+        return $this->CreatedCount;
     }
 
     /**
@@ -50,8 +49,8 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function setCreatedCount($CreatedCount)
     {
-      $this->CreatedCount = $CreatedCount;
-      return $this;
+        $this->CreatedCount = $CreatedCount;
+        return $this;
     }
 
     /**
@@ -59,7 +58,7 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function getUpdatedCount()
     {
-      return $this->UpdatedCount;
+        return $this->UpdatedCount;
     }
 
     /**
@@ -68,8 +67,8 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function setUpdatedCount($UpdatedCount)
     {
-      $this->UpdatedCount = $UpdatedCount;
-      return $this;
+        $this->UpdatedCount = $UpdatedCount;
+        return $this;
     }
 
     /**
@@ -77,7 +76,7 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function getPaymentTerms()
     {
-      return $this->PaymentTerms;
+        return $this->PaymentTerms;
     }
 
     /**
@@ -86,8 +85,7 @@ class CreateOrUpdatePaymentTermsResult extends TipaltiResponse
      */
     public function setPaymentTerms($PaymentTerms)
     {
-      $this->PaymentTerms = $PaymentTerms;
-      return $this;
+        $this->PaymentTerms = $PaymentTerms;
+        return $this;
     }
-
 }

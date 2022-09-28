@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class RelatedInvoice
 {
-
     /**
      * @var string $InvoiceRefCode
      */
@@ -20,7 +19,7 @@ class RelatedInvoice
      */
     public function __construct($AppliedAmount)
     {
-      $this->AppliedAmount = $AppliedAmount;
+        $this->AppliedAmount = $AppliedAmount;
     }
 
     /**
@@ -28,7 +27,7 @@ class RelatedInvoice
      */
     public function getInvoiceRefCode()
     {
-      return $this->InvoiceRefCode;
+        return $this->InvoiceRefCode;
     }
 
     /**
@@ -37,8 +36,8 @@ class RelatedInvoice
      */
     public function setInvoiceRefCode($InvoiceRefCode)
     {
-      $this->InvoiceRefCode = $InvoiceRefCode;
-      return $this;
+        $this->InvoiceRefCode = $InvoiceRefCode;
+        return $this;
     }
 
     /**
@@ -46,7 +45,7 @@ class RelatedInvoice
      */
     public function getAppliedAmount()
     {
-      return $this->AppliedAmount;
+        return $this->AppliedAmount;
     }
 
     /**
@@ -55,8 +54,7 @@ class RelatedInvoice
      */
     public function setAppliedAmount($AppliedAmount)
     {
-      $this->AppliedAmount = $AppliedAmount;
-      return $this;
+        $this->AppliedAmount = $AppliedAmount;
+        return $this;
     }
-
 }

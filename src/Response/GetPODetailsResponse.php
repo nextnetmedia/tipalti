@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetPODetailsResponse
 {
-
     /**
      * @var TipaltiPaymentOrderResponse $GetPODetailsResult
      */
@@ -15,7 +14,7 @@ class GetPODetailsResponse
      */
     public function __construct($GetPODetailsResult)
     {
-      $this->GetPODetailsResult = $GetPODetailsResult;
+        $this->GetPODetailsResult = $GetPODetailsResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetPODetailsResponse
      */
     public function getGetPODetailsResult()
     {
-      return $this->GetPODetailsResult;
+        return $this->GetPODetailsResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetPODetailsResponse
      */
     public function setGetPODetailsResult($GetPODetailsResult)
     {
-      $this->GetPODetailsResult = $GetPODetailsResult;
-      return $this;
+        $this->GetPODetailsResult = $GetPODetailsResult;
+        return $this;
     }
-
 }

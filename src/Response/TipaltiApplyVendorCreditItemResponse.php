@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class TipaltiApplyVendorCreditItemResponse
 {
-
     /**
      * @var string $ErrorMessage
      */
@@ -25,7 +24,7 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function __construct($Succeeded)
     {
-      $this->Succeeded = $Succeeded;
+        $this->Succeeded = $Succeeded;
     }
 
     /**
@@ -33,7 +32,7 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function getErrorMessage()
     {
-      return $this->ErrorMessage;
+        return $this->ErrorMessage;
     }
 
     /**
@@ -42,8 +41,8 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function setErrorMessage($ErrorMessage)
     {
-      $this->ErrorMessage = $ErrorMessage;
-      return $this;
+        $this->ErrorMessage = $ErrorMessage;
+        return $this;
     }
 
     /**
@@ -51,7 +50,7 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function getSucceeded()
     {
-      return $this->Succeeded;
+        return $this->Succeeded;
     }
 
     /**
@@ -60,8 +59,8 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function setSucceeded($Succeeded)
     {
-      $this->Succeeded = $Succeeded;
-      return $this;
+        $this->Succeeded = $Succeeded;
+        return $this;
     }
 
     /**
@@ -69,7 +68,7 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function getInvoiceRefCode()
     {
-      return $this->InvoiceRefCode;
+        return $this->InvoiceRefCode;
     }
 
     /**
@@ -78,8 +77,7 @@ class TipaltiApplyVendorCreditItemResponse
      */
     public function setInvoiceRefCode($InvoiceRefCode)
     {
-      $this->InvoiceRefCode = $InvoiceRefCode;
-      return $this;
+        $this->InvoiceRefCode = $InvoiceRefCode;
+        return $this;
     }
-
 }

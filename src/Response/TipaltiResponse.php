@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -42,7 +41,7 @@ class TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -50,7 +49,7 @@ class TipaltiResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -59,8 +58,8 @@ class TipaltiResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -68,7 +67,7 @@ class TipaltiResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -77,8 +76,8 @@ class TipaltiResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -86,7 +85,7 @@ class TipaltiResponse
      */
     public function getB()
     {
-      return $this->b;
+        return $this->b;
     }
 
     /**
@@ -95,8 +94,8 @@ class TipaltiResponse
      */
     public function setB($b)
     {
-      $this->b = $b;
-      return $this;
+        $this->b = $b;
+        return $this;
     }
 
     /**
@@ -104,7 +103,7 @@ class TipaltiResponse
      */
     public function getI()
     {
-      return $this->i;
+        return $this->i;
     }
 
     /**
@@ -113,8 +112,8 @@ class TipaltiResponse
      */
     public function setI($i)
     {
-      $this->i = $i;
-      return $this;
+        $this->i = $i;
+        return $this;
     }
 
     /**
@@ -122,7 +121,7 @@ class TipaltiResponse
      */
     public function getD()
     {
-      return $this->d;
+        return $this->d;
     }
 
     /**
@@ -131,8 +130,8 @@ class TipaltiResponse
      */
     public function setD($d)
     {
-      $this->d = $d;
-      return $this;
+        $this->d = $d;
+        return $this;
     }
 
     /**
@@ -140,7 +139,7 @@ class TipaltiResponse
      */
     public function getS()
     {
-      return $this->s;
+        return $this->s;
     }
 
     /**
@@ -149,8 +148,7 @@ class TipaltiResponse
      */
     public function setS($s)
     {
-      $this->s = $s;
-      return $this;
+        $this->s = $s;
+        return $this;
     }
-
 }

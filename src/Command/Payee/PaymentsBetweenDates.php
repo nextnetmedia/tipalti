@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class PaymentsBetweenDates
 {
-
     /**
      * @var string $payerName
      */
@@ -50,12 +49,12 @@ class PaymentsBetweenDates
      */
     public function __construct($payerName, $idap, $timestamp, $from, $to, $key)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->from = $from;
-      $this->to = $to;
-      $this->key = $key;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->from = $from;
+        $this->to = $to;
+        $this->key = $key;
     }
 
     /**
@@ -63,7 +62,7 @@ class PaymentsBetweenDates
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -72,8 +71,8 @@ class PaymentsBetweenDates
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -81,7 +80,7 @@ class PaymentsBetweenDates
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -90,8 +89,8 @@ class PaymentsBetweenDates
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -99,7 +98,7 @@ class PaymentsBetweenDates
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -108,8 +107,8 @@ class PaymentsBetweenDates
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -117,7 +116,7 @@ class PaymentsBetweenDates
      */
     public function getFrom()
     {
-      return $this->from;
+        return $this->from;
     }
 
     /**
@@ -126,8 +125,8 @@ class PaymentsBetweenDates
      */
     public function setFrom($from)
     {
-      $this->from = $from;
-      return $this;
+        $this->from = $from;
+        return $this;
     }
 
     /**
@@ -135,7 +134,7 @@ class PaymentsBetweenDates
      */
     public function getTo()
     {
-      return $this->to;
+        return $this->to;
     }
 
     /**
@@ -144,8 +143,8 @@ class PaymentsBetweenDates
      */
     public function setTo($to)
     {
-      $this->to = $to;
-      return $this;
+        $this->to = $to;
+        return $this;
     }
 
     /**
@@ -153,7 +152,7 @@ class PaymentsBetweenDates
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -162,8 +161,7 @@ class PaymentsBetweenDates
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
-
 }

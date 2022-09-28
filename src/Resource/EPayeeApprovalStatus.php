@@ -4,10 +4,8 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class EPayeeApprovalStatus
 {
-    const __default = 'None';
-    const None = 'None';
-    const Approved = 'Approved';
-    const Declined = 'Declined';
-
-
+    public const __default = 'None';
+    public const None = 'None';
+    public const Approved = 'Approved';
+    public const Declined = 'Declined';
 }

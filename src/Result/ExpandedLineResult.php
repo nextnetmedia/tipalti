@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Command\Payee\TipaltiLineResultStatus;
 
 class ExpandedLineResult
 {
-
     /**
      * @var TipaltiLineResultStatus $status
      */
@@ -38,8 +37,8 @@ class ExpandedLineResult
      */
     public function __construct($status, $lineErrorOrWarningType)
     {
-      $this->status = $status;
-      $this->lineErrorOrWarningType = $lineErrorOrWarningType;
+        $this->status = $status;
+        $this->lineErrorOrWarningType = $lineErrorOrWarningType;
     }
 
     /**
@@ -47,7 +46,7 @@ class ExpandedLineResult
      */
     public function getStatus()
     {
-      return $this->status;
+        return $this->status;
     }
 
     /**
@@ -56,8 +55,8 @@ class ExpandedLineResult
      */
     public function setStatus($status)
     {
-      $this->status = $status;
-      return $this;
+        $this->status = $status;
+        return $this;
     }
 
     /**
@@ -65,7 +64,7 @@ class ExpandedLineResult
      */
     public function getPaymentOrderStatus()
     {
-      return $this->paymentOrderStatus;
+        return $this->paymentOrderStatus;
     }
 
     /**
@@ -74,8 +73,8 @@ class ExpandedLineResult
      */
     public function setPaymentOrderStatus($paymentOrderStatus)
     {
-      $this->paymentOrderStatus = $paymentOrderStatus;
-      return $this;
+        $this->paymentOrderStatus = $paymentOrderStatus;
+        return $this;
     }
 
     /**
@@ -83,7 +82,7 @@ class ExpandedLineResult
      */
     public function getMessage()
     {
-      return $this->message;
+        return $this->message;
     }
 
     /**
@@ -92,8 +91,8 @@ class ExpandedLineResult
      */
     public function setMessage($message)
     {
-      $this->message = $message;
-      return $this;
+        $this->message = $message;
+        return $this;
     }
 
     /**
@@ -101,7 +100,7 @@ class ExpandedLineResult
      */
     public function getRefCode()
     {
-      return $this->refCode;
+        return $this->refCode;
     }
 
     /**
@@ -110,8 +109,8 @@ class ExpandedLineResult
      */
     public function setRefCode($refCode)
     {
-      $this->refCode = $refCode;
-      return $this;
+        $this->refCode = $refCode;
+        return $this;
     }
 
     /**
@@ -119,7 +118,7 @@ class ExpandedLineResult
      */
     public function getLineErrorOrWarningType()
     {
-      return $this->lineErrorOrWarningType;
+        return $this->lineErrorOrWarningType;
     }
 
     /**
@@ -128,8 +127,7 @@ class ExpandedLineResult
      */
     public function setLineErrorOrWarningType($lineErrorOrWarningType)
     {
-      $this->lineErrorOrWarningType = $lineErrorOrWarningType;
-      return $this;
+        $this->lineErrorOrWarningType = $lineErrorOrWarningType;
+        return $this;
     }
-
 }

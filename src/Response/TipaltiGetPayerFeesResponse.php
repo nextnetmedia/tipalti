@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiGetPayerFeesResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiFee $TipaltiFees
      */
@@ -18,7 +17,7 @@ class TipaltiGetPayerFeesResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -26,7 +25,7 @@ class TipaltiGetPayerFeesResponse extends TipaltiResponse
      */
     public function getTipaltiFees()
     {
-      return $this->TipaltiFees;
+        return $this->TipaltiFees;
     }
 
     /**
@@ -35,8 +34,7 @@ class TipaltiGetPayerFeesResponse extends TipaltiResponse
      */
     public function setTipaltiFees($TipaltiFees)
     {
-      $this->TipaltiFees = $TipaltiFees;
-      return $this;
+        $this->TipaltiFees = $TipaltiFees;
+        return $this;
     }
-
 }

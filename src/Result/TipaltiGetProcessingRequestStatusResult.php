@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiGetProcessingRequestStatusResult
 {
-
     /**
      * @var string $errorMessage
      */
@@ -29,8 +28,8 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function __construct($errorCode, $requestStatus)
     {
-      $this->errorCode = $errorCode;
-      $this->requestStatus = $requestStatus;
+        $this->errorCode = $errorCode;
+        $this->requestStatus = $requestStatus;
     }
 
     /**
@@ -38,7 +37,7 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -47,8 +46,8 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -56,7 +55,7 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -65,8 +64,8 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function getRequestStatus()
     {
-      return $this->requestStatus;
+        return $this->requestStatus;
     }
 
     /**
@@ -83,8 +82,7 @@ class TipaltiGetProcessingRequestStatusResult
      */
     public function setRequestStatus($requestStatus)
     {
-      $this->requestStatus = $requestStatus;
-      return $this;
+        $this->requestStatus = $requestStatus;
+        return $this;
     }
-
 }

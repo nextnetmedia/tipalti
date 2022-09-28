@@ -8,7 +8,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class GetPayerEntitiesResult extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfPayerEntityInfo $PayerEntities
      */
@@ -19,7 +18,7 @@ class GetPayerEntitiesResult extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -27,7 +26,7 @@ class GetPayerEntitiesResult extends TipaltiResponse
      */
     public function getPayerEntities()
     {
-      return $this->PayerEntities;
+        return $this->PayerEntities;
     }
 
     /**
@@ -36,8 +35,7 @@ class GetPayerEntitiesResult extends TipaltiResponse
      */
     public function setPayerEntities($PayerEntities)
     {
-      $this->PayerEntities = $PayerEntities;
-      return $this;
+        $this->PayerEntities = $PayerEntities;
+        return $this;
     }
-
 }

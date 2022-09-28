@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
 {
-
     /**
      * @var float $ApprovedUnpaidTotal
      */
@@ -30,10 +29,10 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function __construct($errorCode, $ApprovedUnpaidTotal, $UnapprovedTotal, $UnreleasedTotal)
     {
-      parent::__construct($errorCode);
-      $this->ApprovedUnpaidTotal = $ApprovedUnpaidTotal;
-      $this->UnapprovedTotal = $UnapprovedTotal;
-      $this->UnreleasedTotal = $UnreleasedTotal;
+        parent::__construct($errorCode);
+        $this->ApprovedUnpaidTotal = $ApprovedUnpaidTotal;
+        $this->UnapprovedTotal = $UnapprovedTotal;
+        $this->UnreleasedTotal = $UnreleasedTotal;
     }
 
     /**
@@ -41,7 +40,7 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function getApprovedUnpaidTotal()
     {
-      return $this->ApprovedUnpaidTotal;
+        return $this->ApprovedUnpaidTotal;
     }
 
     /**
@@ -50,8 +49,8 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function setApprovedUnpaidTotal($ApprovedUnpaidTotal)
     {
-      $this->ApprovedUnpaidTotal = $ApprovedUnpaidTotal;
-      return $this;
+        $this->ApprovedUnpaidTotal = $ApprovedUnpaidTotal;
+        return $this;
     }
 
     /**
@@ -59,7 +58,7 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function getUnapprovedTotal()
     {
-      return $this->UnapprovedTotal;
+        return $this->UnapprovedTotal;
     }
 
     /**
@@ -68,8 +67,8 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function setUnapprovedTotal($UnapprovedTotal)
     {
-      $this->UnapprovedTotal = $UnapprovedTotal;
-      return $this;
+        $this->UnapprovedTotal = $UnapprovedTotal;
+        return $this;
     }
 
     /**
@@ -77,7 +76,7 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function getUnreleasedTotal()
     {
-      return $this->UnreleasedTotal;
+        return $this->UnreleasedTotal;
     }
 
     /**
@@ -86,8 +85,7 @@ class TipaltiPayeePendinginvoiceTotalResponse extends TipaltiResponse
      */
     public function setUnreleasedTotal($UnreleasedTotal)
     {
-      $this->UnreleasedTotal = $UnreleasedTotal;
-      return $this;
+        $this->UnreleasedTotal = $UnreleasedTotal;
+        return $this;
     }
-
 }

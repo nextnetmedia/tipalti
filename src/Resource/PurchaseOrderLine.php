@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class PurchaseOrderLine
 {
-
     /**
      * @var string $Item
      */
@@ -110,7 +109,7 @@ class PurchaseOrderLine
      */
     public function __construct($IsClosed)
     {
-      $this->IsClosed = $IsClosed;
+        $this->IsClosed = $IsClosed;
     }
 
     /**
@@ -118,7 +117,7 @@ class PurchaseOrderLine
      */
     public function getItem()
     {
-      return $this->Item;
+        return $this->Item;
     }
 
     /**
@@ -127,8 +126,8 @@ class PurchaseOrderLine
      */
     public function setItem($Item)
     {
-      $this->Item = $Item;
-      return $this;
+        $this->Item = $Item;
+        return $this;
     }
 
     /**
@@ -136,7 +135,7 @@ class PurchaseOrderLine
      */
     public function getQuantity()
     {
-      return $this->Quantity;
+        return $this->Quantity;
     }
 
     /**
@@ -145,8 +144,8 @@ class PurchaseOrderLine
      */
     public function setQuantity($Quantity)
     {
-      $this->Quantity = $Quantity;
-      return $this;
+        $this->Quantity = $Quantity;
+        return $this;
     }
 
     /**
@@ -154,7 +153,7 @@ class PurchaseOrderLine
      */
     public function getUnits()
     {
-      return $this->Units;
+        return $this->Units;
     }
 
     /**
@@ -163,8 +162,8 @@ class PurchaseOrderLine
      */
     public function setUnits($Units)
     {
-      $this->Units = $Units;
-      return $this;
+        $this->Units = $Units;
+        return $this;
     }
 
     /**
@@ -172,7 +171,7 @@ class PurchaseOrderLine
      */
     public function getLineDescription()
     {
-      return $this->LineDescription;
+        return $this->LineDescription;
     }
 
     /**
@@ -181,8 +180,8 @@ class PurchaseOrderLine
      */
     public function setLineDescription($LineDescription)
     {
-      $this->LineDescription = $LineDescription;
-      return $this;
+        $this->LineDescription = $LineDescription;
+        return $this;
     }
 
     /**
@@ -190,7 +189,7 @@ class PurchaseOrderLine
      */
     public function getRate()
     {
-      return $this->Rate;
+        return $this->Rate;
     }
 
     /**
@@ -199,8 +198,8 @@ class PurchaseOrderLine
      */
     public function setRate($Rate)
     {
-      $this->Rate = $Rate;
-      return $this;
+        $this->Rate = $Rate;
+        return $this;
     }
 
     /**
@@ -208,7 +207,7 @@ class PurchaseOrderLine
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -217,8 +216,8 @@ class PurchaseOrderLine
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -226,7 +225,7 @@ class PurchaseOrderLine
      */
     public function getDiscountValue()
     {
-      return $this->DiscountValue;
+        return $this->DiscountValue;
     }
 
     /**
@@ -235,8 +234,8 @@ class PurchaseOrderLine
      */
     public function setDiscountValue($DiscountValue)
     {
-      $this->DiscountValue = $DiscountValue;
-      return $this;
+        $this->DiscountValue = $DiscountValue;
+        return $this;
     }
 
     /**
@@ -244,7 +243,7 @@ class PurchaseOrderLine
      */
     public function getNetValue()
     {
-      return $this->NetValue;
+        return $this->NetValue;
     }
 
     /**
@@ -253,8 +252,8 @@ class PurchaseOrderLine
      */
     public function setNetValue($NetValue)
     {
-      $this->NetValue = $NetValue;
-      return $this;
+        $this->NetValue = $NetValue;
+        return $this;
     }
 
     /**
@@ -262,7 +261,7 @@ class PurchaseOrderLine
      */
     public function getAccount()
     {
-      return $this->Account;
+        return $this->Account;
     }
 
     /**
@@ -271,8 +270,8 @@ class PurchaseOrderLine
      */
     public function setAccount($Account)
     {
-      $this->Account = $Account;
-      return $this;
+        $this->Account = $Account;
+        return $this;
     }
 
     /**
@@ -280,7 +279,7 @@ class PurchaseOrderLine
      */
     public function getTaxAmount()
     {
-      return $this->TaxAmount;
+        return $this->TaxAmount;
     }
 
     /**
@@ -289,8 +288,8 @@ class PurchaseOrderLine
      */
     public function setTaxAmount($TaxAmount)
     {
-      $this->TaxAmount = $TaxAmount;
-      return $this;
+        $this->TaxAmount = $TaxAmount;
+        return $this;
     }
 
     /**
@@ -298,7 +297,7 @@ class PurchaseOrderLine
      */
     public function getCustomFields()
     {
-      return $this->CustomFields;
+        return $this->CustomFields;
     }
 
     /**
@@ -307,8 +306,8 @@ class PurchaseOrderLine
      */
     public function setCustomFields($CustomFields)
     {
-      $this->CustomFields = $CustomFields;
-      return $this;
+        $this->CustomFields = $CustomFields;
+        return $this;
     }
 
     /**
@@ -316,7 +315,7 @@ class PurchaseOrderLine
      */
     public function getPoLineId()
     {
-      return $this->PoLineId;
+        return $this->PoLineId;
     }
 
     /**
@@ -325,8 +324,8 @@ class PurchaseOrderLine
      */
     public function setPoLineId($PoLineId)
     {
-      $this->PoLineId = $PoLineId;
-      return $this;
+        $this->PoLineId = $PoLineId;
+        return $this;
     }
 
     /**
@@ -334,7 +333,7 @@ class PurchaseOrderLine
      */
     public function getLineType()
     {
-      return $this->LineType;
+        return $this->LineType;
     }
 
     /**
@@ -343,8 +342,8 @@ class PurchaseOrderLine
      */
     public function setLineType($LineType)
     {
-      $this->LineType = $LineType;
-      return $this;
+        $this->LineType = $LineType;
+        return $this;
     }
 
     /**
@@ -352,7 +351,7 @@ class PurchaseOrderLine
      */
     public function getBilledQuantity()
     {
-      return $this->BilledQuantity;
+        return $this->BilledQuantity;
     }
 
     /**
@@ -361,8 +360,8 @@ class PurchaseOrderLine
      */
     public function setBilledQuantity($BilledQuantity)
     {
-      $this->BilledQuantity = $BilledQuantity;
-      return $this;
+        $this->BilledQuantity = $BilledQuantity;
+        return $this;
     }
 
     /**
@@ -370,7 +369,7 @@ class PurchaseOrderLine
      */
     public function getBilledAmount()
     {
-      return $this->BilledAmount;
+        return $this->BilledAmount;
     }
 
     /**
@@ -379,8 +378,8 @@ class PurchaseOrderLine
      */
     public function setBilledAmount($BilledAmount)
     {
-      $this->BilledAmount = $BilledAmount;
-      return $this;
+        $this->BilledAmount = $BilledAmount;
+        return $this;
     }
 
     /**
@@ -388,7 +387,7 @@ class PurchaseOrderLine
      */
     public function getAccountExternalId()
     {
-      return $this->AccountExternalId;
+        return $this->AccountExternalId;
     }
 
     /**
@@ -397,8 +396,8 @@ class PurchaseOrderLine
      */
     public function setAccountExternalId($AccountExternalId)
     {
-      $this->AccountExternalId = $AccountExternalId;
-      return $this;
+        $this->AccountExternalId = $AccountExternalId;
+        return $this;
     }
 
     /**
@@ -406,7 +405,7 @@ class PurchaseOrderLine
      */
     public function getItemExternalId()
     {
-      return $this->ItemExternalId;
+        return $this->ItemExternalId;
     }
 
     /**
@@ -415,8 +414,8 @@ class PurchaseOrderLine
      */
     public function setItemExternalId($ItemExternalId)
     {
-      $this->ItemExternalId = $ItemExternalId;
-      return $this;
+        $this->ItemExternalId = $ItemExternalId;
+        return $this;
     }
 
     /**
@@ -424,7 +423,7 @@ class PurchaseOrderLine
      */
     public function getIsClosed()
     {
-      return $this->IsClosed;
+        return $this->IsClosed;
     }
 
     /**
@@ -433,8 +432,8 @@ class PurchaseOrderLine
      */
     public function setIsClosed($IsClosed)
     {
-      $this->IsClosed = $IsClosed;
-      return $this;
+        $this->IsClosed = $IsClosed;
+        return $this;
     }
 
     /**
@@ -442,7 +441,7 @@ class PurchaseOrderLine
      */
     public function getTaxCodeExternalId()
     {
-      return $this->TaxCodeExternalId;
+        return $this->TaxCodeExternalId;
     }
 
     /**
@@ -451,8 +450,8 @@ class PurchaseOrderLine
      */
     public function setTaxCodeExternalId($TaxCodeExternalId)
     {
-      $this->TaxCodeExternalId = $TaxCodeExternalId;
-      return $this;
+        $this->TaxCodeExternalId = $TaxCodeExternalId;
+        return $this;
     }
 
     /**
@@ -460,7 +459,7 @@ class PurchaseOrderLine
      */
     public function getUnitsExternalId()
     {
-      return $this->UnitsExternalId;
+        return $this->UnitsExternalId;
     }
 
     /**
@@ -469,8 +468,7 @@ class PurchaseOrderLine
      */
     public function setUnitsExternalId($UnitsExternalId)
     {
-      $this->UnitsExternalId = $UnitsExternalId;
-      return $this;
+        $this->UnitsExternalId = $UnitsExternalId;
+        return $this;
     }
-
 }

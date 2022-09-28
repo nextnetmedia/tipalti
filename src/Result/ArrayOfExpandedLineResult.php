@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Result;
 
 class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var ExpandedLineResult[] $ExpandedLineResult
      */
     protected $ExpandedLineResult = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
      */
     public function getExpandedLineResult()
     {
-      return $this->ExpandedLineResult;
+        return $this->ExpandedLineResult;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
      */
     public function setExpandedLineResult(array $ExpandedLineResult = null)
     {
-      $this->ExpandedLineResult = $ExpandedLineResult;
-      return $this;
+        $this->ExpandedLineResult = $ExpandedLineResult;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->ExpandedLineResult[$offset]);
+        return isset($this->ExpandedLineResult[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->ExpandedLineResult[$offset];
+        return $this->ExpandedLineResult[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->ExpandedLineResult[] = $value;
-      } else {
-        $this->ExpandedLineResult[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->ExpandedLineResult[] = $value;
+        } else {
+            $this->ExpandedLineResult[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->ExpandedLineResult[$offset]);
+        unset($this->ExpandedLineResult[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->ExpandedLineResult);
+        return current($this->ExpandedLineResult);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->ExpandedLineResult);
+        next($this->ExpandedLineResult);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->ExpandedLineResult);
+        return key($this->ExpandedLineResult);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->ExpandedLineResult);
+        reset($this->ExpandedLineResult);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfExpandedLineResult implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->ExpandedLineResult);
+        return count($this->ExpandedLineResult);
     }
-
 }

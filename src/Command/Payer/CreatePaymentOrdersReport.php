@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payer;
 
 class CreatePaymentOrdersReport
 {
-
     /**
      * @var string $payerName
      */
@@ -39,11 +38,11 @@ class CreatePaymentOrdersReport
      */
     public function __construct($payerName, $timestamp, $key, \DateTime $startTime, \DateTime $endTime)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->startTime = $startTime->format(\DateTime::ATOM);
-      $this->endTime = $endTime->format(\DateTime::ATOM);
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->startTime = $startTime->format(\DateTime::ATOM);
+        $this->endTime = $endTime->format(\DateTime::ATOM);
     }
 
     /**
@@ -51,7 +50,7 @@ class CreatePaymentOrdersReport
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -60,8 +59,8 @@ class CreatePaymentOrdersReport
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -69,7 +68,7 @@ class CreatePaymentOrdersReport
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -78,8 +77,8 @@ class CreatePaymentOrdersReport
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -87,7 +86,7 @@ class CreatePaymentOrdersReport
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -96,8 +95,8 @@ class CreatePaymentOrdersReport
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -105,15 +104,15 @@ class CreatePaymentOrdersReport
      */
     public function getStartTime()
     {
-      if ($this->startTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->startTime);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->startTime == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->startTime);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -122,8 +121,8 @@ class CreatePaymentOrdersReport
      */
     public function setStartTime(\DateTime $startTime)
     {
-      $this->startTime = $startTime->format(\DateTime::ATOM);
-      return $this;
+        $this->startTime = $startTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -131,15 +130,15 @@ class CreatePaymentOrdersReport
      */
     public function getEndTime()
     {
-      if ($this->endTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->endTime);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->endTime == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->endTime);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -148,8 +147,7 @@ class CreatePaymentOrdersReport
      */
     public function setEndTime(\DateTime $endTime)
     {
-      $this->endTime = $endTime->format(\DateTime::ATOM);
-      return $this;
+        $this->endTime = $endTime->format(\DateTime::ATOM);
+        return $this;
     }
-
 }

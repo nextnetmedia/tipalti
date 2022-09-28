@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Command\Payee\SecurityToken;
 
 class GetDynamicKeyResponse
 {
-
     /**
      * @var SecurityToken $GetDynamicKeyResult
      */
@@ -17,7 +16,7 @@ class GetDynamicKeyResponse
      */
     public function __construct($GetDynamicKeyResult)
     {
-      $this->GetDynamicKeyResult = $GetDynamicKeyResult;
+        $this->GetDynamicKeyResult = $GetDynamicKeyResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetDynamicKeyResponse
      */
     public function getGetDynamicKeyResult()
     {
-      return $this->GetDynamicKeyResult;
+        return $this->GetDynamicKeyResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetDynamicKeyResponse
      */
     public function setGetDynamicKeyResult($GetDynamicKeyResult)
     {
-      $this->GetDynamicKeyResult = $GetDynamicKeyResult;
-      return $this;
+        $this->GetDynamicKeyResult = $GetDynamicKeyResult;
+        return $this;
     }
-
 }

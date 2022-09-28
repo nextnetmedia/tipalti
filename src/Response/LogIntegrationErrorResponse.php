@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class LogIntegrationErrorResponse
 {
-
     /**
      * @var TipaltiResponse $LogIntegrationErrorResult
      */
@@ -15,7 +14,7 @@ class LogIntegrationErrorResponse
      */
     public function __construct($LogIntegrationErrorResult)
     {
-      $this->LogIntegrationErrorResult = $LogIntegrationErrorResult;
+        $this->LogIntegrationErrorResult = $LogIntegrationErrorResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class LogIntegrationErrorResponse
      */
     public function getLogIntegrationErrorResult()
     {
-      return $this->LogIntegrationErrorResult;
+        return $this->LogIntegrationErrorResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class LogIntegrationErrorResponse
      */
     public function setLogIntegrationErrorResult($LogIntegrationErrorResult)
     {
-      $this->LogIntegrationErrorResult = $LogIntegrationErrorResult;
-      return $this;
+        $this->LogIntegrationErrorResult = $LogIntegrationErrorResult;
+        return $this;
     }
-
 }

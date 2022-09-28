@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Command\Payee\ArrayOfTipaltiAccountInfo;
 
 class TipaltiGetBalanceResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -27,7 +26,7 @@ class TipaltiGetBalanceResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -35,7 +34,7 @@ class TipaltiGetBalanceResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -44,8 +43,8 @@ class TipaltiGetBalanceResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -53,7 +52,7 @@ class TipaltiGetBalanceResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -62,8 +61,8 @@ class TipaltiGetBalanceResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class TipaltiGetBalanceResponse
      */
     public function getAccountInfos()
     {
-      return $this->AccountInfos;
+        return $this->AccountInfos;
     }
 
     /**
@@ -80,8 +79,7 @@ class TipaltiGetBalanceResponse
      */
     public function setAccountInfos($AccountInfos)
     {
-      $this->AccountInfos = $AccountInfos;
-      return $this;
+        $this->AccountInfos = $AccountInfos;
+        return $this;
     }
-
 }

@@ -45,13 +45,13 @@ use Nextnetmedia\Tipalti\Client\Nextnetmedia;
  * @method Nextnetmedia\Tipalti\Command\Payer\TestPayments TestPayments($paymentGroupTitle, $tipaltiPaymentsOrders)
  * @method Nextnetmedia\Tipalti\Command\Payer\TestPaymentsAsync TestPaymentsAsync($paymentGroupTitle, $tipaltiPaymentsOrders)
  **/
-class PayerClient extends TipaltiClient {
+class PayerClient extends TipaltiClient
+{
+    public const COMMAND_NAMESPACE = "Nextnetmedia\\Tipalti\\Command\\Payer";
 
-  const COMMAND_NAMESPACE = "Nextnetmedia\\Tipalti\\Command\\Payer";
-
-  public function __construct($apikey, $payerName, $production = false) {
-    $wsdl = $production ? 'https://api.tipalti.com/v11/payerfunctions.asmx?wsdl' : 'https://api.sandbox.tipalti.com/v11/payerfunctions.asmx?wsdl';
-    parent::__construct($wsdl, self::COMMAND_NAMESPACE, $apikey, $payerName, $production);
-  }
-
+    public function __construct($apikey, $payerName, $production = false)
+    {
+        $wsdl = $production ? 'https://api.tipalti.com/v11/payerfunctions.asmx?wsdl' : 'https://api.sandbox.tipalti.com/v11/payerfunctions.asmx?wsdl';
+        parent::__construct($wsdl, self::COMMAND_NAMESPACE, $apikey, $payerName, $production);
+    }
 }

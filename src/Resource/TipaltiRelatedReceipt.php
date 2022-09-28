@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiRelatedReceipt
 {
-
     /**
      * @var string $ReceiptNumber
      */
     protected $ReceiptNumber = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class TipaltiRelatedReceipt
      */
     public function getReceiptNumber()
     {
-      return $this->ReceiptNumber;
+        return $this->ReceiptNumber;
     }
 
     /**
@@ -30,8 +28,7 @@ class TipaltiRelatedReceipt
      */
     public function setReceiptNumber($ReceiptNumber)
     {
-      $this->ReceiptNumber = $ReceiptNumber;
-      return $this;
+        $this->ReceiptNumber = $ReceiptNumber;
+        return $this;
     }
-
 }

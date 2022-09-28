@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var RelatedInvoice[] $RelatedInvoice
      */
     protected $RelatedInvoice = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
      */
     public function getRelatedInvoice()
     {
-      return $this->RelatedInvoice;
+        return $this->RelatedInvoice;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
      */
     public function setRelatedInvoice(array $RelatedInvoice = null)
     {
-      $this->RelatedInvoice = $RelatedInvoice;
-      return $this;
+        $this->RelatedInvoice = $RelatedInvoice;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->RelatedInvoice[$offset]);
+        return isset($this->RelatedInvoice[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->RelatedInvoice[$offset];
+        return $this->RelatedInvoice[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->RelatedInvoice[] = $value;
-      } else {
-        $this->RelatedInvoice[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->RelatedInvoice[] = $value;
+        } else {
+            $this->RelatedInvoice[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->RelatedInvoice[$offset]);
+        unset($this->RelatedInvoice[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->RelatedInvoice);
+        return current($this->RelatedInvoice);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->RelatedInvoice);
+        next($this->RelatedInvoice);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->RelatedInvoice);
+        return key($this->RelatedInvoice);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->RelatedInvoice);
+        reset($this->RelatedInvoice);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfRelatedInvoice implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->RelatedInvoice);
+        return count($this->RelatedInvoice);
     }
-
 }

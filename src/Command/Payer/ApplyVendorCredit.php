@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfRelatedInvoice;
 
 class ApplyVendorCredit
 {
-
     /**
      * @var string $payerName
      */
@@ -41,11 +40,11 @@ class ApplyVendorCredit
      */
     public function __construct($payerName, $timestamp, $key, $vendorCreditRefCode, $relatedInvoices)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->vendorCreditRefCode = $vendorCreditRefCode;
-      $this->relatedInvoices = $relatedInvoices;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->vendorCreditRefCode = $vendorCreditRefCode;
+        $this->relatedInvoices = $relatedInvoices;
     }
 
     /**
@@ -53,7 +52,7 @@ class ApplyVendorCredit
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -62,8 +61,8 @@ class ApplyVendorCredit
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class ApplyVendorCredit
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -80,8 +79,8 @@ class ApplyVendorCredit
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -89,7 +88,7 @@ class ApplyVendorCredit
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -98,8 +97,8 @@ class ApplyVendorCredit
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -107,7 +106,7 @@ class ApplyVendorCredit
      */
     public function getVendorCreditRefCode()
     {
-      return $this->vendorCreditRefCode;
+        return $this->vendorCreditRefCode;
     }
 
     /**
@@ -116,8 +115,8 @@ class ApplyVendorCredit
      */
     public function setVendorCreditRefCode($vendorCreditRefCode)
     {
-      $this->vendorCreditRefCode = $vendorCreditRefCode;
-      return $this;
+        $this->vendorCreditRefCode = $vendorCreditRefCode;
+        return $this;
     }
 
     /**
@@ -125,7 +124,7 @@ class ApplyVendorCredit
      */
     public function getRelatedInvoices()
     {
-      return $this->relatedInvoices;
+        return $this->relatedInvoices;
     }
 
     /**
@@ -134,8 +133,7 @@ class ApplyVendorCredit
      */
     public function setRelatedInvoices($relatedInvoices)
     {
-      $this->relatedInvoices = $relatedInvoices;
-      return $this;
+        $this->relatedInvoices = $relatedInvoices;
+        return $this;
     }
-
 }

@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Result\CustomFieldUpdateResult;
 
 class TipaltiCustomFieldUpdateResponse
 {
-
     /**
      * @var CustomFieldUpdateResult $Result
      */
@@ -28,7 +27,7 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function __construct($Result)
     {
-      $this->Result = $Result;
+        $this->Result = $Result;
     }
 
     /**
@@ -36,7 +35,7 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function getResult()
     {
-      return $this->Result;
+        return $this->Result;
     }
 
     /**
@@ -45,8 +44,8 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function setResult($Result)
     {
-      $this->Result = $Result;
-      return $this;
+        $this->Result = $Result;
+        return $this;
     }
 
     /**
@@ -54,7 +53,7 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -63,8 +62,8 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
     /**
@@ -72,7 +71,7 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function getCustomField()
     {
-      return $this->CustomField;
+        return $this->CustomField;
     }
 
     /**
@@ -81,8 +80,7 @@ class TipaltiCustomFieldUpdateResponse
      */
     public function setCustomField($CustomField)
     {
-      $this->CustomField = $CustomField;
-      return $this;
+        $this->CustomField = $CustomField;
+        return $this;
     }
-
 }

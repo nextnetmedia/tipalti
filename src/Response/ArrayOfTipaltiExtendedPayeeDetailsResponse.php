@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiExtendedPayeeDetailsResponse[] $TipaltiExtendedPayeeDetailsResponse
      */
     protected $TipaltiExtendedPayeeDetailsResponse = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
      */
     public function getTipaltiExtendedPayeeDetailsResponse()
     {
-      return $this->TipaltiExtendedPayeeDetailsResponse;
+        return $this->TipaltiExtendedPayeeDetailsResponse;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
      */
     public function setTipaltiExtendedPayeeDetailsResponse(array $TipaltiExtendedPayeeDetailsResponse = null)
     {
-      $this->TipaltiExtendedPayeeDetailsResponse = $TipaltiExtendedPayeeDetailsResponse;
-      return $this;
+        $this->TipaltiExtendedPayeeDetailsResponse = $TipaltiExtendedPayeeDetailsResponse;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiExtendedPayeeDetailsResponse[$offset]);
+        return isset($this->TipaltiExtendedPayeeDetailsResponse[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiExtendedPayeeDetailsResponse[$offset];
+        return $this->TipaltiExtendedPayeeDetailsResponse[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiExtendedPayeeDetailsResponse[] = $value;
-      } else {
-        $this->TipaltiExtendedPayeeDetailsResponse[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiExtendedPayeeDetailsResponse[] = $value;
+        } else {
+            $this->TipaltiExtendedPayeeDetailsResponse[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiExtendedPayeeDetailsResponse[$offset]);
+        unset($this->TipaltiExtendedPayeeDetailsResponse[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiExtendedPayeeDetailsResponse);
+        return current($this->TipaltiExtendedPayeeDetailsResponse);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiExtendedPayeeDetailsResponse);
+        next($this->TipaltiExtendedPayeeDetailsResponse);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiExtendedPayeeDetailsResponse);
+        return key($this->TipaltiExtendedPayeeDetailsResponse);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiExtendedPayeeDetailsResponse);
+        reset($this->TipaltiExtendedPayeeDetailsResponse);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiExtendedPayeeDetailsResponse implements \ArrayAccess, \Itera
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiExtendedPayeeDetailsResponse);
+        return count($this->TipaltiExtendedPayeeDetailsResponse);
     }
-
 }

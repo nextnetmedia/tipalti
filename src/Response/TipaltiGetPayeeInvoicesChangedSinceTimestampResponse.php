@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiGetPayeeInvoicesChangedSinceTimestampResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfString $changedInvoicesRefCode
      */
@@ -18,7 +17,7 @@ class TipaltiGetPayeeInvoicesChangedSinceTimestampResponse extends TipaltiRespon
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -26,7 +25,7 @@ class TipaltiGetPayeeInvoicesChangedSinceTimestampResponse extends TipaltiRespon
      */
     public function getChangedInvoicesRefCode()
     {
-      return $this->changedInvoicesRefCode;
+        return $this->changedInvoicesRefCode;
     }
 
     /**
@@ -35,8 +34,7 @@ class TipaltiGetPayeeInvoicesChangedSinceTimestampResponse extends TipaltiRespon
      */
     public function setChangedInvoicesRefCode($changedInvoicesRefCode)
     {
-      $this->changedInvoicesRefCode = $changedInvoicesRefCode;
-      return $this;
+        $this->changedInvoicesRefCode = $changedInvoicesRefCode;
+        return $this;
     }
-
 }

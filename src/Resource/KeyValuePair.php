@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class KeyValuePair
 {
-
     /**
      * @var string $Key
      */
@@ -15,10 +14,9 @@ class KeyValuePair
      */
     protected $Value = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -26,7 +24,7 @@ class KeyValuePair
      */
     public function getKey()
     {
-      return $this->Key;
+        return $this->Key;
     }
 
     /**
@@ -35,8 +33,8 @@ class KeyValuePair
      */
     public function setKey($Key)
     {
-      $this->Key = $Key;
-      return $this;
+        $this->Key = $Key;
+        return $this;
     }
 
     /**
@@ -44,7 +42,7 @@ class KeyValuePair
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -53,8 +51,7 @@ class KeyValuePair
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
-
 }

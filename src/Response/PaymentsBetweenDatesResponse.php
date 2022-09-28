@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class PaymentsBetweenDatesResponse
 {
-
     /**
      * @var TipaltiPaymentQueryResponse $PaymentsBetweenDatesResult
      */
@@ -15,7 +14,7 @@ class PaymentsBetweenDatesResponse
      */
     public function __construct($PaymentsBetweenDatesResult)
     {
-      $this->PaymentsBetweenDatesResult = $PaymentsBetweenDatesResult;
+        $this->PaymentsBetweenDatesResult = $PaymentsBetweenDatesResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class PaymentsBetweenDatesResponse
      */
     public function getPaymentsBetweenDatesResult()
     {
-      return $this->PaymentsBetweenDatesResult;
+        return $this->PaymentsBetweenDatesResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class PaymentsBetweenDatesResponse
      */
     public function setPaymentsBetweenDatesResult($PaymentsBetweenDatesResult)
     {
-      $this->PaymentsBetweenDatesResult = $PaymentsBetweenDatesResult;
-      return $this;
+        $this->PaymentsBetweenDatesResult = $PaymentsBetweenDatesResult;
+        return $this;
     }
-
 }

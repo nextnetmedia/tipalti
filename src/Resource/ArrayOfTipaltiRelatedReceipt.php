@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiRelatedReceipt[] $TipaltiRelatedReceipt
      */
     protected $TipaltiRelatedReceipt = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      */
     public function getTipaltiRelatedReceipt()
     {
-      return $this->TipaltiRelatedReceipt;
+        return $this->TipaltiRelatedReceipt;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
      */
     public function setTipaltiRelatedReceipt(array $TipaltiRelatedReceipt = null)
     {
-      $this->TipaltiRelatedReceipt = $TipaltiRelatedReceipt;
-      return $this;
+        $this->TipaltiRelatedReceipt = $TipaltiRelatedReceipt;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiRelatedReceipt[$offset]);
+        return isset($this->TipaltiRelatedReceipt[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiRelatedReceipt[$offset];
+        return $this->TipaltiRelatedReceipt[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiRelatedReceipt[] = $value;
-      } else {
-        $this->TipaltiRelatedReceipt[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiRelatedReceipt[] = $value;
+        } else {
+            $this->TipaltiRelatedReceipt[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiRelatedReceipt[$offset]);
+        unset($this->TipaltiRelatedReceipt[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiRelatedReceipt);
+        return current($this->TipaltiRelatedReceipt);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiRelatedReceipt);
+        next($this->TipaltiRelatedReceipt);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiRelatedReceipt);
+        return key($this->TipaltiRelatedReceipt);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiRelatedReceipt);
+        reset($this->TipaltiRelatedReceipt);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiRelatedReceipt implements \ArrayAccess, \Iterator, \Countabl
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiRelatedReceipt);
+        return count($this->TipaltiRelatedReceipt);
     }
-
 }

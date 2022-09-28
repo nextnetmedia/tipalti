@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class CreatePaymentOrdersReportResponse
 {
-
     /**
      * @var TipaltiReportResponse $CreatePaymentOrdersReportResult
      */
@@ -15,7 +14,7 @@ class CreatePaymentOrdersReportResponse
      */
     public function __construct($CreatePaymentOrdersReportResult)
     {
-      $this->CreatePaymentOrdersReportResult = $CreatePaymentOrdersReportResult;
+        $this->CreatePaymentOrdersReportResult = $CreatePaymentOrdersReportResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class CreatePaymentOrdersReportResponse
      */
     public function getCreatePaymentOrdersReportResult()
     {
-      return $this->CreatePaymentOrdersReportResult;
+        return $this->CreatePaymentOrdersReportResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class CreatePaymentOrdersReportResponse
      */
     public function setCreatePaymentOrdersReportResult($CreatePaymentOrdersReportResult)
     {
-      $this->CreatePaymentOrdersReportResult = $CreatePaymentOrdersReportResult;
-      return $this;
+        $this->CreatePaymentOrdersReportResult = $CreatePaymentOrdersReportResult;
+        return $this;
     }
-
 }

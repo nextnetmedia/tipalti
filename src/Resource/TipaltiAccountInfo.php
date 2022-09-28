@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class TipaltiAccountInfo
 {
-
     /**
      * @var ePaymentProviderType $Provider
      */
@@ -31,8 +30,8 @@ class TipaltiAccountInfo
      */
     public function __construct($Provider, $Balance)
     {
-      $this->Provider = $Provider;
-      $this->Balance = $Balance;
+        $this->Provider = $Provider;
+        $this->Balance = $Balance;
     }
 
     /**
@@ -40,7 +39,7 @@ class TipaltiAccountInfo
      */
     public function getProvider()
     {
-      return $this->Provider;
+        return $this->Provider;
     }
 
     /**
@@ -49,8 +48,8 @@ class TipaltiAccountInfo
      */
     public function setProvider($Provider)
     {
-      $this->Provider = $Provider;
-      return $this;
+        $this->Provider = $Provider;
+        return $this;
     }
 
     /**
@@ -58,7 +57,7 @@ class TipaltiAccountInfo
      */
     public function getAccountIdentifier()
     {
-      return $this->AccountIdentifier;
+        return $this->AccountIdentifier;
     }
 
     /**
@@ -67,8 +66,8 @@ class TipaltiAccountInfo
      */
     public function setAccountIdentifier($AccountIdentifier)
     {
-      $this->AccountIdentifier = $AccountIdentifier;
-      return $this;
+        $this->AccountIdentifier = $AccountIdentifier;
+        return $this;
     }
 
     /**
@@ -76,7 +75,7 @@ class TipaltiAccountInfo
      */
     public function getBalance()
     {
-      return $this->Balance;
+        return $this->Balance;
     }
 
     /**
@@ -85,8 +84,8 @@ class TipaltiAccountInfo
      */
     public function setBalance($Balance)
     {
-      $this->Balance = $Balance;
-      return $this;
+        $this->Balance = $Balance;
+        return $this;
     }
 
     /**
@@ -94,7 +93,7 @@ class TipaltiAccountInfo
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -103,8 +102,7 @@ class TipaltiAccountInfo
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
-
 }

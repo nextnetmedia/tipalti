@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class GetPayeesChangedSinceTimestampResponse
 {
-
     /**
      * @var TipaltiChangedPayeeIdsResponse $GetPayeesChangedSinceTimestampResult
      */
@@ -15,7 +14,7 @@ class GetPayeesChangedSinceTimestampResponse
      */
     public function __construct($GetPayeesChangedSinceTimestampResult)
     {
-      $this->GetPayeesChangedSinceTimestampResult = $GetPayeesChangedSinceTimestampResult;
+        $this->GetPayeesChangedSinceTimestampResult = $GetPayeesChangedSinceTimestampResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetPayeesChangedSinceTimestampResponse
      */
     public function getGetPayeesChangedSinceTimestampResult()
     {
-      return $this->GetPayeesChangedSinceTimestampResult;
+        return $this->GetPayeesChangedSinceTimestampResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetPayeesChangedSinceTimestampResponse
      */
     public function setGetPayeesChangedSinceTimestampResult($GetPayeesChangedSinceTimestampResult)
     {
-      $this->GetPayeesChangedSinceTimestampResult = $GetPayeesChangedSinceTimestampResult;
-      return $this;
+        $this->GetPayeesChangedSinceTimestampResult = $GetPayeesChangedSinceTimestampResult;
+        return $this;
     }
-
 }

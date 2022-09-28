@@ -8,7 +8,6 @@ use Nextnetmedia\Tipalti\Result\CustomFieldUpdateResult;
 
 class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
 {
-
     /**
      * @var CustomFieldUpdateResult $Result
      */
@@ -30,8 +29,8 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function __construct($errorCode, $Result)
     {
-      parent::__construct($errorCode);
-      $this->Result = $Result;
+        parent::__construct($errorCode);
+        $this->Result = $Result;
     }
 
     /**
@@ -39,7 +38,7 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function getResult()
     {
-      return $this->Result;
+        return $this->Result;
     }
 
     /**
@@ -48,8 +47,8 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function setResult($Result)
     {
-      $this->Result = $Result;
-      return $this;
+        $this->Result = $Result;
+        return $this;
     }
 
     /**
@@ -57,7 +56,7 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -66,8 +65,8 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
     /**
@@ -75,7 +74,7 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function getCustomFieldValue()
     {
-      return $this->CustomFieldValue;
+        return $this->CustomFieldValue;
     }
 
     /**
@@ -84,8 +83,7 @@ class TipaltiCustomFieldValueUpdateResponse extends TipaltiResponse
      */
     public function setCustomFieldValue($CustomFieldValue)
     {
-      $this->CustomFieldValue = $CustomFieldValue;
-      return $this;
+        $this->CustomFieldValue = $CustomFieldValue;
+        return $this;
     }
-
 }

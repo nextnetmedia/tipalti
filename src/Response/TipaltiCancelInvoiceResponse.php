@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiCancelInvoiceResponse
 {
-
     /**
      * @var string $errorMessage
      */
@@ -22,7 +21,7 @@ class TipaltiCancelInvoiceResponse
      */
     public function __construct($errorCode)
     {
-      $this->errorCode = $errorCode;
+        $this->errorCode = $errorCode;
     }
 
     /**
@@ -30,7 +29,7 @@ class TipaltiCancelInvoiceResponse
      */
     public function getErrorMessage()
     {
-      return $this->errorMessage;
+        return $this->errorMessage;
     }
 
     /**
@@ -39,8 +38,8 @@ class TipaltiCancelInvoiceResponse
      */
     public function setErrorMessage($errorMessage)
     {
-      $this->errorMessage = $errorMessage;
-      return $this;
+        $this->errorMessage = $errorMessage;
+        return $this;
     }
 
     /**
@@ -48,7 +47,7 @@ class TipaltiCancelInvoiceResponse
      */
     public function getErrorCode()
     {
-      return $this->errorCode;
+        return $this->errorCode;
     }
 
     /**
@@ -57,8 +56,7 @@ class TipaltiCancelInvoiceResponse
      */
     public function setErrorCode($errorCode)
     {
-      $this->errorCode = $errorCode;
-      return $this;
+        $this->errorCode = $errorCode;
+        return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class CreatePayeeStatusFile
 {
-
     /**
      * @var string $payerName
      */
@@ -44,11 +43,11 @@ class CreatePayeeStatusFile
      */
     public function __construct($payerName, $timestamp, $key, $saveToFile, $changesSinceDate)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->saveToFile = $saveToFile;
-      $this->changesSinceDate = $changesSinceDate;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->saveToFile = $saveToFile;
+        $this->changesSinceDate = $changesSinceDate;
     }
 
     /**
@@ -56,7 +55,7 @@ class CreatePayeeStatusFile
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -65,8 +64,8 @@ class CreatePayeeStatusFile
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -74,7 +73,7 @@ class CreatePayeeStatusFile
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -83,8 +82,8 @@ class CreatePayeeStatusFile
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -92,7 +91,7 @@ class CreatePayeeStatusFile
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -101,8 +100,8 @@ class CreatePayeeStatusFile
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -110,7 +109,7 @@ class CreatePayeeStatusFile
      */
     public function getSaveToFile()
     {
-      return $this->saveToFile;
+        return $this->saveToFile;
     }
 
     /**
@@ -119,8 +118,8 @@ class CreatePayeeStatusFile
      */
     public function setSaveToFile($saveToFile)
     {
-      $this->saveToFile = $saveToFile;
-      return $this;
+        $this->saveToFile = $saveToFile;
+        return $this;
     }
 
     /**
@@ -128,7 +127,7 @@ class CreatePayeeStatusFile
      */
     public function getChangesSinceDate()
     {
-      return $this->changesSinceDate;
+        return $this->changesSinceDate;
     }
 
     /**
@@ -137,8 +136,7 @@ class CreatePayeeStatusFile
      */
     public function setChangesSinceDate($changesSinceDate)
     {
-      $this->changesSinceDate = $changesSinceDate;
-      return $this;
+        $this->changesSinceDate = $changesSinceDate;
+        return $this;
     }
-
 }

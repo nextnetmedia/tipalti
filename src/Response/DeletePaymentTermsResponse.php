@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\DeletePaymentTermsResult;
 
 class DeletePaymentTermsResponse
 {
-
     /**
      * @var DeletePaymentTermsResult $DeletePaymentTermsResult
      */
@@ -17,7 +16,7 @@ class DeletePaymentTermsResponse
      */
     public function __construct($DeletePaymentTermsResult)
     {
-      $this->DeletePaymentTermsResult = $DeletePaymentTermsResult;
+        $this->DeletePaymentTermsResult = $DeletePaymentTermsResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class DeletePaymentTermsResponse
      */
     public function getDeletePaymentTermsResult()
     {
-      return $this->DeletePaymentTermsResult;
+        return $this->DeletePaymentTermsResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class DeletePaymentTermsResponse
      */
     public function setDeletePaymentTermsResult($DeletePaymentTermsResult)
     {
-      $this->DeletePaymentTermsResult = $DeletePaymentTermsResult;
-      return $this;
+        $this->DeletePaymentTermsResult = $DeletePaymentTermsResult;
+        return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Nextnetmedia\Tipalti\Authentication\EAT;
  */
 class GetPayeesChangedSinceTimestamp
 {
-
     /**
      * @var string $payerName
      */
@@ -38,10 +37,10 @@ class GetPayeesChangedSinceTimestamp
      */
     public function __construct($payerName, $timestamp, $key, $changedSince)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->changedSince = $changedSince;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->changedSince = $changedSince;
     }
 
     /**
@@ -49,7 +48,7 @@ class GetPayeesChangedSinceTimestamp
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -58,8 +57,8 @@ class GetPayeesChangedSinceTimestamp
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -67,7 +66,7 @@ class GetPayeesChangedSinceTimestamp
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -76,8 +75,8 @@ class GetPayeesChangedSinceTimestamp
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -85,7 +84,7 @@ class GetPayeesChangedSinceTimestamp
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -94,8 +93,8 @@ class GetPayeesChangedSinceTimestamp
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -103,7 +102,7 @@ class GetPayeesChangedSinceTimestamp
      */
     public function getChangedSince()
     {
-      return $this->changedSince;
+        return $this->changedSince;
     }
 
     /**
@@ -112,8 +111,7 @@ class GetPayeesChangedSinceTimestamp
      */
     public function setChangedSince($changedSince)
     {
-      $this->changedSince = $changedSince;
-      return $this;
+        $this->changedSince = $changedSince;
+        return $this;
     }
-
 }

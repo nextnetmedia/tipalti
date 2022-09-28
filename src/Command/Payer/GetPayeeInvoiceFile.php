@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payer;
 
 class GetPayeeInvoiceFile
 {
-
     /**
      * @var string $payerName
      */
@@ -33,10 +32,10 @@ class GetPayeeInvoiceFile
      */
     public function __construct($payerName, $timestamp, $key, $invoiceRefCode)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->invoiceRefCode = $invoiceRefCode;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->invoiceRefCode = $invoiceRefCode;
     }
 
     /**
@@ -44,7 +43,7 @@ class GetPayeeInvoiceFile
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -53,8 +52,8 @@ class GetPayeeInvoiceFile
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -62,7 +61,7 @@ class GetPayeeInvoiceFile
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -71,8 +70,8 @@ class GetPayeeInvoiceFile
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -80,7 +79,7 @@ class GetPayeeInvoiceFile
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -89,8 +88,8 @@ class GetPayeeInvoiceFile
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -98,7 +97,7 @@ class GetPayeeInvoiceFile
      */
     public function getInvoiceRefCode()
     {
-      return $this->invoiceRefCode;
+        return $this->invoiceRefCode;
     }
 
     /**
@@ -107,8 +106,7 @@ class GetPayeeInvoiceFile
      */
     public function setInvoiceRefCode($invoiceRefCode)
     {
-      $this->invoiceRefCode = $invoiceRefCode;
-      return $this;
+        $this->invoiceRefCode = $invoiceRefCode;
+        return $this;
     }
-
 }

@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiCustomFieldsUpdateResponse extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiCustomFieldUpdateResponse $CustomFieldUpdateResult
      */
@@ -17,7 +16,7 @@ class TipaltiCustomFieldsUpdateResponse extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -25,7 +24,7 @@ class TipaltiCustomFieldsUpdateResponse extends TipaltiResponse
      */
     public function getCustomFieldUpdateResult()
     {
-      return $this->CustomFieldUpdateResult;
+        return $this->CustomFieldUpdateResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class TipaltiCustomFieldsUpdateResponse extends TipaltiResponse
      */
     public function setCustomFieldUpdateResult($CustomFieldUpdateResult)
     {
-      $this->CustomFieldUpdateResult = $CustomFieldUpdateResult;
-      return $this;
+        $this->CustomFieldUpdateResult = $CustomFieldUpdateResult;
+        return $this;
     }
-
 }

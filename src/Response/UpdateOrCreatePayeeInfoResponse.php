@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class UpdateOrCreatePayeeInfoResponse
 {
-
     /**
      * @var TipaltiResponse $UpdateOrCreatePayeeInfoResult
      */
@@ -15,7 +14,7 @@ class UpdateOrCreatePayeeInfoResponse
      */
     public function __construct($UpdateOrCreatePayeeInfoResult)
     {
-      $this->UpdateOrCreatePayeeInfoResult = $UpdateOrCreatePayeeInfoResult;
+        $this->UpdateOrCreatePayeeInfoResult = $UpdateOrCreatePayeeInfoResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class UpdateOrCreatePayeeInfoResponse
      */
     public function getUpdateOrCreatePayeeInfoResult()
     {
-      return $this->UpdateOrCreatePayeeInfoResult;
+        return $this->UpdateOrCreatePayeeInfoResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class UpdateOrCreatePayeeInfoResponse
      */
     public function setUpdateOrCreatePayeeInfoResult($UpdateOrCreatePayeeInfoResult)
     {
-      $this->UpdateOrCreatePayeeInfoResult = $UpdateOrCreatePayeeInfoResult;
-      return $this;
+        $this->UpdateOrCreatePayeeInfoResult = $UpdateOrCreatePayeeInfoResult;
+        return $this;
     }
-
 }

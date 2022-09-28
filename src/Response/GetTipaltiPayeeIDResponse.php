@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\GetTipaltiPayeeIdResult;
 
 class GetTipaltiPayeeIDResponse
 {
-
     /**
      * @var GetTipaltiPayeeIdResult $GetTipaltiPayeeIDResult
      */
@@ -17,7 +16,7 @@ class GetTipaltiPayeeIDResponse
      */
     public function __construct($GetTipaltiPayeeIDResult)
     {
-      $this->GetTipaltiPayeeIDResult = $GetTipaltiPayeeIDResult;
+        $this->GetTipaltiPayeeIDResult = $GetTipaltiPayeeIDResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetTipaltiPayeeIDResponse
      */
     public function getGetTipaltiPayeeIDResult()
     {
-      return $this->GetTipaltiPayeeIDResult;
+        return $this->GetTipaltiPayeeIDResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetTipaltiPayeeIDResponse
      */
     public function setGetTipaltiPayeeIDResult($GetTipaltiPayeeIDResult)
     {
-      $this->GetTipaltiPayeeIDResult = $GetTipaltiPayeeIDResult;
-      return $this;
+        $this->GetTipaltiPayeeIDResult = $GetTipaltiPayeeIDResult;
+        return $this;
     }
-
 }

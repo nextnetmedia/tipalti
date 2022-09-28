@@ -4,11 +4,9 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class CustomFieldType
 {
-    const __default = 'FreeText';
-    const FreeText = 'FreeText';
-    const UniqueText = 'UniqueText';
-    const MultipleValues = 'MultipleValues';
-    const ListOfValues = 'ListOfValues';
-
-
+    public const __default = 'FreeText';
+    public const FreeText = 'FreeText';
+    public const UniqueText = 'UniqueText';
+    public const MultipleValues = 'MultipleValues';
+    public const ListOfValues = 'ListOfValues';
 }

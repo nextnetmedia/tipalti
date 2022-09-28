@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class CreatePayeeInfoAutoIdapResponse
 {
-
     /**
      * @var TipaltiCreatePayeeInfoAutoIdapResponse $CreatePayeeInfoAutoIdapResult
      */
@@ -15,7 +14,7 @@ class CreatePayeeInfoAutoIdapResponse
      */
     public function __construct($CreatePayeeInfoAutoIdapResult)
     {
-      $this->CreatePayeeInfoAutoIdapResult = $CreatePayeeInfoAutoIdapResult;
+        $this->CreatePayeeInfoAutoIdapResult = $CreatePayeeInfoAutoIdapResult;
     }
 
     /**
@@ -23,7 +22,7 @@ class CreatePayeeInfoAutoIdapResponse
      */
     public function getCreatePayeeInfoAutoIdapResult()
     {
-      return $this->CreatePayeeInfoAutoIdapResult;
+        return $this->CreatePayeeInfoAutoIdapResult;
     }
 
     /**
@@ -32,8 +31,7 @@ class CreatePayeeInfoAutoIdapResponse
      */
     public function setCreatePayeeInfoAutoIdapResult($CreatePayeeInfoAutoIdapResult)
     {
-      $this->CreatePayeeInfoAutoIdapResult = $CreatePayeeInfoAutoIdapResult;
-      return $this;
+        $this->CreatePayeeInfoAutoIdapResult = $CreatePayeeInfoAutoIdapResult;
+        return $this;
     }
-
 }

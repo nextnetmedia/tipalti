@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class UpdateGLAccountRequest extends TipaltiGLAccount
 {
-
     /**
      * @var TipaltiGlAccountAction $Action
      */
@@ -25,8 +24,8 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function __construct($Action)
     {
-      parent::__construct();
-      $this->Action = $Action;
+        parent::__construct();
+        $this->Action = $Action;
     }
 
     /**
@@ -34,7 +33,7 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function getAction()
     {
-      return $this->Action;
+        return $this->Action;
     }
 
     /**
@@ -43,8 +42,8 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function setAction($Action)
     {
-      $this->Action = $Action;
-      return $this;
+        $this->Action = $Action;
+        return $this;
     }
 
     /**
@@ -52,7 +51,7 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function getPayerEntities()
     {
-      return $this->PayerEntities;
+        return $this->PayerEntities;
     }
 
     /**
@@ -61,8 +60,8 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function setPayerEntities($PayerEntities)
     {
-      $this->PayerEntities = $PayerEntities;
-      return $this;
+        $this->PayerEntities = $PayerEntities;
+        return $this;
     }
 
     /**
@@ -70,7 +69,7 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function getCategory()
     {
-      return $this->Category;
+        return $this->Category;
     }
 
     /**
@@ -79,8 +78,7 @@ class UpdateGLAccountRequest extends TipaltiGLAccount
      */
     public function setCategory($Category)
     {
-      $this->Category = $Category;
-      return $this;
+        $this->Category = $Category;
+        return $this;
     }
-
 }

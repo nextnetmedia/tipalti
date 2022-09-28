@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class AccountInfo
 {
-
     /**
      * @var string $Provider
      */
@@ -30,10 +29,9 @@ class AccountInfo
      */
     protected $PayerEntityName = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -41,7 +39,7 @@ class AccountInfo
      */
     public function getProvider()
     {
-      return $this->Provider;
+        return $this->Provider;
     }
 
     /**
@@ -50,8 +48,8 @@ class AccountInfo
      */
     public function setProvider($Provider)
     {
-      $this->Provider = $Provider;
-      return $this;
+        $this->Provider = $Provider;
+        return $this;
     }
 
     /**
@@ -59,7 +57,7 @@ class AccountInfo
      */
     public function getAccountIdentifier()
     {
-      return $this->AccountIdentifier;
+        return $this->AccountIdentifier;
     }
 
     /**
@@ -68,8 +66,8 @@ class AccountInfo
      */
     public function setAccountIdentifier($AccountIdentifier)
     {
-      $this->AccountIdentifier = $AccountIdentifier;
-      return $this;
+        $this->AccountIdentifier = $AccountIdentifier;
+        return $this;
     }
 
     /**
@@ -77,7 +75,7 @@ class AccountInfo
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -86,8 +84,8 @@ class AccountInfo
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
 
     /**
@@ -95,7 +93,7 @@ class AccountInfo
      */
     public function getDisplayName()
     {
-      return $this->DisplayName;
+        return $this->DisplayName;
     }
 
     /**
@@ -104,8 +102,8 @@ class AccountInfo
      */
     public function setDisplayName($DisplayName)
     {
-      $this->DisplayName = $DisplayName;
-      return $this;
+        $this->DisplayName = $DisplayName;
+        return $this;
     }
 
     /**
@@ -113,7 +111,7 @@ class AccountInfo
      */
     public function getPayerEntityName()
     {
-      return $this->PayerEntityName;
+        return $this->PayerEntityName;
     }
 
     /**
@@ -122,8 +120,7 @@ class AccountInfo
      */
     public function setPayerEntityName($PayerEntityName)
     {
-      $this->PayerEntityName = $PayerEntityName;
-      return $this;
+        $this->PayerEntityName = $PayerEntityName;
+        return $this;
     }
-
 }

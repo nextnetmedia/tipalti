@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfKeyValuePair;
 
 class UpdatePayeeCustomFields
 {
-
     /**
      * @var string $payerName
      */
@@ -41,11 +40,11 @@ class UpdatePayeeCustomFields
      */
     public function __construct($payerName, $idap, $timestamp, $key, $customFieldsValues)
     {
-      $this->payerName = $payerName;
-      $this->idap = $idap;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->customFieldsValues = $customFieldsValues;
+        $this->payerName = $payerName;
+        $this->idap = $idap;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->customFieldsValues = $customFieldsValues;
     }
 
     /**
@@ -53,7 +52,7 @@ class UpdatePayeeCustomFields
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -62,8 +61,8 @@ class UpdatePayeeCustomFields
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -71,7 +70,7 @@ class UpdatePayeeCustomFields
      */
     public function getIdap()
     {
-      return $this->idap;
+        return $this->idap;
     }
 
     /**
@@ -80,8 +79,8 @@ class UpdatePayeeCustomFields
      */
     public function setIdap($idap)
     {
-      $this->idap = $idap;
-      return $this;
+        $this->idap = $idap;
+        return $this;
     }
 
     /**
@@ -89,7 +88,7 @@ class UpdatePayeeCustomFields
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -98,8 +97,8 @@ class UpdatePayeeCustomFields
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -107,7 +106,7 @@ class UpdatePayeeCustomFields
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -116,8 +115,8 @@ class UpdatePayeeCustomFields
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -125,7 +124,7 @@ class UpdatePayeeCustomFields
      */
     public function getCustomFieldsValues()
     {
-      return $this->customFieldsValues;
+        return $this->customFieldsValues;
     }
 
     /**
@@ -134,8 +133,7 @@ class UpdatePayeeCustomFields
      */
     public function setCustomFieldsValues($customFieldsValues)
     {
-      $this->customFieldsValues = $customFieldsValues;
-      return $this;
+        $this->customFieldsValues = $customFieldsValues;
+        return $this;
     }
-
 }

@@ -4,7 +4,6 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 
 class GetExtendedPayeeDetailsList
 {
-
     /**
      * @var PayeeInfoListRequest $payeeInfoListRequest
      */
@@ -15,7 +14,7 @@ class GetExtendedPayeeDetailsList
      */
     public function __construct($payeeInfoListRequest)
     {
-      $this->payeeInfoListRequest = $payeeInfoListRequest;
+        $this->payeeInfoListRequest = $payeeInfoListRequest;
     }
 
     /**
@@ -23,7 +22,7 @@ class GetExtendedPayeeDetailsList
      */
     public function getPayeeInfoListRequest()
     {
-      return $this->payeeInfoListRequest;
+        return $this->payeeInfoListRequest;
     }
 
     /**
@@ -32,8 +31,7 @@ class GetExtendedPayeeDetailsList
      */
     public function setPayeeInfoListRequest($payeeInfoListRequest)
     {
-      $this->payeeInfoListRequest = $payeeInfoListRequest;
-      return $this;
+        $this->payeeInfoListRequest = $payeeInfoListRequest;
+        return $this;
     }
-
 }

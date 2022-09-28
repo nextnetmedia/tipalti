@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Response;
 
 class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var TipaltiCustomFieldUpdateResponse[] $TipaltiCustomFieldUpdateResponse
      */
     protected $TipaltiCustomFieldUpdateResponse = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
      */
     public function getTipaltiCustomFieldUpdateResponse()
     {
-      return $this->TipaltiCustomFieldUpdateResponse;
+        return $this->TipaltiCustomFieldUpdateResponse;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
      */
     public function setTipaltiCustomFieldUpdateResponse(array $TipaltiCustomFieldUpdateResponse = null)
     {
-      $this->TipaltiCustomFieldUpdateResponse = $TipaltiCustomFieldUpdateResponse;
-      return $this;
+        $this->TipaltiCustomFieldUpdateResponse = $TipaltiCustomFieldUpdateResponse;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->TipaltiCustomFieldUpdateResponse[$offset]);
+        return isset($this->TipaltiCustomFieldUpdateResponse[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->TipaltiCustomFieldUpdateResponse[$offset];
+        return $this->TipaltiCustomFieldUpdateResponse[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->TipaltiCustomFieldUpdateResponse[] = $value;
-      } else {
-        $this->TipaltiCustomFieldUpdateResponse[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->TipaltiCustomFieldUpdateResponse[] = $value;
+        } else {
+            $this->TipaltiCustomFieldUpdateResponse[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->TipaltiCustomFieldUpdateResponse[$offset]);
+        unset($this->TipaltiCustomFieldUpdateResponse[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->TipaltiCustomFieldUpdateResponse);
+        return current($this->TipaltiCustomFieldUpdateResponse);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->TipaltiCustomFieldUpdateResponse);
+        next($this->TipaltiCustomFieldUpdateResponse);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->TipaltiCustomFieldUpdateResponse);
+        return key($this->TipaltiCustomFieldUpdateResponse);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->TipaltiCustomFieldUpdateResponse);
+        reset($this->TipaltiCustomFieldUpdateResponse);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfTipaltiCustomFieldUpdateResponse implements \ArrayAccess, \Iterator
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->TipaltiCustomFieldUpdateResponse);
+        return count($this->TipaltiCustomFieldUpdateResponse);
     }
-
 }

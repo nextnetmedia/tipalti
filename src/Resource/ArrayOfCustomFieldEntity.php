@@ -4,16 +4,14 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
      * @var CustomFieldEntity[] $CustomFieldEntity
      */
     protected $CustomFieldEntity = null;
 
-    
+
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,7 +19,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
      */
     public function getCustomFieldEntity()
     {
-      return $this->CustomFieldEntity;
+        return $this->CustomFieldEntity;
     }
 
     /**
@@ -30,8 +28,8 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
      */
     public function setCustomFieldEntity(array $CustomFieldEntity = null)
     {
-      $this->CustomFieldEntity = $CustomFieldEntity;
-      return $this;
+        $this->CustomFieldEntity = $CustomFieldEntity;
+        return $this;
     }
 
     /**
@@ -43,7 +41,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
-      return isset($this->CustomFieldEntity[$offset]);
+        return isset($this->CustomFieldEntity[$offset]);
     }
 
     /**
@@ -55,7 +53,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
-      return $this->CustomFieldEntity[$offset];
+        return $this->CustomFieldEntity[$offset];
     }
 
     /**
@@ -68,11 +66,11 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->CustomFieldEntity[] = $value;
-      } else {
-        $this->CustomFieldEntity[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->CustomFieldEntity[] = $value;
+        } else {
+            $this->CustomFieldEntity[$offset] = $value;
+        }
     }
 
     /**
@@ -84,7 +82,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
-      unset($this->CustomFieldEntity[$offset]);
+        unset($this->CustomFieldEntity[$offset]);
     }
 
     /**
@@ -95,7 +93,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function current()
     {
-      return current($this->CustomFieldEntity);
+        return current($this->CustomFieldEntity);
     }
 
     /**
@@ -107,7 +105,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function next()
     {
-      next($this->CustomFieldEntity);
+        next($this->CustomFieldEntity);
     }
 
     /**
@@ -118,7 +116,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function key()
     {
-      return key($this->CustomFieldEntity);
+        return key($this->CustomFieldEntity);
     }
 
     /**
@@ -129,7 +127,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
@@ -141,7 +139,7 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function rewind()
     {
-      reset($this->CustomFieldEntity);
+        reset($this->CustomFieldEntity);
     }
 
     /**
@@ -152,7 +150,6 @@ class ArrayOfCustomFieldEntity implements \ArrayAccess, \Iterator, \Countable
     #[\ReturnTypeWillChange]
     public function count()
     {
-      return count($this->CustomFieldEntity);
+        return count($this->CustomFieldEntity);
     }
-
 }

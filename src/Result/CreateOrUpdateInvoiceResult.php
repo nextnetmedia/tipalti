@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class CreateOrUpdateInvoiceResult extends TipaltiResponse
 {
-
     /**
      * @var ArrayOfTipaltiInvoiceItemResult $InvoiceErrors
      */
@@ -18,7 +17,7 @@ class CreateOrUpdateInvoiceResult extends TipaltiResponse
      */
     public function __construct($errorCode)
     {
-      parent::__construct($errorCode);
+        parent::__construct($errorCode);
     }
 
     /**
@@ -26,7 +25,7 @@ class CreateOrUpdateInvoiceResult extends TipaltiResponse
      */
     public function getInvoiceErrors()
     {
-      return $this->InvoiceErrors;
+        return $this->InvoiceErrors;
     }
 
     /**
@@ -35,8 +34,7 @@ class CreateOrUpdateInvoiceResult extends TipaltiResponse
      */
     public function setInvoiceErrors($InvoiceErrors)
     {
-      $this->InvoiceErrors = $InvoiceErrors;
-      return $this;
+        $this->InvoiceErrors = $InvoiceErrors;
+        return $this;
     }
-
 }

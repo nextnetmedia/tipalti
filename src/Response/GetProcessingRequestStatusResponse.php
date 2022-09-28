@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\TipaltiGetProcessingRequestStatusResult;
 
 class GetProcessingRequestStatusResponse
 {
-
     /**
      * @var TipaltiGetProcessingRequestStatusResult $GetProcessingRequestStatusResult
      */
@@ -17,7 +16,7 @@ class GetProcessingRequestStatusResponse
      */
     public function __construct($GetProcessingRequestStatusResult)
     {
-      $this->GetProcessingRequestStatusResult = $GetProcessingRequestStatusResult;
+        $this->GetProcessingRequestStatusResult = $GetProcessingRequestStatusResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetProcessingRequestStatusResponse
      */
     public function getGetProcessingRequestStatusResult()
     {
-      return $this->GetProcessingRequestStatusResult;
+        return $this->GetProcessingRequestStatusResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetProcessingRequestStatusResponse
      */
     public function setGetProcessingRequestStatusResult($GetProcessingRequestStatusResult)
     {
-      $this->GetProcessingRequestStatusResult = $GetProcessingRequestStatusResult;
-      return $this;
+        $this->GetProcessingRequestStatusResult = $GetProcessingRequestStatusResult;
+        return $this;
     }
-
 }

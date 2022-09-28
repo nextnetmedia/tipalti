@@ -7,7 +7,6 @@ use Nextnetmedia\Tipalti\Resource\WSErrors;
 
 class TipaltiPaymentOrderResponse extends TipaltiResponse
 {
-
     /**
      * @var string $RefCode
      */
@@ -102,11 +101,11 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function __construct($errorCode, \DateTime $SubmittionDate, $AmountSubmitted, $PayerFees, $PayeeFees)
     {
-      parent::__construct($errorCode);
-      $this->SubmittionDate = $SubmittionDate->format(\DateTime::ATOM);
-      $this->AmountSubmitted = $AmountSubmitted;
-      $this->PayerFees = $PayerFees;
-      $this->PayeeFees = $PayeeFees;
+        parent::__construct($errorCode);
+        $this->SubmittionDate = $SubmittionDate->format(\DateTime::ATOM);
+        $this->AmountSubmitted = $AmountSubmitted;
+        $this->PayerFees = $PayerFees;
+        $this->PayeeFees = $PayeeFees;
     }
 
     /**
@@ -114,7 +113,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getRefCode()
     {
-      return $this->RefCode;
+        return $this->RefCode;
     }
 
     /**
@@ -123,8 +122,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setRefCode($RefCode)
     {
-      $this->RefCode = $RefCode;
-      return $this;
+        $this->RefCode = $RefCode;
+        return $this;
     }
 
     /**
@@ -132,15 +131,15 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getSubmittionDate()
     {
-      if ($this->SubmittionDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->SubmittionDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->SubmittionDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->SubmittionDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -149,8 +148,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setSubmittionDate(\DateTime $SubmittionDate)
     {
-      $this->SubmittionDate = $SubmittionDate->format(\DateTime::ATOM);
-      return $this;
+        $this->SubmittionDate = $SubmittionDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -158,7 +157,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getAmountSubmitted()
     {
-      return $this->AmountSubmitted;
+        return $this->AmountSubmitted;
     }
 
     /**
@@ -167,8 +166,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setAmountSubmitted($AmountSubmitted)
     {
-      $this->AmountSubmitted = $AmountSubmitted;
-      return $this;
+        $this->AmountSubmitted = $AmountSubmitted;
+        return $this;
     }
 
     /**
@@ -176,7 +175,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getPaymentMethod()
     {
-      return $this->PaymentMethod;
+        return $this->PaymentMethod;
     }
 
     /**
@@ -185,8 +184,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setPaymentMethod($PaymentMethod)
     {
-      $this->PaymentMethod = $PaymentMethod;
-      return $this;
+        $this->PaymentMethod = $PaymentMethod;
+        return $this;
     }
 
     /**
@@ -194,7 +193,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getPOStatus()
     {
-      return $this->POStatus;
+        return $this->POStatus;
     }
 
     /**
@@ -203,8 +202,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setPOStatus($POStatus)
     {
-      $this->POStatus = $POStatus;
-      return $this;
+        $this->POStatus = $POStatus;
+        return $this;
     }
 
     /**
@@ -212,7 +211,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getPayerFees()
     {
-      return $this->PayerFees;
+        return $this->PayerFees;
     }
 
     /**
@@ -221,8 +220,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setPayerFees($PayerFees)
     {
-      $this->PayerFees = $PayerFees;
-      return $this;
+        $this->PayerFees = $PayerFees;
+        return $this;
     }
 
     /**
@@ -230,7 +229,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getPayeeFees()
     {
-      return $this->PayeeFees;
+        return $this->PayeeFees;
     }
 
     /**
@@ -239,8 +238,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setPayeeFees($PayeeFees)
     {
-      $this->PayeeFees = $PayeeFees;
-      return $this;
+        $this->PayeeFees = $PayeeFees;
+        return $this;
     }
 
     /**
@@ -248,7 +247,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getErrorMessages()
     {
-      return $this->ErrorMessages;
+        return $this->ErrorMessages;
     }
 
     /**
@@ -257,8 +256,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setErrorMessages($ErrorMessages)
     {
-      $this->ErrorMessages = $ErrorMessages;
-      return $this;
+        $this->ErrorMessages = $ErrorMessages;
+        return $this;
     }
 
     /**
@@ -266,15 +265,15 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getValueDate()
     {
-      if ($this->ValueDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ValueDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->ValueDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->ValueDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -283,12 +282,12 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setValueDate(\DateTime $ValueDate = null)
     {
-      if ($ValueDate == null) {
-       $this->ValueDate = null;
-      } else {
-        $this->ValueDate = $ValueDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($ValueDate == null) {
+            $this->ValueDate = null;
+        } else {
+            $this->ValueDate = $ValueDate->format(\DateTime::ATOM);
+        }
+        return $this;
     }
 
     /**
@@ -296,7 +295,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -305,8 +304,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
     /**
@@ -314,7 +313,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getBankingMessage()
     {
-      return $this->BankingMessage;
+        return $this->BankingMessage;
     }
 
     /**
@@ -323,8 +322,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setBankingMessage($BankingMessage)
     {
-      $this->BankingMessage = $BankingMessage;
-      return $this;
+        $this->BankingMessage = $BankingMessage;
+        return $this;
     }
 
     /**
@@ -332,7 +331,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getEmailSubject()
     {
-      return $this->EmailSubject;
+        return $this->EmailSubject;
     }
 
     /**
@@ -341,8 +340,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setEmailSubject($EmailSubject)
     {
-      $this->EmailSubject = $EmailSubject;
-      return $this;
+        $this->EmailSubject = $EmailSubject;
+        return $this;
     }
 
     /**
@@ -350,7 +349,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getTxnReference()
     {
-      return $this->TxnReference;
+        return $this->TxnReference;
     }
 
     /**
@@ -359,8 +358,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setTxnReference($TxnReference)
     {
-      $this->TxnReference = $TxnReference;
-      return $this;
+        $this->TxnReference = $TxnReference;
+        return $this;
     }
 
     /**
@@ -368,7 +367,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getPaymentAmount()
     {
-      return $this->PaymentAmount;
+        return $this->PaymentAmount;
     }
 
     /**
@@ -377,8 +376,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setPaymentAmount($PaymentAmount)
     {
-      $this->PaymentAmount = $PaymentAmount;
-      return $this;
+        $this->PaymentAmount = $PaymentAmount;
+        return $this;
     }
 
     /**
@@ -386,7 +385,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getPaymentCurrency()
     {
-      return $this->PaymentCurrency;
+        return $this->PaymentCurrency;
     }
 
     /**
@@ -395,8 +394,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setPaymentCurrency($PaymentCurrency)
     {
-      $this->PaymentCurrency = $PaymentCurrency;
-      return $this;
+        $this->PaymentCurrency = $PaymentCurrency;
+        return $this;
     }
 
     /**
@@ -404,7 +403,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getLiftingFees()
     {
-      return $this->LiftingFees;
+        return $this->LiftingFees;
     }
 
     /**
@@ -413,8 +412,8 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setLiftingFees($LiftingFees)
     {
-      $this->LiftingFees = $LiftingFees;
-      return $this;
+        $this->LiftingFees = $LiftingFees;
+        return $this;
     }
 
     /**
@@ -422,7 +421,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function getEstimatedProviderFees()
     {
-      return $this->EstimatedProviderFees;
+        return $this->EstimatedProviderFees;
     }
 
     /**
@@ -431,8 +430,7 @@ class TipaltiPaymentOrderResponse extends TipaltiResponse
      */
     public function setEstimatedProviderFees($EstimatedProviderFees)
     {
-      $this->EstimatedProviderFees = $EstimatedProviderFees;
-      return $this;
+        $this->EstimatedProviderFees = $EstimatedProviderFees;
+        return $this;
     }
-
 }

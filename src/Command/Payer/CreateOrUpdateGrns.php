@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\ArrayOfTipaltiGrnItem;
 
 class CreateOrUpdateGrns
 {
-
     /**
      * @var string $payerName
      */
@@ -35,10 +34,10 @@ class CreateOrUpdateGrns
      */
     public function __construct($payerName, $timestamp, $key, $grns)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->grns = $grns;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->grns = $grns;
     }
 
     /**
@@ -46,7 +45,7 @@ class CreateOrUpdateGrns
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -55,8 +54,8 @@ class CreateOrUpdateGrns
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -64,7 +63,7 @@ class CreateOrUpdateGrns
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -73,8 +72,8 @@ class CreateOrUpdateGrns
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -82,7 +81,7 @@ class CreateOrUpdateGrns
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -91,8 +90,8 @@ class CreateOrUpdateGrns
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -100,7 +99,7 @@ class CreateOrUpdateGrns
      */
     public function getGrns()
     {
-      return $this->grns;
+        return $this->grns;
     }
 
     /**
@@ -109,8 +108,7 @@ class CreateOrUpdateGrns
      */
     public function setGrns($grns)
     {
-      $this->grns = $grns;
-      return $this;
+        $this->grns = $grns;
+        return $this;
     }
-
 }

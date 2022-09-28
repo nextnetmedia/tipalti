@@ -4,9 +4,7 @@ namespace Nextnetmedia\Tipalti\Resource;
 
 class CustomFieldSubEntity
 {
-    const __default = 'Header';
-    const Header = 'Header';
-    const Line = 'Line';
-
-
+    public const __default = 'Header';
+    public const Header = 'Header';
+    public const Line = 'Line';
 }

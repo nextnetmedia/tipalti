@@ -3,12 +3,12 @@
 namespace Nextnetmedia\Tipalti\Resource;
 
 use Nextnetmedia\Tipalti\Authentication\EAT;
+
 /**
  * @EAT("Idap","Street1")
  */
 class PayeeDetailsItem
 {
-
     /**
      * @var string $Idap
      */
@@ -135,7 +135,7 @@ class PayeeDetailsItem
      */
     public function getIdap()
     {
-      return $this->Idap;
+        return $this->Idap;
     }
 
     /**
@@ -144,8 +144,8 @@ class PayeeDetailsItem
      */
     public function setIdap($Idap)
     {
-      $this->Idap = $Idap;
-      return $this;
+        $this->Idap = $Idap;
+        return $this;
     }
 
     /**
@@ -153,7 +153,7 @@ class PayeeDetailsItem
      */
     public function getFirstName()
     {
-      return $this->FirstName;
+        return $this->FirstName;
     }
 
     /**
@@ -162,8 +162,8 @@ class PayeeDetailsItem
      */
     public function setFirstName($FirstName)
     {
-      $this->FirstName = $FirstName;
-      return $this;
+        $this->FirstName = $FirstName;
+        return $this;
     }
 
     /**
@@ -171,7 +171,7 @@ class PayeeDetailsItem
      */
     public function getLastName()
     {
-      return $this->LastName;
+        return $this->LastName;
     }
 
     /**
@@ -180,8 +180,8 @@ class PayeeDetailsItem
      */
     public function setLastName($LastName)
     {
-      $this->LastName = $LastName;
-      return $this;
+        $this->LastName = $LastName;
+        return $this;
     }
 
     /**
@@ -189,7 +189,7 @@ class PayeeDetailsItem
      */
     public function getStreet1()
     {
-      return $this->Street1;
+        return $this->Street1;
     }
 
     /**
@@ -198,8 +198,8 @@ class PayeeDetailsItem
      */
     public function setStreet1($Street1)
     {
-      $this->Street1 = $Street1;
-      return $this;
+        $this->Street1 = $Street1;
+        return $this;
     }
 
     /**
@@ -207,7 +207,7 @@ class PayeeDetailsItem
      */
     public function getStreet2()
     {
-      return $this->Street2;
+        return $this->Street2;
     }
 
     /**
@@ -216,8 +216,8 @@ class PayeeDetailsItem
      */
     public function setStreet2($Street2)
     {
-      $this->Street2 = $Street2;
-      return $this;
+        $this->Street2 = $Street2;
+        return $this;
     }
 
     /**
@@ -225,7 +225,7 @@ class PayeeDetailsItem
      */
     public function getCity()
     {
-      return $this->City;
+        return $this->City;
     }
 
     /**
@@ -234,8 +234,8 @@ class PayeeDetailsItem
      */
     public function setCity($City)
     {
-      $this->City = $City;
-      return $this;
+        $this->City = $City;
+        return $this;
     }
 
     /**
@@ -243,7 +243,7 @@ class PayeeDetailsItem
      */
     public function getState()
     {
-      return $this->State;
+        return $this->State;
     }
 
     /**
@@ -252,8 +252,8 @@ class PayeeDetailsItem
      */
     public function setState($State)
     {
-      $this->State = $State;
-      return $this;
+        $this->State = $State;
+        return $this;
     }
 
     /**
@@ -261,7 +261,7 @@ class PayeeDetailsItem
      */
     public function getZip()
     {
-      return $this->Zip;
+        return $this->Zip;
     }
 
     /**
@@ -270,8 +270,8 @@ class PayeeDetailsItem
      */
     public function setZip($Zip)
     {
-      $this->Zip = $Zip;
-      return $this;
+        $this->Zip = $Zip;
+        return $this;
     }
 
     /**
@@ -279,7 +279,7 @@ class PayeeDetailsItem
      */
     public function getCountry()
     {
-      return $this->Country;
+        return $this->Country;
     }
 
     /**
@@ -288,8 +288,8 @@ class PayeeDetailsItem
      */
     public function setCountry($Country)
     {
-      $this->Country = $Country;
-      return $this;
+        $this->Country = $Country;
+        return $this;
     }
 
     /**
@@ -297,7 +297,7 @@ class PayeeDetailsItem
      */
     public function getEmail()
     {
-      return $this->Email;
+        return $this->Email;
     }
 
     /**
@@ -306,8 +306,8 @@ class PayeeDetailsItem
      */
     public function setEmail($Email)
     {
-      $this->Email = $Email;
-      return $this;
+        $this->Email = $Email;
+        return $this;
     }
 
     /**
@@ -315,7 +315,7 @@ class PayeeDetailsItem
      */
     public function getAlias()
     {
-      return $this->Alias;
+        return $this->Alias;
     }
 
     /**
@@ -324,8 +324,8 @@ class PayeeDetailsItem
      */
     public function setAlias($Alias)
     {
-      $this->Alias = $Alias;
-      return $this;
+        $this->Alias = $Alias;
+        return $this;
     }
 
     /**
@@ -333,7 +333,7 @@ class PayeeDetailsItem
      */
     public function getCompany()
     {
-      return $this->Company;
+        return $this->Company;
     }
 
     /**
@@ -342,8 +342,8 @@ class PayeeDetailsItem
      */
     public function setCompany($Company)
     {
-      $this->Company = $Company;
-      return $this;
+        $this->Company = $Company;
+        return $this;
     }
 
     /**
@@ -351,7 +351,7 @@ class PayeeDetailsItem
      */
     public function getPreferredPayerEntity()
     {
-      return $this->PreferredPayerEntity;
+        return $this->PreferredPayerEntity;
     }
 
     /**
@@ -360,8 +360,8 @@ class PayeeDetailsItem
      */
     public function setPreferredPayerEntity($PreferredPayerEntity)
     {
-      $this->PreferredPayerEntity = $PreferredPayerEntity;
-      return $this;
+        $this->PreferredPayerEntity = $PreferredPayerEntity;
+        return $this;
     }
 
     /**
@@ -369,7 +369,7 @@ class PayeeDetailsItem
      */
     public function getApAccountNumber()
     {
-      return $this->ApAccountNumber;
+        return $this->ApAccountNumber;
     }
 
     /**
@@ -378,8 +378,8 @@ class PayeeDetailsItem
      */
     public function setApAccountNumber($ApAccountNumber)
     {
-      $this->ApAccountNumber = $ApAccountNumber;
-      return $this;
+        $this->ApAccountNumber = $ApAccountNumber;
+        return $this;
     }
 
     /**
@@ -387,7 +387,7 @@ class PayeeDetailsItem
      */
     public function getPayerEntityName()
     {
-      return $this->PayerEntityName;
+        return $this->PayerEntityName;
     }
 
     /**
@@ -396,8 +396,8 @@ class PayeeDetailsItem
      */
     public function setPayerEntityName($PayerEntityName)
     {
-      $this->PayerEntityName = $PayerEntityName;
-      return $this;
+        $this->PayerEntityName = $PayerEntityName;
+        return $this;
     }
 
     /**
@@ -405,7 +405,7 @@ class PayeeDetailsItem
      */
     public function getPaymentTermId()
     {
-      return $this->PaymentTermId;
+        return $this->PaymentTermId;
     }
 
     /**
@@ -414,8 +414,8 @@ class PayeeDetailsItem
      */
     public function setPaymentTermId($PaymentTermId)
     {
-      $this->PaymentTermId = $PaymentTermId;
-      return $this;
+        $this->PaymentTermId = $PaymentTermId;
+        return $this;
     }
 
     /**
@@ -423,7 +423,7 @@ class PayeeDetailsItem
      */
     public function getCountryName()
     {
-      return $this->CountryName;
+        return $this->CountryName;
     }
 
     /**
@@ -432,8 +432,8 @@ class PayeeDetailsItem
      */
     public function setCountryName($CountryName)
     {
-      $this->CountryName = $CountryName;
-      return $this;
+        $this->CountryName = $CountryName;
+        return $this;
     }
 
     /**
@@ -441,7 +441,7 @@ class PayeeDetailsItem
      */
     public function getErpCurrency()
     {
-      return $this->ErpCurrency;
+        return $this->ErpCurrency;
     }
 
     /**
@@ -450,8 +450,8 @@ class PayeeDetailsItem
      */
     public function setErpCurrency($ErpCurrency)
     {
-      $this->ErpCurrency = $ErpCurrency;
-      return $this;
+        $this->ErpCurrency = $ErpCurrency;
+        return $this;
     }
 
     /**
@@ -459,7 +459,7 @@ class PayeeDetailsItem
      */
     public function getPayeeEntityType()
     {
-      return $this->PayeeEntityType;
+        return $this->PayeeEntityType;
     }
 
     /**
@@ -468,8 +468,8 @@ class PayeeDetailsItem
      */
     public function setPayeeEntityType($PayeeEntityType)
     {
-      $this->PayeeEntityType = $PayeeEntityType;
-      return $this;
+        $this->PayeeEntityType = $PayeeEntityType;
+        return $this;
     }
 
     /**
@@ -477,7 +477,7 @@ class PayeeDetailsItem
      */
     public function getMiddleName()
     {
-      return $this->MiddleName;
+        return $this->MiddleName;
     }
 
     /**
@@ -486,8 +486,8 @@ class PayeeDetailsItem
      */
     public function setMiddleName($MiddleName)
     {
-      $this->MiddleName = $MiddleName;
-      return $this;
+        $this->MiddleName = $MiddleName;
+        return $this;
     }
 
     /**
@@ -495,7 +495,7 @@ class PayeeDetailsItem
      */
     public function getApAccountExternalId()
     {
-      return $this->ApAccountExternalId;
+        return $this->ApAccountExternalId;
     }
 
     /**
@@ -504,8 +504,8 @@ class PayeeDetailsItem
      */
     public function setApAccountExternalId($ApAccountExternalId)
     {
-      $this->ApAccountExternalId = $ApAccountExternalId;
-      return $this;
+        $this->ApAccountExternalId = $ApAccountExternalId;
+        return $this;
     }
 
     /**
@@ -513,7 +513,7 @@ class PayeeDetailsItem
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -522,8 +522,8 @@ class PayeeDetailsItem
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -531,7 +531,7 @@ class PayeeDetailsItem
      */
     public function getExternalId()
     {
-      return $this->ExternalId;
+        return $this->ExternalId;
     }
 
     /**
@@ -540,8 +540,8 @@ class PayeeDetailsItem
      */
     public function setExternalId($ExternalId)
     {
-      $this->ExternalId = $ExternalId;
-      return $this;
+        $this->ExternalId = $ExternalId;
+        return $this;
     }
 
     /**
@@ -549,7 +549,7 @@ class PayeeDetailsItem
      */
     public function getSendSupplierPortalInvite()
     {
-      return $this->SendSupplierPortalInvite;
+        return $this->SendSupplierPortalInvite;
     }
 
     /**
@@ -558,8 +558,7 @@ class PayeeDetailsItem
      */
     public function setSendSupplierPortalInvite($SendSupplierPortalInvite)
     {
-      $this->SendSupplierPortalInvite = $SendSupplierPortalInvite;
-      return $this;
+        $this->SendSupplierPortalInvite = $SendSupplierPortalInvite;
+        return $this;
     }
-
 }

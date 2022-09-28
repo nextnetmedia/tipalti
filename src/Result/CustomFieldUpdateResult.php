@@ -4,19 +4,17 @@ namespace Nextnetmedia\Tipalti\Result;
 
 class CustomFieldUpdateResult
 {
-    const __default = 'Other';
-    const Other = 'Other';
-    const Success = 'Success';
-    const FieldDoesntExist = 'FieldDoesntExist';
-    const DuplicateField = 'DuplicateField';
-    const EmptyTitle = 'EmptyTitle';
-    const TooLongTitle = 'TooLongTitle';
-    const IllegalCharsTitle = 'IllegalCharsTitle';
-    const RestrictedTitle = 'RestrictedTitle';
-    const EmptyMultiValueSelectionField = 'EmptyMultiValueSelectionField';
-    const MultiValuesAreNotUnique = 'MultiValuesAreNotUnique';
-    const ValueTypeNotSupported = 'ValueTypeNotSupported';
-    const UnknownPayerEntity = 'UnknownPayerEntity';
-
-
+    public const __default = 'Other';
+    public const Other = 'Other';
+    public const Success = 'Success';
+    public const FieldDoesntExist = 'FieldDoesntExist';
+    public const DuplicateField = 'DuplicateField';
+    public const EmptyTitle = 'EmptyTitle';
+    public const TooLongTitle = 'TooLongTitle';
+    public const IllegalCharsTitle = 'IllegalCharsTitle';
+    public const RestrictedTitle = 'RestrictedTitle';
+    public const EmptyMultiValueSelectionField = 'EmptyMultiValueSelectionField';
+    public const MultiValuesAreNotUnique = 'MultiValuesAreNotUnique';
+    public const ValueTypeNotSupported = 'ValueTypeNotSupported';
+    public const UnknownPayerEntity = 'UnknownPayerEntity';
 }

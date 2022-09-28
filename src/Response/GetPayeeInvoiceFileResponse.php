@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Result\GetInvoiceFileResult;
 
 class GetPayeeInvoiceFileResponse
 {
-
     /**
      * @var GetInvoiceFileResult $GetPayeeInvoiceFileResult
      */
@@ -17,7 +16,7 @@ class GetPayeeInvoiceFileResponse
      */
     public function __construct($GetPayeeInvoiceFileResult)
     {
-      $this->GetPayeeInvoiceFileResult = $GetPayeeInvoiceFileResult;
+        $this->GetPayeeInvoiceFileResult = $GetPayeeInvoiceFileResult;
     }
 
     /**
@@ -25,7 +24,7 @@ class GetPayeeInvoiceFileResponse
      */
     public function getGetPayeeInvoiceFileResult()
     {
-      return $this->GetPayeeInvoiceFileResult;
+        return $this->GetPayeeInvoiceFileResult;
     }
 
     /**
@@ -34,8 +33,7 @@ class GetPayeeInvoiceFileResponse
      */
     public function setGetPayeeInvoiceFileResult($GetPayeeInvoiceFileResult)
     {
-      $this->GetPayeeInvoiceFileResult = $GetPayeeInvoiceFileResult;
-      return $this;
+        $this->GetPayeeInvoiceFileResult = $GetPayeeInvoiceFileResult;
+        return $this;
     }
-
 }

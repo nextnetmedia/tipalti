@@ -5,12 +5,12 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 use Nextnetmedia\Tipalti\Resource\PayeeDetailsItem;
 
 use Nextnetmedia\Tipalti\Authentication\NestedEAT;
+
 /**
  * @NestedEAT("item")
  */
 class CreatePayeeInfoAutoIdap
 {
-
     /**
      * @var string $payerName
      */
@@ -45,11 +45,11 @@ class CreatePayeeInfoAutoIdap
      */
     public function __construct($payerName, $timestamp, $key, $skipNulls, $item)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->skipNulls = $skipNulls;
-      $this->item = $item;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->skipNulls = $skipNulls;
+        $this->item = $item;
     }
 
     /**
@@ -57,7 +57,7 @@ class CreatePayeeInfoAutoIdap
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -66,8 +66,8 @@ class CreatePayeeInfoAutoIdap
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -75,7 +75,7 @@ class CreatePayeeInfoAutoIdap
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -84,8 +84,8 @@ class CreatePayeeInfoAutoIdap
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -93,7 +93,7 @@ class CreatePayeeInfoAutoIdap
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -102,8 +102,8 @@ class CreatePayeeInfoAutoIdap
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -111,7 +111,7 @@ class CreatePayeeInfoAutoIdap
      */
     public function getSkipNulls()
     {
-      return $this->skipNulls;
+        return $this->skipNulls;
     }
 
     /**
@@ -120,8 +120,8 @@ class CreatePayeeInfoAutoIdap
      */
     public function setSkipNulls($skipNulls)
     {
-      $this->skipNulls = $skipNulls;
-      return $this;
+        $this->skipNulls = $skipNulls;
+        return $this;
     }
 
     /**
@@ -129,7 +129,7 @@ class CreatePayeeInfoAutoIdap
      */
     public function getItem()
     {
-      return $this->item;
+        return $this->item;
     }
 
     /**
@@ -138,8 +138,7 @@ class CreatePayeeInfoAutoIdap
      */
     public function setItem($item)
     {
-      $this->item = $item;
-      return $this;
+        $this->item = $item;
+        return $this;
     }
-
 }

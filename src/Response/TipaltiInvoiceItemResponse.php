@@ -12,7 +12,6 @@ use Nextnetmedia\Tipalti\Command\Payee\TipaltiInvoiceStatus;
 
 class TipaltiInvoiceItemResponse
 {
-
     /**
      * @var string $Idap
      */
@@ -158,17 +157,17 @@ class TipaltiInvoiceItemResponse
      */
     public function __construct(\DateTime $InvoiceDate, \DateTime $InvoiceDueDate, $InvoiceLines, $CanApprove, $IsPaidManually, \DateTime $ApprovalDate, $PurchaseOrderMatchingCompleted, $HasInvoiceFile, $IsInvoiceFileDeleted, $IsPrepayment, \DateTime $InvoiceCreationDate)
     {
-      $this->InvoiceDate = $InvoiceDate->format(\DateTime::ATOM);
-      $this->InvoiceDueDate = $InvoiceDueDate->format(\DateTime::ATOM);
-      $this->InvoiceLines = $InvoiceLines;
-      $this->CanApprove = $CanApprove;
-      $this->IsPaidManually = $IsPaidManually;
-      $this->ApprovalDate = $ApprovalDate->format(\DateTime::ATOM);
-      $this->PurchaseOrderMatchingCompleted = $PurchaseOrderMatchingCompleted;
-      $this->HasInvoiceFile = $HasInvoiceFile;
-      $this->IsInvoiceFileDeleted = $IsInvoiceFileDeleted;
-      $this->IsPrepayment = $IsPrepayment;
-      $this->InvoiceCreationDate = $InvoiceCreationDate->format(\DateTime::ATOM);
+        $this->InvoiceDate = $InvoiceDate->format(\DateTime::ATOM);
+        $this->InvoiceDueDate = $InvoiceDueDate->format(\DateTime::ATOM);
+        $this->InvoiceLines = $InvoiceLines;
+        $this->CanApprove = $CanApprove;
+        $this->IsPaidManually = $IsPaidManually;
+        $this->ApprovalDate = $ApprovalDate->format(\DateTime::ATOM);
+        $this->PurchaseOrderMatchingCompleted = $PurchaseOrderMatchingCompleted;
+        $this->HasInvoiceFile = $HasInvoiceFile;
+        $this->IsInvoiceFileDeleted = $IsInvoiceFileDeleted;
+        $this->IsPrepayment = $IsPrepayment;
+        $this->InvoiceCreationDate = $InvoiceCreationDate->format(\DateTime::ATOM);
     }
 
     /**
@@ -176,7 +175,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getIdap()
     {
-      return $this->Idap;
+        return $this->Idap;
     }
 
     /**
@@ -185,8 +184,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setIdap($Idap)
     {
-      $this->Idap = $Idap;
-      return $this;
+        $this->Idap = $Idap;
+        return $this;
     }
 
     /**
@@ -194,7 +193,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceRefCode()
     {
-      return $this->InvoiceRefCode;
+        return $this->InvoiceRefCode;
     }
 
     /**
@@ -203,8 +202,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceRefCode($InvoiceRefCode)
     {
-      $this->InvoiceRefCode = $InvoiceRefCode;
-      return $this;
+        $this->InvoiceRefCode = $InvoiceRefCode;
+        return $this;
     }
 
     /**
@@ -212,15 +211,15 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceDate()
     {
-      if ($this->InvoiceDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->InvoiceDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->InvoiceDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->InvoiceDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -229,8 +228,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceDate(\DateTime $InvoiceDate)
     {
-      $this->InvoiceDate = $InvoiceDate->format(\DateTime::ATOM);
-      return $this;
+        $this->InvoiceDate = $InvoiceDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -238,15 +237,15 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceDueDate()
     {
-      if ($this->InvoiceDueDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->InvoiceDueDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->InvoiceDueDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->InvoiceDueDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -255,8 +254,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceDueDate(\DateTime $InvoiceDueDate)
     {
-      $this->InvoiceDueDate = $InvoiceDueDate->format(\DateTime::ATOM);
-      return $this;
+        $this->InvoiceDueDate = $InvoiceDueDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -264,7 +263,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceLines()
     {
-      return $this->InvoiceLines;
+        return $this->InvoiceLines;
     }
 
     /**
@@ -273,8 +272,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceLines($InvoiceLines)
     {
-      $this->InvoiceLines = $InvoiceLines;
-      return $this;
+        $this->InvoiceLines = $InvoiceLines;
+        return $this;
     }
 
     /**
@@ -282,7 +281,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -291,8 +290,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -300,7 +299,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getCanApprove()
     {
-      return $this->CanApprove;
+        return $this->CanApprove;
     }
 
     /**
@@ -309,8 +308,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setCanApprove($CanApprove)
     {
-      $this->CanApprove = $CanApprove;
-      return $this;
+        $this->CanApprove = $CanApprove;
+        return $this;
     }
 
     /**
@@ -318,7 +317,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceInternalNotes()
     {
-      return $this->InvoiceInternalNotes;
+        return $this->InvoiceInternalNotes;
     }
 
     /**
@@ -327,8 +326,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceInternalNotes($InvoiceInternalNotes)
     {
-      $this->InvoiceInternalNotes = $InvoiceInternalNotes;
-      return $this;
+        $this->InvoiceInternalNotes = $InvoiceInternalNotes;
+        return $this;
     }
 
     /**
@@ -336,7 +335,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getCustomFields()
     {
-      return $this->CustomFields;
+        return $this->CustomFields;
     }
 
     /**
@@ -345,8 +344,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setCustomFields($CustomFields)
     {
-      $this->CustomFields = $CustomFields;
-      return $this;
+        $this->CustomFields = $CustomFields;
+        return $this;
     }
 
     /**
@@ -354,7 +353,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getIsPaidManually()
     {
-      return $this->IsPaidManually;
+        return $this->IsPaidManually;
     }
 
     /**
@@ -363,8 +362,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setIsPaidManually($IsPaidManually)
     {
-      $this->IsPaidManually = $IsPaidManually;
-      return $this;
+        $this->IsPaidManually = $IsPaidManually;
+        return $this;
     }
 
     /**
@@ -372,7 +371,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getIncomeType()
     {
-      return $this->IncomeType;
+        return $this->IncomeType;
     }
 
     /**
@@ -381,8 +380,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setIncomeType($IncomeType)
     {
-      $this->IncomeType = $IncomeType;
-      return $this;
+        $this->IncomeType = $IncomeType;
+        return $this;
     }
 
     /**
@@ -390,7 +389,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceStatus()
     {
-      return $this->InvoiceStatus;
+        return $this->InvoiceStatus;
     }
 
     /**
@@ -399,8 +398,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceStatus($InvoiceStatus)
     {
-      $this->InvoiceStatus = $InvoiceStatus;
-      return $this;
+        $this->InvoiceStatus = $InvoiceStatus;
+        return $this;
     }
 
     /**
@@ -408,7 +407,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getCurrency()
     {
-      return $this->Currency;
+        return $this->Currency;
     }
 
     /**
@@ -417,8 +416,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setCurrency($Currency)
     {
-      $this->Currency = $Currency;
-      return $this;
+        $this->Currency = $Currency;
+        return $this;
     }
 
     /**
@@ -426,7 +425,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getApprovers()
     {
-      return $this->Approvers;
+        return $this->Approvers;
     }
 
     /**
@@ -435,8 +434,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setApprovers($Approvers)
     {
-      $this->Approvers = $Approvers;
-      return $this;
+        $this->Approvers = $Approvers;
+        return $this;
     }
 
     /**
@@ -444,7 +443,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceNumber()
     {
-      return $this->InvoiceNumber;
+        return $this->InvoiceNumber;
     }
 
     /**
@@ -453,8 +452,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceNumber($InvoiceNumber)
     {
-      $this->InvoiceNumber = $InvoiceNumber;
-      return $this;
+        $this->InvoiceNumber = $InvoiceNumber;
+        return $this;
     }
 
     /**
@@ -462,15 +461,15 @@ class TipaltiInvoiceItemResponse
      */
     public function getApprovalDate()
     {
-      if ($this->ApprovalDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ApprovalDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->ApprovalDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->ApprovalDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -479,8 +478,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setApprovalDate(\DateTime $ApprovalDate)
     {
-      $this->ApprovalDate = $ApprovalDate->format(\DateTime::ATOM);
-      return $this;
+        $this->ApprovalDate = $ApprovalDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -488,7 +487,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getPayerEntityName()
     {
-      return $this->PayerEntityName;
+        return $this->PayerEntityName;
     }
 
     /**
@@ -497,8 +496,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setPayerEntityName($PayerEntityName)
     {
-      $this->PayerEntityName = $PayerEntityName;
-      return $this;
+        $this->PayerEntityName = $PayerEntityName;
+        return $this;
     }
 
     /**
@@ -506,7 +505,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getAmountDue()
     {
-      return $this->AmountDue;
+        return $this->AmountDue;
     }
 
     /**
@@ -515,8 +514,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setAmountDue($AmountDue)
     {
-      $this->AmountDue = $AmountDue;
-      return $this;
+        $this->AmountDue = $AmountDue;
+        return $this;
     }
 
     /**
@@ -524,7 +523,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getVendorCredits()
     {
-      return $this->VendorCredits;
+        return $this->VendorCredits;
     }
 
     /**
@@ -533,8 +532,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setVendorCredits($VendorCredits)
     {
-      $this->VendorCredits = $VendorCredits;
-      return $this;
+        $this->VendorCredits = $VendorCredits;
+        return $this;
     }
 
     /**
@@ -542,7 +541,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getAPAccount()
     {
-      return $this->APAccount;
+        return $this->APAccount;
     }
 
     /**
@@ -551,8 +550,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setAPAccount($APAccount)
     {
-      $this->APAccount = $APAccount;
-      return $this;
+        $this->APAccount = $APAccount;
+        return $this;
     }
 
     /**
@@ -560,7 +559,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getPurchaseOrderMatchingCompleted()
     {
-      return $this->PurchaseOrderMatchingCompleted;
+        return $this->PurchaseOrderMatchingCompleted;
     }
 
     /**
@@ -569,8 +568,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setPurchaseOrderMatchingCompleted($PurchaseOrderMatchingCompleted)
     {
-      $this->PurchaseOrderMatchingCompleted = $PurchaseOrderMatchingCompleted;
-      return $this;
+        $this->PurchaseOrderMatchingCompleted = $PurchaseOrderMatchingCompleted;
+        return $this;
     }
 
     /**
@@ -578,7 +577,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getHasInvoiceFile()
     {
-      return $this->HasInvoiceFile;
+        return $this->HasInvoiceFile;
     }
 
     /**
@@ -587,8 +586,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setHasInvoiceFile($HasInvoiceFile)
     {
-      $this->HasInvoiceFile = $HasInvoiceFile;
-      return $this;
+        $this->HasInvoiceFile = $HasInvoiceFile;
+        return $this;
     }
 
     /**
@@ -596,7 +595,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getIsInvoiceFileDeleted()
     {
-      return $this->IsInvoiceFileDeleted;
+        return $this->IsInvoiceFileDeleted;
     }
 
     /**
@@ -605,8 +604,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setIsInvoiceFileDeleted($IsInvoiceFileDeleted)
     {
-      $this->IsInvoiceFileDeleted = $IsInvoiceFileDeleted;
-      return $this;
+        $this->IsInvoiceFileDeleted = $IsInvoiceFileDeleted;
+        return $this;
     }
 
     /**
@@ -614,7 +613,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getIsPrepayment()
     {
-      return $this->IsPrepayment;
+        return $this->IsPrepayment;
     }
 
     /**
@@ -623,8 +622,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setIsPrepayment($IsPrepayment)
     {
-      $this->IsPrepayment = $IsPrepayment;
-      return $this;
+        $this->IsPrepayment = $IsPrepayment;
+        return $this;
     }
 
     /**
@@ -632,7 +631,7 @@ class TipaltiInvoiceItemResponse
      */
     public function getLinkedPurchaseOrders()
     {
-      return $this->LinkedPurchaseOrders;
+        return $this->LinkedPurchaseOrders;
     }
 
     /**
@@ -641,8 +640,8 @@ class TipaltiInvoiceItemResponse
      */
     public function setLinkedPurchaseOrders($LinkedPurchaseOrders)
     {
-      $this->LinkedPurchaseOrders = $LinkedPurchaseOrders;
-      return $this;
+        $this->LinkedPurchaseOrders = $LinkedPurchaseOrders;
+        return $this;
     }
 
     /**
@@ -650,15 +649,15 @@ class TipaltiInvoiceItemResponse
      */
     public function getInvoiceCreationDate()
     {
-      if ($this->InvoiceCreationDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->InvoiceCreationDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->InvoiceCreationDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->InvoiceCreationDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
@@ -667,8 +666,7 @@ class TipaltiInvoiceItemResponse
      */
     public function setInvoiceCreationDate(\DateTime $InvoiceCreationDate)
     {
-      $this->InvoiceCreationDate = $InvoiceCreationDate->format(\DateTime::ATOM);
-      return $this;
+        $this->InvoiceCreationDate = $InvoiceCreationDate->format(\DateTime::ATOM);
+        return $this;
     }
-
 }

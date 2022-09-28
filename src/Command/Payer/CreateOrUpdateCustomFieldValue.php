@@ -6,7 +6,6 @@ use Nextnetmedia\Tipalti\Resource\TipaltiCustomFieldValue;
 
 class CreateOrUpdateCustomFieldValue
 {
-
     /**
      * @var string $payerName
      */
@@ -35,10 +34,10 @@ class CreateOrUpdateCustomFieldValue
      */
     public function __construct($payerName, $timestamp, $key, $customFieldValueUpdateModel)
     {
-      $this->payerName = $payerName;
-      $this->timestamp = $timestamp;
-      $this->key = $key;
-      $this->customFieldValueUpdateModel = $customFieldValueUpdateModel;
+        $this->payerName = $payerName;
+        $this->timestamp = $timestamp;
+        $this->key = $key;
+        $this->customFieldValueUpdateModel = $customFieldValueUpdateModel;
     }
 
     /**
@@ -46,7 +45,7 @@ class CreateOrUpdateCustomFieldValue
      */
     public function getPayerName()
     {
-      return $this->payerName;
+        return $this->payerName;
     }
 
     /**
@@ -55,8 +54,8 @@ class CreateOrUpdateCustomFieldValue
      */
     public function setPayerName($payerName)
     {
-      $this->payerName = $payerName;
-      return $this;
+        $this->payerName = $payerName;
+        return $this;
     }
 
     /**
@@ -64,7 +63,7 @@ class CreateOrUpdateCustomFieldValue
      */
     public function getTimestamp()
     {
-      return $this->timestamp;
+        return $this->timestamp;
     }
 
     /**
@@ -73,8 +72,8 @@ class CreateOrUpdateCustomFieldValue
      */
     public function setTimestamp($timestamp)
     {
-      $this->timestamp = $timestamp;
-      return $this;
+        $this->timestamp = $timestamp;
+        return $this;
     }
 
     /**
@@ -82,7 +81,7 @@ class CreateOrUpdateCustomFieldValue
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -91,8 +90,8 @@ class CreateOrUpdateCustomFieldValue
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -100,7 +99,7 @@ class CreateOrUpdateCustomFieldValue
      */
     public function getCustomFieldValueUpdateModel()
     {
-      return $this->customFieldValueUpdateModel;
+        return $this->customFieldValueUpdateModel;
     }
 
     /**
@@ -109,8 +108,7 @@ class CreateOrUpdateCustomFieldValue
      */
     public function setCustomFieldValueUpdateModel($customFieldValueUpdateModel)
     {
-      $this->customFieldValueUpdateModel = $customFieldValueUpdateModel;
-      return $this;
+        $this->customFieldValueUpdateModel = $customFieldValueUpdateModel;
+        return $this;
     }
-
 }
