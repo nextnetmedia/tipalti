@@ -1,6 +1,6 @@
 # tipalti
  
-An adaptation of the [Tipalti API](https://support.tipalti.com/Content/Topics/Development/APIs/Intro.htm) SOAP API v11 and [Tipalti iFrame URLs](https://support.tipalti.com/Content/Topics/Development/iFrames/Intro.htm) in PHP.Licensed under the MIT license.
+An adaptation of the [Tipalti API](https://support.tipalti.com/Content/Topics/Development/APIs/Intro.htm) SOAP API v11 and [Tipalti iFrame URLs](https://support.tipalti.com/Content/Topics/Development/iFrames/Intro.htm) in PHP. Licensed under the MIT license.
 
 ### iFrame Helper Example
 

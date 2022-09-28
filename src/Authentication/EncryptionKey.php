@@ -64,7 +64,7 @@ class EncryptionKey
                 foreach ($annotation->eatParameter as $av) {
                     $value = ($annotation && !empty($args[$av])) ? $args[$av] : null;
                     if (!empty($value)) {
-                        continue;
+                        break;
                     }
                 }
             } else {
