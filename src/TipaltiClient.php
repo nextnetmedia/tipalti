@@ -12,7 +12,7 @@ use ReflectionMethod;
 use SoapClient;
 use SoapFault;
 
-class TipaltiClient extends SoapClient
+class TipaltiClient
 {
     /**
      * @var string
@@ -36,6 +36,11 @@ class TipaltiClient extends SoapClient
      */
     public $payerName;
 
+    /**
+     * @var SoapClient
+     */
+    public $soapclient;
+
     public $wsdl;
     public $namespace;
 
@@ -57,7 +62,7 @@ class TipaltiClient extends SoapClient
                 $options['classmap'][$shortName] = $class;
             }
         }
-        parent::__construct($this->wsdl, $options);
+        $this->soapclient = new SoapClient($this->wsdl, $options);
     }
 
     /**
@@ -95,7 +100,7 @@ class TipaltiClient extends SoapClient
                 }
             }
             $callParams[$keyPosition] = EncryptionKey::generate($class, $namedParams, $this->apikey);
-            $reply = $this->__soapCall($name, [$classToCall->newInstanceArgs($callParams)]);
+            $reply = $this->soapclient->__soapCall($name, [$classToCall->newInstanceArgs($callParams)]);
             // Try to replace the stupid empty result classes with the actual response
             $finalreply = method_exists($reply, "get" . $name . "Result") ? $reply->{"get" . $name . "Result"}() : $reply;
             // There is no rhyme or reason to the error codes; some are "Ok" or "OK" or 0 or just not even set... The error messages, at least, seem to generally be one of "OK", "Ok", or "OK."
