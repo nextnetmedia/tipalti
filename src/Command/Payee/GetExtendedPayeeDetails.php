@@ -4,9 +4,9 @@ namespace Nextnetmedia\Tipalti\Command\Payee;
 
 class GetExtendedPayeeDetails
 {
-  /**
-   * @var string $payerName
-   */
+    /**
+     * @var string $payerName
+     */
     protected $payerName = null;
 
     /**

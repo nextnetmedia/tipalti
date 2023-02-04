@@ -11,8 +11,8 @@ namespace Nextnetmedia\Tipalti\Authentication;
  */
 final class EAT
 {
-  /**
-   * @var mixed
-   */
+    /**
+     * @var mixed
+     */
     public $eatParameter;
 }

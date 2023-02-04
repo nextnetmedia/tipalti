@@ -12,9 +12,9 @@ use Nextnetmedia\Tipalti\Authentication\EncryptionKey;
  */
 class iFrame
 {
-  /**
-   * @var string
-   */
+    /**
+     * @var string
+     */
     private $apikey;
     /**
      * @var string

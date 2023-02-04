@@ -13,8 +13,8 @@ namespace Nextnetmedia\Tipalti\Authentication;
  */
 final class NestedEAT
 {
-  /**
-   * @var string
-   */
+    /**
+     * @var string
+     */
     public $childItem;
 }
