@@ -12,7 +12,7 @@
         "ext-soap": "*",
         "ext-hash": "*",
         "ext-json": "*",
-        "haydenpierce/class-finder": "~0.5",
+        "haydenpierce/class-finder": "^0.4.4",
         "doctrine/annotations": "^1.4"
     }
 }

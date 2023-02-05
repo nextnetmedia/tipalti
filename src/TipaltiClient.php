@@ -50,7 +50,7 @@ class TipaltiClient
      */
     public function __construct($wsdl, $namespace, $apikey, $payerName, $production = false)
     {
-        ClassFinder::disablePSR4Vendors();
+//        ClassFinder::disablePSR4Vendors();
         $this->wsdl = $wsdl;
         $this->namespace = $namespace;
         $this->apikey=$apikey;

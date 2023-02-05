@@ -13,7 +13,7 @@ class AnnotationGenerator
         if (empty($namespace)) {
             throw new Exception("You must provide a namespace");
         }
-        ClassFinder::disablePSR4Vendors();
+//        ClassFinder::disablePSR4Vendors();
         $classes = ClassFinder::getClassesInNamespace($namespace);
         $output = "/**" . PHP_EOL;
         foreach ($classes as $class) {

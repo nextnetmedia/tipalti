@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba4619f0d67b53905fbada47655bef15",
+    "content-hash": "07d031b9d5fe3a31c93cac93915ae107",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -205,16 +205,16 @@
         },
         {
             "name": "haydenpierce/class-finder",
-            "version": "0.5.0",
+            "version": "0.4.4",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.com:hpierce1102/ClassFinder.git",
-                "reference": "94cc3ced73affe931b168f60d874e6c6e6a755cf"
+                "reference": "94c602870ddf8d4fa2d67fb9bae637d88f9bd76e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/hpierce1102%2FClassFinder/repository/archive.zip?sha=94cc3ced73affe931b168f60d874e6c6e6a755cf",
-                "reference": "94cc3ced73affe931b168f60d874e6c6e6a755cf",
+                "url": "https://gitlab.com/api/v4/projects/hpierce1102%2FClassFinder/repository/archive.zip?sha=94c602870ddf8d4fa2d67fb9bae637d88f9bd76e",
+                "reference": "94c602870ddf8d4fa2d67fb9bae637d88f9bd76e",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
                 }
             ],
             "description": "A library that can provide of a list of classes in a given namespace",
-            "time": "2023-02-04T17:54:51+00:00"
+            "time": "2022-09-26T22:42:59+00:00"
         },
         {
             "name": "psr/cache",
